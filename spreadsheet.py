@@ -41,7 +41,8 @@ class SpreadsheetLogic:
         # key: resolution, value: list of performance with the same ordering as openstack_service_names
         sorter = lambda x: sorted(x, key=lambda y: (len(y), y))
         grouped_by_resolution = combine_dicts(dictionaries, sorter, jagged_default_value=None)
-        headers.extend(openstack_service_names)
+        for service_name in openstack_service_names:
+            headers.append(f"{service_name} (FPS)")
 
         for resolution, benchmark_results in grouped_by_resolution.items():
             benchmark_result: Glmark2ResultProcessor
@@ -64,7 +65,7 @@ class SpreadsheetLogic:
     def process_namd(self):
         headers = []
         for openstack_service in self.namd_processors.keys():
-            headers.append(openstack_service)
+            headers.append(f"{openstack_service} (days/ns)")
         body_opstck_svc_as_row = []
         for openstack_service, benchmark in self.namd_processors.items():
             body_opstck_svc_as_row.append(benchmark.results)
@@ -83,7 +84,7 @@ class SpreadsheetLogic:
         headers = ["Model", "Batch Size", "Test Case"]
         table = [headers]
         for openstack_service in self.pytorch_processors.keys():
-            headers.append(openstack_service)
+            headers.append(f"{openstack_service} (batches/s)")
         for (model, batch_size, tc_number), values in combined_dict.items():
             table.append([model, int(batch_size), tc_number, *values])
 

@@ -42,7 +42,7 @@ def handle_processing(benchmark_type, content, pytorch_processor, namd_processor
 
 
 def get_file_list() -> list[str]:
-    return  list(glob("./data/*.txt"))
+    return  list(glob("./data/*"))
 
 
 def get_file_content_dict(file_list: list[str], file_name_extract=os.path.basename):
