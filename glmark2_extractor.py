@@ -13,4 +13,4 @@ class Glmark2ResultProcessor:
             step_name = info.group(2)
             fps = info.group(3)
             frame_time = info.group(4)
-            self.results[step_name] = (step_category,fps, frame_time)
+            self.results[step_name] = (step_category, int(fps), float(frame_time))

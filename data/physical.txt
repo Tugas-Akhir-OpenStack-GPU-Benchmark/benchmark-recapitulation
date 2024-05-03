@@ -1,0 +1,693 @@
+::::::::::::::
+glmark2_benchmark_result_1366x768.txt
+::::::::::::::
+=======================================================
+    glmark2 2021.02
+=======================================================
+    OpenGL Information
+    GL_VENDOR:     NVIDIA Corporation
+    GL_RENDERER:   Tesla T4/PCIe/SSE2
+    GL_VERSION:    4.6.0 NVIDIA 535.161.08
+=======================================================
+[build] use-vbo=false: FPS: 397 FrameTime: 2.519 ms
+[build] use-vbo=true: FPS: 491 FrameTime: 2.037 ms
+[texture] texture-filter=nearest: FPS: 484 FrameTime: 2.066 ms
+[texture] texture-filter=linear: FPS: 483 FrameTime: 2.070 ms
+[texture] texture-filter=mipmap: FPS: 485 FrameTime: 2.062 ms
+[shading] shading=gouraud: FPS: 484 FrameTime: 2.066 ms
+[shading] shading=blinn-phong-inf: FPS: 481 FrameTime: 2.079 ms
+[shading] shading=phong: FPS: 423 FrameTime: 2.364 ms
+[shading] shading=cel: FPS: 365 FrameTime: 2.740 ms
+[bump] bump-render=high-poly: FPS: 343 FrameTime: 2.915 ms
+[bump] bump-render=normals: FPS: 347 FrameTime: 2.882 ms
+[bump] bump-render=height: FPS: 346 FrameTime: 2.890 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 344 FrameTime: 2.907 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 340 FrameTime: 2.941 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 347 FrameTime: 2.882 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 329 FrameTime: 3.040 ms
+[desktop] effect=shadow:windows=4: FPS: 474 FrameTime: 2.110 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 380 FrameTime: 2.632 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 341 FrameTime: 2.933 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 353 FrameTime: 2.833 ms
+[ideas] speed=duration: FPS: 574 FrameTime: 1.742 ms
+[jellyfish] <default>: FPS: 602 FrameTime: 1.661 ms
+[terrain] <default>: FPS: 222 FrameTime: 4.505 ms
+[shadow] <default>: FPS: 484 FrameTime: 2.066 ms
+[refract] <default>: FPS: 443 FrameTime: 2.257 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 534 FrameTime: 1.873 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 518 FrameTime: 1.931 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 493 FrameTime: 2.028 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 526 FrameTime: 1.901 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 407 FrameTime: 2.457 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 368 FrameTime: 2.717 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 361 FrameTime: 2.770 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 465 FrameTime: 2.151 ms
+=======================================================
+                                  glmark2 Score: 425
+=======================================================::::::::::::::
+glmark2_benchmark_result_1920x1080.txt
+::::::::::::::
+=======================================================
+    glmark2 2021.02
+=======================================================
+    OpenGL Information
+    GL_VENDOR:     NVIDIA Corporation
+    GL_RENDERER:   Tesla T4/PCIe/SSE2
+    GL_VERSION:    4.6.0 NVIDIA 535.161.08
+=======================================================
+[build] use-vbo=false: FPS: 199 FrameTime: 5.025 ms
+[build] use-vbo=true: FPS: 211 FrameTime: 4.739 ms
+[texture] texture-filter=nearest: FPS: 204 FrameTime: 4.902 ms
+[texture] texture-filter=linear: FPS: 189 FrameTime: 5.291 ms
+[texture] texture-filter=mipmap: FPS: 184 FrameTime: 5.435 ms
+[shading] shading=gouraud: FPS: 186 FrameTime: 5.376 ms
+[shading] shading=blinn-phong-inf: FPS: 185 FrameTime: 5.405 ms
+[shading] shading=phong: FPS: 184 FrameTime: 5.435 ms
+[shading] shading=cel: FPS: 186 FrameTime: 5.376 ms
+[bump] bump-render=high-poly: FPS: 180 FrameTime: 5.556 ms
+[bump] bump-render=normals: FPS: 181 FrameTime: 5.525 ms
+[bump] bump-render=height: FPS: 180 FrameTime: 5.556 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 176 FrameTime: 5.682 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 260 FrameTime: 3.846 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 297 FrameTime: 3.367 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 253 FrameTime: 3.953 ms
+[desktop] effect=shadow:windows=4: FPS: 217 FrameTime: 4.608 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 163 FrameTime: 6.135 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 160 FrameTime: 6.250 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 159 FrameTime: 6.289 ms
+[ideas] speed=duration: FPS: 185 FrameTime: 5.405 ms
+[jellyfish] <default>: FPS: 188 FrameTime: 5.319 ms
+[terrain] <default>: FPS: 123 FrameTime: 8.130 ms
+[shadow] <default>: FPS: 161 FrameTime: 6.211 ms
+[refract] <default>: FPS: 134 FrameTime: 7.463 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 136 FrameTime: 7.353 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 136 FrameTime: 7.353 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 136 FrameTime: 7.353 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 136 FrameTime: 7.353 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 136 FrameTime: 7.353 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 136 FrameTime: 7.353 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 265 FrameTime: 3.774 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 296 FrameTime: 3.378 ms
+=======================================================
+                                  glmark2 Score: 185
+=======================================================::::::::::::::
+glmark2_benchmark_result_192x108.txt
+::::::::::::::
+=======================================================
+    glmark2 2021.02
+=======================================================
+    OpenGL Information
+    GL_VENDOR:     NVIDIA Corporation
+    GL_RENDERER:   Tesla T4/PCIe/SSE2
+    GL_VERSION:    4.6.0 NVIDIA 535.161.08
+=======================================================
+[build] use-vbo=false: FPS: 633 FrameTime: 1.580 ms
+[build] use-vbo=true: FPS: 655 FrameTime: 1.527 ms
+[texture] texture-filter=nearest: FPS: 655 FrameTime: 1.527 ms
+[texture] texture-filter=linear: FPS: 655 FrameTime: 1.527 ms
+[texture] texture-filter=mipmap: FPS: 654 FrameTime: 1.529 ms
+[shading] shading=gouraud: FPS: 653 FrameTime: 1.531 ms
+[shading] shading=blinn-phong-inf: FPS: 7558 FrameTime: 0.132 ms
+[shading] shading=phong: FPS: 12218 FrameTime: 0.082 ms
+[shading] shading=cel: FPS: 12101 FrameTime: 0.083 ms
+[bump] bump-render=high-poly: FPS: 11263 FrameTime: 0.089 ms
+[bump] bump-render=normals: FPS: 12473 FrameTime: 0.080 ms
+[bump] bump-render=height: FPS: 12025 FrameTime: 0.083 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 6465 FrameTime: 0.155 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 5399 FrameTime: 0.185 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 3870 FrameTime: 0.258 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 2651 FrameTime: 0.377 ms
+[desktop] effect=shadow:windows=4: FPS: 3419 FrameTime: 0.292 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 849 FrameTime: 1.178 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 927 FrameTime: 1.079 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 928 FrameTime: 1.078 ms
+[ideas] speed=duration: FPS: 3636 FrameTime: 0.275 ms
+[jellyfish] <default>: FPS: 3643 FrameTime: 0.274 ms
+[terrain] <default>: FPS: 1180 FrameTime: 0.847 ms
+[shadow] <default>: FPS: 3484 FrameTime: 0.287 ms
+[refract] <default>: FPS: 2578 FrameTime: 0.388 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 7144 FrameTime: 0.140 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 13017 FrameTime: 0.077 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 12922 FrameTime: 0.077 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 12355 FrameTime: 0.081 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 5376 FrameTime: 0.186 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 5621 FrameTime: 0.178 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 3834 FrameTime: 0.261 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 3818 FrameTime: 0.262 ms
+=======================================================
+                                  glmark2 Score: 5292
+=======================================================::::::::::::::
+glmark2_benchmark_result_360x800.txt
+::::::::::::::
+=======================================================
+    glmark2 2021.02
+=======================================================
+    OpenGL Information
+    GL_VENDOR:     NVIDIA Corporation
+    GL_RENDERER:   Tesla T4/PCIe/SSE2
+    GL_VERSION:    4.6.0 NVIDIA 535.161.08
+=======================================================
+[build] use-vbo=false: FPS: 984 FrameTime: 1.016 ms
+[build] use-vbo=true: FPS: 984 FrameTime: 1.016 ms
+[texture] texture-filter=nearest: FPS: 1068 FrameTime: 0.936 ms
+[texture] texture-filter=linear: FPS: 966 FrameTime: 1.035 ms
+[texture] texture-filter=mipmap: FPS: 1348 FrameTime: 0.742 ms
+[shading] shading=gouraud: FPS: 1787 FrameTime: 0.560 ms
+[shading] shading=blinn-phong-inf: FPS: 1738 FrameTime: 0.575 ms
+[shading] shading=phong: FPS: 1537 FrameTime: 0.651 ms
+[shading] shading=cel: FPS: 1235 FrameTime: 0.810 ms
+[bump] bump-render=high-poly: FPS: 1287 FrameTime: 0.777 ms
+[bump] bump-render=normals: FPS: 1381 FrameTime: 0.724 ms
+[bump] bump-render=height: FPS: 1362 FrameTime: 0.734 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 1337 FrameTime: 0.748 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 1282 FrameTime: 0.780 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 1059 FrameTime: 0.944 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 519 FrameTime: 1.927 ms
+[desktop] effect=shadow:windows=4: FPS: 428 FrameTime: 2.336 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 226 FrameTime: 4.425 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 399 FrameTime: 2.506 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 229 FrameTime: 4.367 ms
+[ideas] speed=duration: FPS: 429 FrameTime: 2.331 ms
+[jellyfish] <default>: FPS: 426 FrameTime: 2.347 ms
+[terrain] <default>: FPS: 516 FrameTime: 1.938 ms
+[shadow] <default>: FPS: 1639 FrameTime: 0.610 ms
+[refract] <default>: FPS: 1380 FrameTime: 0.725 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 1565 FrameTime: 0.639 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 1290 FrameTime: 0.775 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 1359 FrameTime: 0.736 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 1349 FrameTime: 0.741 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 1350 FrameTime: 0.741 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 1371 FrameTime: 0.729 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 1345 FrameTime: 0.743 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 919 FrameTime: 1.088 ms
+=======================================================
+                                  glmark2 Score: 1093
+=======================================================::::::::::::::
+namd_benchmark_result.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           13.75 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+
+    Desktop:              GNOME Shell 42.9
+
+    Display Server:       X Server 1.21.1.4
+
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+
+    Security:             gather_data_sampling: Mitigation of Microcode
+
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+
+                          + l1tf: Not affected
+
+                          + mds: Not affected
+
+                          + meltdown: Not affected
+
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+
+                          + retbleed: Mitigation of Enhanced IBRS
+
+                          + spec_rstack_overflow: Not affected
+
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+
+    Would you like to save these test results (Y/n):
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    5
+    Estimated Time To Completion: 2 Minutes [19:04 WIB]
+        Started Run 1 @ 19:02:19
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:02:48
+        Started Run 3 @ 19:03:17
+        Started Run 4 @ 19:03:45
+        Started Run 5 @ 19:04:14
+
+    ATPase Simulation - 327,506 Atoms:
+        0.296715
+        0.278297
+        0.281902
+        0.324847
+        0.292108
+
+    Average: 0.29477 days/ns
+    Deviation: 6.24%
+    Samples: 5
+
+    Comparison of 579 OpenBenchmarking.org samples since 28 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*--*#*!#*]
+                                    This Result (19th Percentile): 0.29477 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                             Gigabyte  RTX 3070: 0.35359 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_cuda_install_result.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1::::::::::::::
+pytorch_benchmark_result.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+    Evaluating External Test Dependencies ..................................
+    Evaluating System Dependencies .........................................
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/pytorch-1.0.1
+
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1
+    System Test Configuration
+        1: CPU
+        2: gpu
+        3: Test All Options
+        ** Multiple items can be selected, delimit by a comma. **
+        Device:
+
+        1: 1
+        2: 16
+        3: 32
+        4: 64
+        5: 256
+        6: 512
+        7: Test All Options
+        ** Multiple items can be selected, delimit by a comma. **
+        Batch Size:
+
+        1: ResNet-50
+        2: ResNet-152
+        3: Efficientnet_v2_l
+        4: Test All Options
+        ** Multiple items can be selected, delimit by a comma. **
+        Model:
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           13.75 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+
+    Desktop:              GNOME Shell 42.9
+
+    Display Server:       X Server 1.21.1.4
+
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+
+    Security:             gather_data_sampling: Mitigation of Microcode
+
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+
+                          + l1tf: Not affected
+
+                          + mds: Not affected
+
+                          + meltdown: Not affected
+
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+
+                          + retbleed: Mitigation of Enhanced IBRS
+
+                          + spec_rstack_overflow: Not affected
+
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+
+    Would you like to save these test results (Y/n):
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 1 - Model: ResNet-50]
+    Test 1 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      1 Minute
+    Estimated Time To Completion: 31 Minutes [19:35 WIB]
+        Started Run 1 @ 19:04:55
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:05:12
+        Started Run 3 @ 19:05:30
+
+    Device: gpu - Batch Size: 1 - Model: ResNet-50:
+        127.87602271035
+        124.18668957104
+        148.28800055803
+
+    Average: 133.45 batches/sec
+    Minimum: 57.84
+    Maximum: 150.4
+    Deviation: 9.73%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 1 - Model: ResNet-152]
+    Test 2 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 30 Minutes [19:35 WIB]
+        Started Run 1 @ 19:05:54
+        Started Run 2 @ 19:06:24
+        Started Run 3 @ 19:06:53
+
+    Device: gpu - Batch Size: 1 - Model: ResNet-152:
+        54.633810748035
+        54.418358474008
+        45.016551699251
+
+    Average: 51.36 batches/sec
+    Minimum: 38.43
+    Maximum: 55.65
+    Deviation: 10.69%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 16 - Model: ResNet-50]
+    Test 3 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 29 Minutes [19:35 WIB]
+        Started Run 1 @ 19:07:34
+        Started Run 2 @ 19:08:00
+        Started Run 3 @ 19:08:27
+
+    Device: gpu - Batch Size: 16 - Model: ResNet-50:
+        130.08591295439
+        116.45982699138
+        129.69952071848
+
+    Average: 125.42 batches/sec
+    Minimum: 88.78
+    Maximum: 138.25
+    Deviation: 6.19%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 64 - Model: ResNet-50]
+    Test 4 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 28 Minutes [19:36 WIB]
+        Started Run 1 @ 19:08:59
+        Started Run 2 @ 19:09:24
+        Started Run 3 @ 19:09:50
+
+    Device: gpu - Batch Size: 64 - Model: ResNet-50:
+        129.97001748999
+        129.63920166012
+        129.11293292078
+
+    Average: 129.57 batches/sec
+    Minimum: 98.62
+    Maximum: 138.1
+    Deviation: 0.33%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 16 - Model: ResNet-152]
+    Test 5 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 26 Minutes [19:36 WIB]
+        Started Run 1 @ 19:10:22
+        Started Run 2 @ 19:11:13
+        Started Run 3 @ 19:12:13
+
+    Device: gpu - Batch Size: 16 - Model: ResNet-152:
+        50.885647657334
+        43.084194140728
+        42.490216260058
+
+    Average: 45.49 batches/sec
+    Minimum: 29.37
+    Maximum: 51.93
+    Deviation: 10.30%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 512 - Model: ResNet-50]
+    Test 6 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 24 Minutes [19:36 WIB]
+        Started Run 1 @ 19:13:20
+        Started Run 2 @ 19:13:45
+        Started Run 3 @ 19:14:10
+
+    Device: gpu - Batch Size: 512 - Model: ResNet-50:
+        130.04998530063
+        129.58740896597
+        116.64872884967
+
+    Average: 125.43 batches/sec
+    Minimum: 79.74
+    Maximum: 139.53
+    Deviation: 6.06%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 64 - Model: ResNet-152]
+    Test 7 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 23 Minutes [19:36 WIB]
+        Started Run 1 @ 19:14:45
+        Started Run 2 @ 19:15:38
+        Started Run 3 @ 19:16:30
+
+    Device: gpu - Batch Size: 64 - Model: ResNet-152:
+        49.687694145624
+        50.235621872627
+        42.597336258109
+
+    Average: 47.51 batches/sec
+    Minimum: 35.72
+    Maximum: 51.36
+    Deviation: 8.97%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 512 - Model: ResNet-152]
+    Test 8 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 20 Minutes [19:37 WIB]
+        Started Run 1 @ 19:17:37
+        Started Run 2 @ 19:18:30
+        Started Run 3 @ 19:19:30
+
+    Device: gpu - Batch Size: 512 - Model: ResNet-152:
+        49.871720098524
+        42.447268458376
+        51.476750378033
+
+    Average: 47.93 batches/sec
+    Minimum: 36.88
+    Maximum: 52.3
+    Deviation: 10.05%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 1 - Model: Efficientnet_v2_l]
+    Test 9 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 18 Minutes [19:37 WIB]
+        Started Run 1 @ 19:20:29
+        Started Run 2 @ 19:21:30
+        Started Run 3 @ 19:22:23
+
+    Device: gpu - Batch Size: 1 - Model: Efficientnet_v2_l:
+        21.932086896503
+        26.393232645671
+        26.639667462375
+
+    Average: 24.99 batches/sec
+    Minimum: 18.34
+    Maximum: 27.16
+    Deviation: 10.60%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 16 - Model: Efficientnet_v2_l]
+    Test 10 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      5 Minutes
+    Estimated Time To Completion: 15 Minutes [19:37 WIB]
+        Started Run 1 @ 19:23:22
+        Started Run 2 @ 19:25:17
+        Started Run 3 @ 19:26:54
+
+    Device: gpu - Batch Size: 16 - Model: Efficientnet_v2_l:
+        20.609227787353
+        25.014943389807
+        24.941113489099
+
+    Average: 23.52 batches/sec
+    Minimum: 18.69
+    Maximum: 25.38
+    Deviation: 10.72%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 64 - Model: Efficientnet_v2_l]
+    Test 11 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      5 Minutes
+    Estimated Time To Completion: 10 Minutes [19:38 WIB]
+        Started Run 1 @ 19:28:38
+        Started Run 2 @ 19:30:13
+        Started Run 3 @ 19:31:49
+
+    Device: gpu - Batch Size: 64 - Model: Efficientnet_v2_l:
+        25.530367358313
+        25.608005407359
+        25.235403672386
+
+    Average: 25.46 batches/sec
+    Minimum: 22.6
+    Maximum: 25.95
+    Deviation: 0.77%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 512 - Model: Efficientnet_v2_l]
+    Test 12 of 12
+    Estimated Trial Run Count:    3
+    Estimated Time To Completion: 5 Minutes [19:38 WIB]
+        Started Run 1 @ 19:33:32
+        Started Run 2 @ 19:35:09
+        Started Run 3 @ 19:37:03
+
+    Device: gpu - Batch Size: 512 - Model: Efficientnet_v2_l:
+        25.040272208798
+        20.798232176014
+        25.391527589981
+
+    Average: 23.74 batches/sec
+    Minimum: 17.93
+    Maximum: 25.78
+    Deviation: 10.77%::::::::::::::
+pytorch_install_result.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+    Evaluating External Test Dependencies ..................................
+    Evaluating System Dependencies .........................................
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/pytorch-1.0.1
