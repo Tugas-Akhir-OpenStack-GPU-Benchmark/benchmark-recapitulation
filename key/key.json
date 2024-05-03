@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "law-2006463162",
+  "private_key_id": "67ebe05dd3b537a822135b396a991067cf0b00e6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDCmwMoaDG1qTP7\nrfN0lO+Va//Hepb88+uhsXQjh0IgKtCfP9lnFreZQNZcgQHIpgaa1M0xBeZcuI73\nOUaaVeHs68lYBZxhDr4QZOuTuCiWmpMilp+cfdFDl8I7XazZFNRF0kuK6GYi3Kug\njamH/ZOWPF04mVoLJWAv6en+NpOYHjhwxLORy1uKu7MLrEpaifodzCJOkRaI6nVS\nCOzmcBGm8wKsy6CguZEWZK0/PGkFFrPpVvEUV5r3pjenQtZUhnCZksC7MZZEvx6e\n2OIu2Vqe55kFoOYv4MjDgiD7vUwXAC9VX8mB/dPuqwS40fZBnPxdRcZKhKOoKuH3\nOmBozy2RAgMBAAECggEAAQ3DlD0PMtmAFG9uU23oh7W6YHdFmMhN2PXr5/LYLPIq\nZ8hZ2iTteNUY7A6PRsm+XKmFFGxAoXUm4ggTfau0Idsrf5BlNsHUjeRsAaRkRN+A\npzXrVpa4Ur5AQR/KWzERjrC7M7z7K5poDAIkXj4FZfF8/DzZV9jbltrUh2m+fhr+\nWwVYaZ3vgB7mDOXbSjwIS3I4k6Y40wm0jduQqh8V5PO+K6UcGdfboVpZnGS3TWJe\n56yyl9udfLKBn0yMp/TANAT3s5fR9QviY3aEw+yQ1DIrvXL5omV0YwE3AJn8147q\ndaBgbbQULbR/1kaKdeGAQriCMbjPoePt9w+5Q5wswQKBgQD40obBS0/gqFlLHYyF\nymb1hCqdsNs61T1WYZZ0etMxCT81Pu5VYZCvO+VPFNdtPZ9GgTZWlh2JsDmCEmXA\n7JKhBS9/TVNLZZeAjvfO8ZOvLhfuXDu6zikOAL+BKkUPJFcSJsk8W4az5jp5W+r3\nr3VPVecR5stfGLbI10nAOHZDsQKBgQDIOByhau50nzA8nSBDddgnVP+NL5MSEZ1d\nSxMkVcp+TP00ZaMLnmlf8WpiOmPCoKhc31oH1RfS1aGuPNJLmIhM56yWPOOTjpCI\n+0vyAco4pHrzWCzAWXKiLEdxgwbXeHiWnSrvj5ntPcic1qIc1c/tEltt+pQhsti+\nsCuLTG9f4QKBgCekGrXm0rX+/CLcdUvHYDnTMZrn1zV7TYdaisbJ3qWcTIamHQBb\nR9qzFyhPMLcFrz9jTI3k4pXSDodreOyQhBfFJLkKT6/eYpGntVEx6Y5qMIPYC+gJ\n+j5x3hCs9E2iQ4DvzvWfu0kj78Lv4vJM8MqP6/1NIK9o144NxoEqPaUxAoGAGEs2\nrh9bb6shHzmxgH38DEmz+F2dasPYZEmHuRDv0QNmdcUfU3mVL58LWX/cOvFjfGFd\nezXP/jUNuSaIHcQURcCWoGQi+PSDdRuIy4SMFPNgN8arJ2uzDRpyUMOlQN/NQfkw\nDIFQHAkzHlSstvL6l7lyfpW5A52/zuNxZSWRHgECgYApWlFFKQErE0qS3NrzHUeC\nAPPGO4xgPKUcb+6CTHUpqKhJjRXJwlF744aOTxZ67rTzylOFAtHdA3BeQDXcGc2v\nsl5h0jScPGx47Bk2opLup+toaH1c03dkJ2wpu7eG1CAOwO1VOeq+7p7xZADGa1HF\nrC8TebLdAyIdxsY50qK7cg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "tugas-akhir-spreadsheet@law-2006463162.iam.gserviceaccount.com",
+  "client_id": "100315117474814133368",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tugas-akhir-spreadsheet%40law-2006463162.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

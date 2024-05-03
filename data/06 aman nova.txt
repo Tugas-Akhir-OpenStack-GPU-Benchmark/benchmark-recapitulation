@@ -1,0 +1,626 @@
+::::::::::::::
+glmark2_benchmark_result_1366x768.txt
+::::::::::::::
+=======================================================
+    glmark2 2021.02
+=======================================================
+    OpenGL Information
+    GL_VENDOR:     NVIDIA Corporation
+    GL_RENDERER:   Tesla T4/PCIe/SSE2
+    GL_VERSION:    4.6.0 NVIDIA 535.161.08
+=======================================================
+[build] use-vbo=false: FPS: 264 FrameTime: 3.788 ms
+[build] use-vbo=true: FPS: 264 FrameTime: 3.788 ms
+[texture] texture-filter=nearest: FPS: 178 FrameTime: 5.618 ms
+[texture] texture-filter=linear: FPS: 176 FrameTime: 5.682 ms
+[texture] texture-filter=mipmap: FPS: 163 FrameTime: 6.135 ms
+[shading] shading=gouraud: FPS: 172 FrameTime: 5.814 ms
+[shading] shading=blinn-phong-inf: FPS: 176 FrameTime: 5.682 ms
+[shading] shading=phong: FPS: 173 FrameTime: 5.780 ms
+[shading] shading=cel: FPS: 162 FrameTime: 6.173 ms
+[bump] bump-render=high-poly: FPS: 147 FrameTime: 6.803 ms
+[bump] bump-render=normals: FPS: 183 FrameTime: 5.464 ms
+[bump] bump-render=height: FPS: 173 FrameTime: 5.780 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 141 FrameTime: 7.092 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 139 FrameTime: 7.194 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 174 FrameTime: 5.747 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 129 FrameTime: 7.752 ms
+[desktop] effect=shadow:windows=4: FPS: 141 FrameTime: 7.092 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 137 FrameTime: 7.299 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 121 FrameTime: 8.264 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 155 FrameTime: 6.452 ms
+[ideas] speed=duration: FPS: 164 FrameTime: 6.098 ms
+[jellyfish] <default>: FPS: 150 FrameTime: 6.667 ms
+[terrain] <default>: FPS: 149 FrameTime: 6.711 ms
+[shadow] <default>: FPS: 249 FrameTime: 4.016 ms
+[refract] <default>: FPS: 272 FrameTime: 3.676 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 282 FrameTime: 3.546 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 202 FrameTime: 4.950 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 171 FrameTime: 5.848 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 176 FrameTime: 5.682 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 166 FrameTime: 6.024 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 165 FrameTime: 6.061 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 166 FrameTime: 6.024 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 171 FrameTime: 5.848 ms
+=======================================================
+                                  glmark2 Score: 177
+=======================================================::::::::::::::
+glmark2_benchmark_result_1920x1080.txt
+::::::::::::::
+=======================================================
+    glmark2 2021.02
+=======================================================
+    OpenGL Information
+    GL_VENDOR:     NVIDIA Corporation
+    GL_RENDERER:   Tesla T4/PCIe/SSE2
+    GL_VERSION:    4.6.0 NVIDIA 535.161.08
+=======================================================
+[build] use-vbo=false: FPS: 152 FrameTime: 6.579 ms
+[build] use-vbo=true: FPS: 160 FrameTime: 6.250 ms
+[texture] texture-filter=nearest: FPS: 105 FrameTime: 9.524 ms
+[texture] texture-filter=linear: FPS: 103 FrameTime: 9.709 ms
+[texture] texture-filter=mipmap: FPS: 97 FrameTime: 10.309 ms
+[shading] shading=gouraud: FPS: 93 FrameTime: 10.753 ms
+[shading] shading=blinn-phong-inf: FPS: 93 FrameTime: 10.753 ms
+[shading] shading=phong: FPS: 94 FrameTime: 10.638 ms
+[shading] shading=cel: FPS: 99 FrameTime: 10.101 ms
+[bump] bump-render=high-poly: FPS: 98 FrameTime: 10.204 ms
+[bump] bump-render=normals: FPS: 97 FrameTime: 10.309 ms
+[bump] bump-render=height: FPS: 110 FrameTime: 9.091 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 87 FrameTime: 11.494 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 84 FrameTime: 11.905 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 97 FrameTime: 10.309 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 82 FrameTime: 12.195 ms
+[desktop] effect=shadow:windows=4: FPS: 87 FrameTime: 11.494 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 92 FrameTime: 10.870 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 82 FrameTime: 12.195 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 85 FrameTime: 11.765 ms
+[ideas] speed=duration: FPS: 90 FrameTime: 11.111 ms
+[jellyfish] <default>: FPS: 86 FrameTime: 11.628 ms
+[terrain] <default>: FPS: 89 FrameTime: 11.236 ms
+[shadow] <default>: FPS: 189 FrameTime: 5.291 ms
+[refract] <default>: FPS: 154 FrameTime: 6.494 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 157 FrameTime: 6.369 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 117 FrameTime: 8.547 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 102 FrameTime: 9.804 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 94 FrameTime: 10.638 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 101 FrameTime: 9.901 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 98 FrameTime: 10.204 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 94 FrameTime: 10.638 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 100 FrameTime: 10.000 ms
+=======================================================
+                                  glmark2 Score: 105
+=======================================================::::::::::::::
+glmark2_benchmark_result_192x108.txt
+::::::::::::::
+=======================================================
+    glmark2 2021.02
+=======================================================
+    OpenGL Information
+    GL_VENDOR:     NVIDIA Corporation
+    GL_RENDERER:   Tesla T4/PCIe/SSE2
+    GL_VERSION:    4.6.0 NVIDIA 535.161.08
+=======================================================
+[build] use-vbo=false: FPS: 1310 FrameTime: 0.763 ms
+[build] use-vbo=true: FPS: 1285 FrameTime: 0.778 ms
+[texture] texture-filter=nearest: FPS: 967 FrameTime: 1.034 ms
+[texture] texture-filter=linear: FPS: 1242 FrameTime: 0.805 ms
+[texture] texture-filter=mipmap: FPS: 799 FrameTime: 1.252 ms
+[shading] shading=gouraud: FPS: 1131 FrameTime: 0.884 ms
+[shading] shading=blinn-phong-inf: FPS: 1323 FrameTime: 0.756 ms
+[shading] shading=phong: FPS: 1361 FrameTime: 0.735 ms
+[shading] shading=cel: FPS: 1346 FrameTime: 0.743 ms
+[bump] bump-render=high-poly: FPS: 1485 FrameTime: 0.673 ms
+[bump] bump-render=normals: FPS: 1232 FrameTime: 0.812 ms
+[bump] bump-render=height: FPS: 1308 FrameTime: 0.765 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 1308 FrameTime: 0.765 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 815 FrameTime: 1.227 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 1224 FrameTime: 0.817 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 1548 FrameTime: 0.646 ms
+[desktop] effect=shadow:windows=4: FPS: 1811 FrameTime: 0.552 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 646 FrameTime: 1.548 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 692 FrameTime: 1.445 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 705 FrameTime: 1.418 ms
+[ideas] speed=duration: FPS: 1718 FrameTime: 0.582 ms
+[jellyfish] <default>: FPS: 1365 FrameTime: 0.733 ms
+[terrain] <default>: FPS: 1064 FrameTime: 0.940 ms
+[shadow] <default>: FPS: 800 FrameTime: 1.250 ms
+[refract] <default>: FPS: 1774 FrameTime: 0.564 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 996 FrameTime: 1.004 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 1068 FrameTime: 0.936 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 1347 FrameTime: 0.742 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 1494 FrameTime: 0.669 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 1342 FrameTime: 0.745 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 1366 FrameTime: 0.732 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 1374 FrameTime: 0.728 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 1376 FrameTime: 0.727 ms
+=======================================================
+                                  glmark2 Score: 1230
+=======================================================::::::::::::::
+glmark2_benchmark_result_360x800.txt
+::::::::::::::
+=======================================================
+    glmark2 2021.02
+=======================================================
+    OpenGL Information
+    GL_VENDOR:     NVIDIA Corporation
+    GL_RENDERER:   Tesla T4/PCIe/SSE2
+    GL_VERSION:    4.6.0 NVIDIA 535.161.08
+=======================================================
+[build] use-vbo=false: FPS: 918 FrameTime: 1.089 ms
+[build] use-vbo=true: FPS: 884 FrameTime: 1.131 ms
+[texture] texture-filter=nearest: FPS: 764 FrameTime: 1.309 ms
+[texture] texture-filter=linear: FPS: 861 FrameTime: 1.161 ms
+[texture] texture-filter=mipmap: FPS: 867 FrameTime: 1.153 ms
+[shading] shading=gouraud: FPS: 780 FrameTime: 1.282 ms
+[shading] shading=blinn-phong-inf: FPS: 682 FrameTime: 1.466 ms
+[shading] shading=phong: FPS: 713 FrameTime: 1.403 ms
+[shading] shading=cel: FPS: 801 FrameTime: 1.248 ms
+[bump] bump-render=high-poly: FPS: 792 FrameTime: 1.263 ms
+[bump] bump-render=normals: FPS: 706 FrameTime: 1.416 ms
+[bump] bump-render=height: FPS: 948 FrameTime: 1.055 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 651 FrameTime: 1.536 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 629 FrameTime: 1.590 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 641 FrameTime: 1.560 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 519 FrameTime: 1.927 ms
+[desktop] effect=shadow:windows=4: FPS: 627 FrameTime: 1.595 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 373 FrameTime: 2.681 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 385 FrameTime: 2.597 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 397 FrameTime: 2.519 ms
+[ideas] speed=duration: FPS: 605 FrameTime: 1.653 ms
+[jellyfish] <default>: FPS: 646 FrameTime: 1.548 ms
+[terrain] <default>: FPS: 418 FrameTime: 2.392 ms
+[shadow] <default>: FPS: 613 FrameTime: 1.631 ms
+[refract] <default>: FPS: 793 FrameTime: 1.261 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 1010 FrameTime: 0.990 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 752 FrameTime: 1.330 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 647 FrameTime: 1.546 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 678 FrameTime: 1.475 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 643 FrameTime: 1.555 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 696 FrameTime: 1.437 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 670 FrameTime: 1.493 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 676 FrameTime: 1.479 ms
+=======================================================
+                                  glmark2 Score: 690
+=======================================================::::::::::::::
+namd_benchmark_result.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+  PROCESSOR:              6 x Intel Core i7 9xx
+    Core Count:           6
+    Extensions:           SSE 4.2
+    Cache Size:           96 MB
+    Microcode:            0x1
+    Core Family:          Nehalem
+
+  GRAPHICS:               Red Hat Virtio GPU 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Monitor:              QEMU Monitor
+    Screen:               1024x768
+
+  MOTHERBOARD:            OpenStack Foundation Nova v0.0.0
+    BIOS Version:         1.15.0-1
+    Chipset:              Intel 440FX 82441FX PMC
+    Network:              Red Hat Virtio device
+
+  MEMORY:                 1 x 4096 MB RAM QEMU
+
+  DISK:                   39GB
+    File-System:          ext4
+    Mount Options:        relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               5.4.0-177-generic (x86_64)
+    Desktop:              GNOME Shell 3.36.9
+    Display Server:       X Server 1.20.13
+    Compiler:             GCC 9.4.0 + CUDA 10.1
+    System Layer:         KVM
+    Security:             gather_data_sampling: Not affected
+                          + itlb_multihit: KVM: Vulnerable
+                          + l1tf: Mitigation of PTE Inversion
+                          + mds: Vulnerable: Clear buffers attempted no microcode; SMT Host state unknown
+                          + meltdown: Mitigation of PTI
+                          + mmio_stale_data: Unknown: No mitigations
+                          + retbleed: Not affected
+                          + spec_store_bypass: Vulnerable
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected
+                          + srbds: Not affected
+                          + tsx_async_abort: Not affected
+
+    Would you like to save these test results (Y/n): n
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    5
+    Estimated Time To Completion: 2 Minutes [06:33 UTC]
+        Started Run 1 @ 06:31:26
+        Started Run 2 @ 06:31:55
+        Started Run 3 @ 06:32:23
+        Started Run 4 @ 06:32:51
+        Started Run 5 @ 06:33:19
+
+    ATPase Simulation - 327,506 Atoms:
+        0.40255
+        0.402444
+        0.404929
+        0.405841
+        0.404354
+
+    Average: 0.40402 days/ns
+    Deviation: 0.37%
+    Samples: 5
+
+    Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                                                                                      |---------------------------------*-----#*#!*#*|* ]
+                                                                                                                      This Result (10th Percentile): 0.40402 ^
+                                                                                                                                          NVIDIA GeForce RTX 4080: 0.07204 ^
+                                                                                                                                        NVIDIA GeForce RTX 3070: 0.12431 ^
+                                                                                                                                 NVIDIA GeForce RTX 2060 SUPER: 0.1586 ^
+                                                                                                                                         NVIDIA Quadro RTX: 0.23049 ^
+
+::::::::::::::
+namd_cuda_install_result.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1::::::::::::::
+pytorch_benchmark_result.txt
+::::::::::::::
+
+    Evaluating External Test Dependencies ..................................
+    Evaluating System Dependencies .........................................
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/pytorch-1.0.1
+
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1
+    System Test Configuration
+        1: CPU
+        2: gpu
+        3: Test All Options
+        ** Multiple items can be selected, delimit by a comma. **
+        Device:
+
+        1: 1
+        2: 16
+        3: 32
+        4: 64
+        5: 256
+        6: 512
+        7: Test All Options
+        ** Multiple items can be selected, delimit by a comma. **
+        Batch Size:
+
+        1: ResNet-50
+        2: ResNet-152
+        3: Efficientnet_v2_l
+        4: Test All Options
+        ** Multiple items can be selected, delimit by a comma. **
+        Model:
+
+System Information
+
+
+  PROCESSOR:              6 x Intel Core i7 9xx
+    Core Count:           6
+    Extensions:           SSE 4.2
+    Cache Size:           96 MB
+    Microcode:            0x1
+    Core Family:          Nehalem
+
+  GRAPHICS:               Red Hat Virtio GPU 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Monitor:              QEMU Monitor
+    Screen:               1024x768
+
+  MOTHERBOARD:            OpenStack Foundation Nova v0.0.0
+    BIOS Version:         1.15.0-1
+    Chipset:              Intel 440FX 82441FX PMC
+    Network:              Red Hat Virtio device
+
+  MEMORY:                 1 x 4096 MB RAM QEMU
+
+  DISK:                   39GB
+    File-System:          ext4
+    Mount Options:        relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               5.4.0-176-generic (x86_64)
+    Display Server:       X Server 1.20.13
+    Compiler:             GCC 9.4.0 + CUDA 10.1
+    System Layer:         KVM
+    Security:             gather_data_sampling: Not affected
+                          + itlb_multihit: KVM: Vulnerable
+                          + l1tf: Mitigation of PTE Inversion
+                          + mds: Vulnerable: Clear buffers attempted no microcode; SMT Host state unknown
+                          + meltdown: Mitigation of PTI
+                          + mmio_stale_data: Unknown: No mitigations
+                          + retbleed: Not affected
+                          + spec_store_bypass: Vulnerable
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected
+                          + srbds: Not affected
+                          + tsx_async_abort: Not affected
+
+    Would you like to save these test results (Y/n):
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 1 - Model: ResNet-50]
+    Test 1 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      10 Minutes
+    Estimated Time To Completion: 1 Hour, 51 Minutes [07:25 UTC]
+        Started Run 1 @ 05:35:21
+        Started Run 2 @ 05:35:46
+        Started Run 3 @ 05:36:05
+
+    Device: gpu - Batch Size: 1 - Model: ResNet-50:
+        110.509671909
+        131.91184116943
+        129.1504427747
+
+    Average: 123.86 batches/sec
+    Minimum: 89.89
+    Maximum: 134.62
+    Deviation: 9.40%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 1 - Model: ResNet-152]
+    Test 2 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      1 Minute
+    Estimated Time To Completion: 10 Minutes [05:45 UTC]
+        Started Run 1 @ 05:36:31
+        Started Run 2 @ 05:37:05
+        Started Run 3 @ 05:37:39
+
+    Device: gpu - Batch Size: 1 - Model: ResNet-152:
+        47.674794937933
+        46.90185996228
+        47.788336164441
+
+    Average: 47.45 batches/sec
+    Minimum: 24.07
+    Maximum: 48.75
+    Deviation: 1.02%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 16 - Model: ResNet-50]
+    Test 3 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 13 Minutes [05:50 UTC]
+        Started Run 1 @ 05:38:21
+        Started Run 2 @ 05:38:49
+        Started Run 3 @ 05:39:16
+
+    Device: gpu - Batch Size: 16 - Model: ResNet-50:
+        121.54876798742
+        121.75312969562
+        122.09032724044
+
+    Average: 121.80 batches/sec
+    Minimum: 45.64
+    Maximum: 125.68
+    Deviation: 0.22%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 64 - Model: ResNet-50]
+    Test 4 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 11 Minutes [05:50 UTC]
+        Started Run 1 @ 05:39:50
+        Started Run 2 @ 05:40:18
+        Started Run 3 @ 05:40:45
+
+    Device: gpu - Batch Size: 64 - Model: ResNet-50:
+        121.48152027947
+        120.13868450289
+        120.4819882948
+
+    Average: 120.70 batches/sec
+    Minimum: 63.9
+    Maximum: 124.89
+    Deviation: 0.58%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 16 - Model: ResNet-152]
+    Test 5 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 10 Minutes [05:50 UTC]
+        Started Run 1 @ 05:41:20
+        Started Run 2 @ 05:42:19
+        Started Run 3 @ 05:43:18
+
+    Device: gpu - Batch Size: 16 - Model: ResNet-152:
+        44.369358654551
+        44.872700623791
+        44.867463671772
+
+    Average: 44.70 batches/sec
+    Minimum: 22.25
+    Maximum: 45.77
+    Deviation: 0.65%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 512 - Model: ResNet-50]
+    Test 6 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 11 Minutes [05:55 UTC]
+        Started Run 1 @ 05:44:25
+        Started Run 2 @ 05:44:53
+        Started Run 3 @ 05:45:20
+
+    Device: gpu - Batch Size: 512 - Model: ResNet-50:
+        120.55045996542
+        121.71257762148
+        121.86065788583
+
+    Average: 121.37 batches/sec
+    Minimum: 79.48
+    Maximum: 125.33
+    Deviation: 0.59%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 64 - Model: ResNet-152]
+    Test 7 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 10 Minutes [05:54 UTC]
+        Started Run 1 @ 05:45:55
+        Started Run 2 @ 05:46:55
+        Started Run 3 @ 05:47:54
+
+    Device: gpu - Batch Size: 64 - Model: ResNet-152:
+        44.0576306376
+        44.296885343475
+        44.947200306719
+
+    Average: 44.43 batches/sec
+    Minimum: 27.23
+    Maximum: 45.86
+    Deviation: 1.04%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 512 - Model: ResNet-152]
+    Test 8 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 9 Minutes [05:57 UTC]
+        Started Run 1 @ 05:49:01
+        Started Run 2 @ 05:50:00
+        Started Run 3 @ 05:50:59
+
+    Device: gpu - Batch Size: 512 - Model: ResNet-152:
+        45.110838410854
+        44.183140113413
+        45.197948192142
+
+    Average: 44.83 batches/sec
+    Minimum: 29.21
+    Maximum: 46.04
+    Deviation: 1.25%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 1 - Model: Efficientnet_v2_l]
+    Test 9 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 8 Minutes [05:59 UTC]
+        Started Run 1 @ 05:52:05
+        Started Run 2 @ 05:53:06
+        Started Run 3 @ 05:54:08
+
+    Device: gpu - Batch Size: 1 - Model: Efficientnet_v2_l:
+        22.723781675462
+        22.799216491427
+        22.597654191621
+
+    Average: 22.71 batches/sec
+    Minimum: 15.67
+    Maximum: 23.37
+    Deviation: 0.45%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 16 - Model: Efficientnet_v2_l]
+    Test 10 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 6 Minutes [06:01 UTC]
+        Started Run 1 @ 05:55:16
+        Started Run 2 @ 05:57:09
+        Started Run 3 @ 05:59:04
+
+    Device: gpu - Batch Size: 16 - Model: Efficientnet_v2_l:
+        21.292991889891
+        21.098096437866
+        21.067185926546
+
+    Average: 21.15 batches/sec
+    Minimum: 14.95
+    Maximum: 21.68
+    Deviation: 0.58%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 64 - Model: Efficientnet_v2_l]
+    Test 11 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 5 Minutes [06:05 UTC]
+        Started Run 1 @ 06:01:06
+        Started Run 2 @ 06:03:01
+        Started Run 3 @ 06:04:53
+
+    Device: gpu - Batch Size: 64 - Model: Efficientnet_v2_l:
+        21.106854023047
+        21.556754721825
+        21.162123175037
+
+    Average: 21.28 batches/sec
+    Minimum: 16.63
+    Maximum: 21.95
+    Deviation: 1.15%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 512 - Model: Efficientnet_v2_l]
+    Test 12 of 12
+    Estimated Trial Run Count:    3
+    Estimated Time To Completion: 3 Minutes [06:09 UTC]
+        Started Run 1 @ 06:06:54
+        Started Run 2 @ 06:08:47
+        Started Run 3 @ 06:10:40
+
+    Device: gpu - Batch Size: 512 - Model: Efficientnet_v2_l:
+        21.440265951936
+        21.529100493962
+        21.434435903632
+
+    Average: 21.47 batches/sec
+    Minimum: 15.6
+    Maximum: 21.92
+    Deviation: 0.25%::::::::::::::
+pytorch_install_result.txt
+::::::::::::::
+
+    Evaluating External Test Dependencies ..................................
+    Evaluating System Dependencies .........................................
+
+Phoronix Test Suite v10.8.4
+
+    To Install:    pts/pytorch-1.0.1
+
+    Determining File Requirements ..........................................
+    Searching Download Caches ..............................................
+
+    1 Test To Install
+        4800MB Of Disk Space Is Needed
+        3 Minutes, 30 Seconds Estimated Install Time
+
+    pts/pytorch-1.0.1:
+        Test Installation 1 of 1
+        Approximate Install Size: 4800 MB
+        Estimated Install Time: 3 Minutes, 30 Seconds
+        Installing Test @ 05:35:10
