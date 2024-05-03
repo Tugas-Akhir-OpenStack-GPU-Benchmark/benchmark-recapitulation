@@ -56,7 +56,7 @@ class SpreadsheetLogic:
             table.append([*key, *values])
 
         glmark2_ws = self.get_or_create_worksheets("Glmark2")
-        glmark2_ws.clear()
+        # glmark2_ws.clear()
         glmark2_ws.update(table, "A1")
         self.merge_adjacent_equal_rows(glmark2_ws, get_column(table, 0), 'A', 1)
 
@@ -71,7 +71,7 @@ class SpreadsheetLogic:
         body_opstck_svc_as_col = transpose(body_opstck_svc_as_row)
 
         namd_ws = self.get_or_create_worksheets("NAMD")
-        namd_ws.clear()
+        # namd_ws.clear()
         namd_ws.update([headers] + body_opstck_svc_as_col, "A1")
 
     def process_pytorch(self):
@@ -88,7 +88,7 @@ class SpreadsheetLogic:
             table.append([model, int(batch_size), tc_number, *values])
 
         pytorch_ws = self.get_or_create_worksheets("PyTorch")
-        pytorch_ws.clear()
+        # pytorch_ws.clear()
         pytorch_ws.update(table, "A1")
         self.merge_adjacent_equal_rows(pytorch_ws, get_column(table, 0), 'A', 1)
         self.merge_adjacent_equal_rows(pytorch_ws, get_column(table, 1), 'B', 1)
