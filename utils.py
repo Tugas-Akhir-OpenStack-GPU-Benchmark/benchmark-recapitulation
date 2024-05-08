@@ -47,6 +47,21 @@ def get_column(array_of_arrays, column):
     return ret
 
 
+def iterate_dict_items_based_on_list_ordering(dct: dict, keys_ordering: list):
+    for key in keys_ordering:
+        assert key in keys_ordering
+        yield key, dct[key]
+
+
+
+def groupby_and_select(lst: list, key_to_group_by, select=lambda x: x):
+    grouping = {}
+    for item in lst:
+        key = key_to_group_by(item)
+        if key not in grouping:
+            grouping[key] = []
+        grouping[key].append(select(item))
+    return grouping
 
 
 
