@@ -10,5 +10,5 @@ class NamdResultProcessor:
         content2 = content[temp.end(0):]
         extracted_content = re.split(r"Average:", content2)[0]
         benchmark_results_as_str = extracted_content.strip().split()
-        self.results = list(map(float, benchmark_results_as_str))
+        self.results += list(map(float, benchmark_results_as_str))
 

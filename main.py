@@ -8,6 +8,7 @@ from glmark2_extractor import Glmark2ResultProcessor
 from spreadsheet import SpreadsheetLogic
 
 glmark2_resolutions = ['1920x1080', '1366x768', '360x800', '192x108']
+openstack_namd_batch_range = range(0, 15)
 
 
 def main():
@@ -35,6 +36,9 @@ def handle_processing(benchmark_type, content, pytorch_processor, namd_processor
         'namd_benchmark_result.txt': namd_processor,
     } | {
         f'glmark2_benchmark_result_{resolution}.txt': processor for resolution, processor in glmark2_processors.items()
+    } | {
+        f'namd_benchmark_result_{batch_no}.txt': namd_processor
+        for batch_no in openstack_namd_batch_range
     }
     nop_processor = NopProcessor()
     handler = handlers.get(benchmark_type, nop_processor)

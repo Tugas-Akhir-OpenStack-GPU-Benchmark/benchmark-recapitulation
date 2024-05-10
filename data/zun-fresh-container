@@ -1,0 +1,2191 @@
+::::::::::::::
+glmark2_benchmark_result_1366x768.txt
+::::::::::::::
+=======================================================
+    glmark2 2021.02
+=======================================================
+    OpenGL Information
+    GL_VENDOR:     NVIDIA Corporation
+    GL_RENDERER:   Tesla T4/PCIe/SSE2
+    GL_VERSION:    4.6.0 NVIDIA 535.161.08
+=======================================================
+[build] use-vbo=false: FPS: 35 FrameTime: 28.571 ms
+[build] use-vbo=true: FPS: 35 FrameTime: 28.571 ms
+[texture] texture-filter=nearest: FPS: 35 FrameTime: 28.571 ms
+[texture] texture-filter=linear: FPS: 35 FrameTime: 28.571 ms
+[texture] texture-filter=mipmap: FPS: 35 FrameTime: 28.571 ms
+[shading] shading=gouraud: FPS: 35 FrameTime: 28.571 ms
+[shading] shading=blinn-phong-inf: FPS: 35 FrameTime: 28.571 ms
+[shading] shading=phong: FPS: 35 FrameTime: 28.571 ms
+[shading] shading=cel: FPS: 35 FrameTime: 28.571 ms
+[bump] bump-render=high-poly: FPS: 35 FrameTime: 28.571 ms
+[bump] bump-render=normals: FPS: 35 FrameTime: 28.571 ms
+[bump] bump-render=height: FPS: 35 FrameTime: 28.571 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 35 FrameTime: 28.571 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 35 FrameTime: 28.571 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 35 FrameTime: 28.571 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 35 FrameTime: 28.571 ms
+[desktop] effect=shadow:windows=4: FPS: 35 FrameTime: 28.571 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 35 FrameTime: 28.571 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 35 FrameTime: 28.571 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 35 FrameTime: 28.571 ms
+[ideas] speed=duration: FPS: 35 FrameTime: 28.571 ms
+[jellyfish] <default>: FPS: 35 FrameTime: 28.571 ms
+[terrain] <default>: FPS: 30 FrameTime: 33.333 ms
+[shadow] <default>: FPS: 35 FrameTime: 28.571 ms
+[refract] <default>: FPS: 35 FrameTime: 28.571 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 35 FrameTime: 28.571 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 35 FrameTime: 28.571 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 35 FrameTime: 28.571 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 35 FrameTime: 28.571 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 35 FrameTime: 28.571 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 35 FrameTime: 28.571 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 35 FrameTime: 28.571 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 35 FrameTime: 28.571 ms
+=======================================================
+                                  glmark2 Score: 34
+=======================================================::::::::::::::
+glmark2_benchmark_result_1920x1080.txt
+::::::::::::::
+=======================================================
+    glmark2 2021.02
+=======================================================
+    OpenGL Information
+    GL_VENDOR:     NVIDIA Corporation
+    GL_RENDERER:   Tesla T4/PCIe/SSE2
+    GL_VERSION:    4.6.0 NVIDIA 535.161.08
+=======================================================
+[build] use-vbo=false: FPS: 21 FrameTime: 47.619 ms
+[build] use-vbo=true: FPS: 21 FrameTime: 47.619 ms
+[texture] texture-filter=nearest: FPS: 20 FrameTime: 50.000 ms
+[texture] texture-filter=linear: FPS: 20 FrameTime: 50.000 ms
+[texture] texture-filter=mipmap: FPS: 20 FrameTime: 50.000 ms
+[shading] shading=gouraud: FPS: 20 FrameTime: 50.000 ms
+[shading] shading=blinn-phong-inf: FPS: 20 FrameTime: 50.000 ms
+[shading] shading=phong: FPS: 20 FrameTime: 50.000 ms
+[shading] shading=cel: FPS: 20 FrameTime: 50.000 ms
+[bump] bump-render=high-poly: FPS: 20 FrameTime: 50.000 ms
+[bump] bump-render=normals: FPS: 20 FrameTime: 50.000 ms
+[bump] bump-render=height: FPS: 20 FrameTime: 50.000 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 20 FrameTime: 50.000 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 20 FrameTime: 50.000 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 20 FrameTime: 50.000 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 20 FrameTime: 50.000 ms
+[desktop] effect=shadow:windows=4: FPS: 20 FrameTime: 50.000 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 20 FrameTime: 50.000 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 20 FrameTime: 50.000 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 20 FrameTime: 50.000 ms
+[ideas] speed=duration: FPS: 20 FrameTime: 50.000 ms
+[jellyfish] <default>: FPS: 20 FrameTime: 50.000 ms
+[terrain] <default>: FPS: 15 FrameTime: 66.667 ms
+[shadow] <default>: FPS: 20 FrameTime: 50.000 ms
+[refract] <default>: FPS: 18 FrameTime: 55.556 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 20 FrameTime: 50.000 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 20 FrameTime: 50.000 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 20 FrameTime: 50.000 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 20 FrameTime: 50.000 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 20 FrameTime: 50.000 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 20 FrameTime: 50.000 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 20 FrameTime: 50.000 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 20 FrameTime: 50.000 ms
+=======================================================
+                                  glmark2 Score: 19
+=======================================================::::::::::::::
+glmark2_benchmark_result_192x108.txt
+::::::::::::::
+=======================================================
+    glmark2 2021.02
+=======================================================
+    OpenGL Information
+    GL_VENDOR:     NVIDIA Corporation
+    GL_RENDERER:   Tesla T4/PCIe/SSE2
+    GL_VERSION:    4.6.0 NVIDIA 535.161.08
+=======================================================
+[build] use-vbo=false: FPS: 2127 FrameTime: 0.470 ms
+[build] use-vbo=true: FPS: 3030 FrameTime: 0.330 ms
+[texture] texture-filter=nearest: FPS: 3030 FrameTime: 0.330 ms
+[texture] texture-filter=linear: FPS: 3020 FrameTime: 0.331 ms
+[texture] texture-filter=mipmap: FPS: 2098 FrameTime: 0.477 ms
+[shading] shading=gouraud: FPS: 2888 FrameTime: 0.346 ms
+[shading] shading=blinn-phong-inf: FPS: 2892 FrameTime: 0.346 ms
+[shading] shading=phong: FPS: 2852 FrameTime: 0.351 ms
+[shading] shading=cel: FPS: 2855 FrameTime: 0.350 ms
+[bump] bump-render=high-poly: FPS: 2575 FrameTime: 0.388 ms
+[bump] bump-render=normals: FPS: 3035 FrameTime: 0.329 ms
+[bump] bump-render=height: FPS: 3011 FrameTime: 0.332 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 3029 FrameTime: 0.330 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 2992 FrameTime: 0.334 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 3032 FrameTime: 0.330 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 1723 FrameTime: 0.580 ms
+[desktop] effect=shadow:windows=4: FPS: 2265 FrameTime: 0.442 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 658 FrameTime: 1.520 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 710 FrameTime: 1.408 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 716 FrameTime: 1.397 ms
+[ideas] speed=duration: FPS: 2393 FrameTime: 0.418 ms
+[jellyfish] <default>: FPS: 2812 FrameTime: 0.356 ms
+[terrain] <default>: FPS: 1081 FrameTime: 0.925 ms
+[shadow] <default>: FPS: 3107 FrameTime: 0.322 ms
+[refract] <default>: FPS: 2212 FrameTime: 0.452 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 3359 FrameTime: 0.298 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 3133 FrameTime: 0.319 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 2990 FrameTime: 0.334 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 2991 FrameTime: 0.334 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 2987 FrameTime: 0.335 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 2982 FrameTime: 0.335 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 2985 FrameTime: 0.335 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 2981 FrameTime: 0.335 ms
+=======================================================
+                                  glmark2 Score: 2562
+=======================================================::::::::::::::
+glmark2_benchmark_result_360x800.txt
+::::::::::::::
+=======================================================
+    glmark2 2021.02
+=======================================================
+    OpenGL Information
+    GL_VENDOR:     NVIDIA Corporation
+    GL_RENDERER:   Tesla T4/PCIe/SSE2
+    GL_VERSION:    4.6.0 NVIDIA 535.161.08
+=======================================================
+[build] use-vbo=false: FPS: 129 FrameTime: 7.752 ms
+[build] use-vbo=true: FPS: 128 FrameTime: 7.812 ms
+[texture] texture-filter=nearest: FPS: 129 FrameTime: 7.752 ms
+[texture] texture-filter=linear: FPS: 128 FrameTime: 7.812 ms
+[texture] texture-filter=mipmap: FPS: 128 FrameTime: 7.812 ms
+[shading] shading=gouraud: FPS: 128 FrameTime: 7.812 ms
+[shading] shading=blinn-phong-inf: FPS: 128 FrameTime: 7.812 ms
+[shading] shading=phong: FPS: 129 FrameTime: 7.752 ms
+[shading] shading=cel: FPS: 128 FrameTime: 7.812 ms
+[bump] bump-render=high-poly: FPS: 128 FrameTime: 7.812 ms
+[bump] bump-render=normals: FPS: 128 FrameTime: 7.812 ms
+[bump] bump-render=height: FPS: 128 FrameTime: 7.812 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 128 FrameTime: 7.812 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 128 FrameTime: 7.812 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 128 FrameTime: 7.812 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 128 FrameTime: 7.812 ms
+[desktop] effect=shadow:windows=4: FPS: 128 FrameTime: 7.812 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 131 FrameTime: 7.634 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 118 FrameTime: 8.475 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 131 FrameTime: 7.634 ms
+[ideas] speed=duration: FPS: 127 FrameTime: 7.874 ms
+[jellyfish] <default>: FPS: 128 FrameTime: 7.812 ms
+[terrain] <default>: FPS: 109 FrameTime: 9.174 ms
+[shadow] <default>: FPS: 126 FrameTime: 7.937 ms
+[refract] <default>: FPS: 118 FrameTime: 8.475 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 126 FrameTime: 7.937 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 128 FrameTime: 7.812 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 128 FrameTime: 7.812 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 128 FrameTime: 7.812 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 128 FrameTime: 7.812 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 128 FrameTime: 7.812 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 128 FrameTime: 7.812 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 128 FrameTime: 7.812 ms
+=======================================================
+                                  glmark2 Score: 126
+=======================================================::::::::::::::
+namd_benchmark_result_0.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8192 MB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          overlayfs
+    Disk Scheduler:       NONE
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server
+    Compiler:             GCC 9.4.0
+    System Layer:         docker
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 2 Minutes [06:37 UTC]
+        Started Run 1 @ 06:36:01
+        Started Run 2 @ 06:37:06
+
+    ATPase Simulation - 327,506 Atoms:
+        0.230606
+        0.201978
+
+    Average: 0.21629 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (31st Percentile): 0.21629 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_1.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8192 MB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          overlayfs
+    Disk Scheduler:       NONE
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server
+    Compiler:             GCC 9.4.0
+    System Layer:         docker
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 2 Minutes [06:39 UTC]
+        Started Run 1 @ 06:37:41
+        Started Run 2 @ 06:38:07
+
+    ATPase Simulation - 327,506 Atoms:
+        0.216582
+        0.270204
+
+    Average: 0.24339 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*--*#*!#*]
+                                    This Result (23rd Percentile): 0.24339 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                             Gigabyte  RTX 3070: 0.35359 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_10.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8192 MB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          overlayfs
+    Disk Scheduler:       NONE
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server
+    Compiler:             GCC 9.4.0
+    System Layer:         docker
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [06:47 UTC]
+        Started Run 1 @ 06:47:04
+        Started Run 2 @ 06:47:31
+
+    ATPase Simulation - 327,506 Atoms:
+        0.23351
+        0.270541
+
+    Average: 0.25203 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*--*#*!#*]
+                                    This Result (23rd Percentile): 0.25203 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                             Gigabyte  RTX 3070: 0.35359 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_11.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8192 MB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          overlayfs
+    Disk Scheduler:       NONE
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server
+    Compiler:             GCC 9.4.0
+    System Layer:         docker
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [06:48 UTC]
+        Started Run 1 @ 06:48:07
+        Started Run 2 @ 06:48:33
+
+    ATPase Simulation - 327,506 Atoms:
+        0.228191
+        0.231742
+
+    Average: 0.22997 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (27th Percentile): 0.22997 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_12.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8192 MB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          overlayfs
+    Disk Scheduler:       NONE
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server
+    Compiler:             GCC 9.4.0
+    System Layer:         docker
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [06:49 UTC]
+        Started Run 1 @ 06:49:09
+        Started Run 2 @ 06:49:37
+
+    ATPase Simulation - 327,506 Atoms:
+        0.249044
+        0.229442
+
+    Average: 0.23924 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (25th Percentile): 0.23924 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_13.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8192 MB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          overlayfs
+    Disk Scheduler:       NONE
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server
+    Compiler:             GCC 9.4.0
+    System Layer:         docker
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [06:51 UTC]
+        Started Run 1 @ 06:50:12
+        Started Run 2 @ 06:50:38
+
+    ATPase Simulation - 327,506 Atoms:
+        0.212645
+        0.211025
+
+    Average: 0.21184 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (31st Percentile): 0.21184 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_14.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8192 MB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          overlayfs
+    Disk Scheduler:       NONE
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server
+    Compiler:             GCC 9.4.0
+    System Layer:         docker
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [06:52 UTC]
+        Started Run 1 @ 06:51:14
+        Started Run 2 @ 06:51:43
+
+    ATPase Simulation - 327,506 Atoms:
+        0.295506
+        0.235164
+
+    Average: 0.26534 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*--*#*!#*]
+                                    This Result (21st Percentile): 0.26534 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                             Gigabyte  RTX 3070: 0.35359 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_15.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8192 MB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          overlayfs
+    Disk Scheduler:       NONE
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server
+    Compiler:             GCC 9.4.0
+    System Layer:         docker
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [06:53 UTC]
+        Started Run 1 @ 06:52:17
+        Started Run 2 @ 06:52:45
+
+    ATPase Simulation - 327,506 Atoms:
+        0.282757
+        0.272816
+
+    Average: 0.27779 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*--*#*!#*]
+                                    This Result (21st Percentile): 0.27779 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                             Gigabyte  RTX 3070: 0.35359 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_2.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8192 MB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          overlayfs
+    Disk Scheduler:       NONE
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server
+    Compiler:             GCC 9.4.0
+    System Layer:         docker
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 2 Minutes [06:39 UTC]
+        Started Run 1 @ 06:38:44
+        Started Run 2 @ 06:39:12
+
+    ATPase Simulation - 327,506 Atoms:
+        0.431011
+        0.238974
+
+    Average: 0.33499 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                   This Result (17th Percentile): 0.33499 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                          GTX 1080: 0.19607 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_3.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8192 MB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          overlayfs
+    Disk Scheduler:       NONE
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server
+    Compiler:             GCC 9.4.0
+    System Layer:         docker
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 2 Minutes [06:40 UTC]
+        Started Run 1 @ 06:39:46
+        Started Run 2 @ 06:40:15
+
+    ATPase Simulation - 327,506 Atoms:
+        0.221339
+        0.262105
+
+    Average: 0.24172 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (24th Percentile): 0.24172 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_4.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8192 MB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          overlayfs
+    Disk Scheduler:       NONE
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server
+    Compiler:             GCC 9.4.0
+    System Layer:         docker
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [06:41 UTC]
+        Started Run 1 @ 06:40:50
+        Started Run 2 @ 06:41:19
+
+    ATPase Simulation - 327,506 Atoms:
+        0.229432
+        0.216958
+
+    Average: 0.22320 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (29th Percentile): 0.22320 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_5.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8192 MB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          overlayfs
+    Disk Scheduler:       NONE
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server
+    Compiler:             GCC 9.4.0
+    System Layer:         docker
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [06:42 UTC]
+        Started Run 1 @ 06:41:51
+        Started Run 2 @ 06:42:20
+
+    ATPase Simulation - 327,506 Atoms:
+        0.222185
+        0.22851
+
+    Average: 0.22535 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (28th Percentile): 0.22535 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_6.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8192 MB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          overlayfs
+    Disk Scheduler:       NONE
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server
+    Compiler:             GCC 9.4.0
+    System Layer:         docker
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [06:43 UTC]
+        Started Run 1 @ 06:42:54
+        Started Run 2 @ 06:43:21
+
+    ATPase Simulation - 327,506 Atoms:
+        0.2248
+        0.20802
+
+    Average: 0.21641 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (31st Percentile): 0.21641 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_7.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8192 MB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          overlayfs
+    Disk Scheduler:       NONE
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server
+    Compiler:             GCC 9.4.0
+    System Layer:         docker
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [06:44 UTC]
+        Started Run 1 @ 06:43:56
+        Started Run 2 @ 06:44:23
+
+    ATPase Simulation - 327,506 Atoms:
+        0.235637
+        0.209809
+
+    Average: 0.22272 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (30th Percentile): 0.22272 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_8.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8192 MB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          overlayfs
+    Disk Scheduler:       NONE
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server
+    Compiler:             GCC 9.4.0
+    System Layer:         docker
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [06:45 UTC]
+        Started Run 1 @ 06:44:59
+        Started Run 2 @ 06:45:25
+
+    ATPase Simulation - 327,506 Atoms:
+        0.233753
+        0.216325
+
+    Average: 0.22504 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (28th Percentile): 0.22504 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_9.txt
+::::::::::::::
+
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8192 MB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          overlayfs
+    Disk Scheduler:       NONE
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server
+    Compiler:             GCC 9.4.0
+    System Layer:         docker
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [06:46 UTC]
+        Started Run 1 @ 06:46:02
+        Started Run 2 @ 06:46:28
+
+    ATPase Simulation - 327,506 Atoms:
+        0.233632
+        0.283075
+
+    Average: 0.25835 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*--*#*!#*]
+                                    This Result (22nd Percentile): 0.25835 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                             Gigabyte  RTX 3070: 0.35359 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_cuda_install_result.txt
+::::::::::::::
+
+Updated OpenBenchmarking.org Repository Index
+pts: 548 Distinct Tests, 2417 Test Versions, 57 Suites
+Available Changes From 3 July 2022 To 10 May
+New Test:       pts/3dmark              v1.0.0  3DMark Wild Life Extreme
+Updated Test:   pts/ai-benchmark        v1.0.2  AI Benchmark Alpha
+Updated Test:   pts/aircrack-ng         v1.3.0  Aircrack-ng
+Updated Test:   pts/aom-av1             v3.9.0  AOM AV1
+Updated Test:   pts/apache              v3.0.0  Apache HTTP Server
+New Test:       pts/apache-iotdb        v1.2.0  Apache IoTDB
+Updated Test:   pts/arrayfire           v1.2.0  ArrayFire
+Updated Test:   pts/astcenc             v1.5.1  ASTC Encoder
+Updated Test:   pts/avifenc             v1.4.1  libavif avifenc
+New Test:       pts/axs2mlperf          v1.0.0  axs2mlperf
+Updated Test:   pts/batman-knight       v1.0.1  Batman: Arkham Knight
+Updated Test:   pts/blender             v4.1.0  Blender
+Updated Test:   pts/blosc               v1.3.0  C-Blosc
+Updated Test:   pts/brl-cad             v1.6.0  BRL-CAD
+Updated Test:   pts/build-erlang        v1.2.0  Timed Erlang/OTP Compilation
+Updated Test:   pts/build-ffmpeg        v7.0.0  Timed FFmpeg Compilation
+Updated Test:   pts/build-gcc           v1.4.0  Timed GCC Compilation
+Updated Test:   pts/build-gem5          v1.1.0  Timed Gem5 Compilation
+Updated Test:   pts/build-godot         v4.0.0  Timed Godot Game Engine Compilation
+Updated Test:   pts/build-linux-kernel  v1.16.0 Timed Linux Kernel Compilation
+Updated Test:   pts/build-llvm          v1.5.0  Timed LLVM Compilation
+Updated Test:   pts/build-mesa          v1.1.0  Timed Mesa Compilation
+Updated Test:   pts/build-nodejs        v1.4.0  Timed Node.js Compilation
+Updated Test:   pts/build-php           v1.7.0  Timed PHP Compilation
+New Test:       pts/build-python        v1.0.0  Timed CPython Compilation
+Updated Test:   pts/build-wasmer        v1.2.0  Timed Wasmer Compilation
+Updated Test:   pts/build2              v1.2.0  Build2
+Updated Test:   pts/c-ray               v2.0.0  C-Ray
+Updated Test:   pts/cachebench          v1.2.0  CacheBench
+Updated Test:   pts/cassandra           v1.2.0  Apache Cassandra
+Updated Test:   pts/clickhouse          v1.2.0  ClickHouse
+Updated Test:   pts/cloudsuite-da       v1.2.0  CloudSuite Data Analytics
+Updated Test:   pts/cloudsuite-ga       v1.1.0  CloudSuite Graph Analytics
+Updated Test:   pts/cloudsuite-ma       v1.1.0  CloudSuite In-Memory Analytics
+Updated Test:   pts/cloudsuite-ms       v1.0.1  CloudSuite Media Streaming
+Updated Test:   pts/cloudsuite-ws       v1.1.0  CloudSuite Web Serving
+Updated Test:   pts/cloverleaf          v1.2.0  CloverLeaf
+Updated Test:   pts/clpeak              v1.1.0  clpeak
+New Test:       pts/cockroach           v1.0.2  CockroachDB
+Updated Test:   pts/compress-7zip       v1.10.0 7-Zip Compression
+Updated Test:   pts/compress-lz4        v1.1.0  LZ4 Compression
+Updated Test:   pts/compress-pbzip2     v1.6.1  Parallel BZIP2 Compression
+Updated Test:   pts/compress-zstd       v1.6.0  Zstd Compression
+Updated Test:   pts/couchdb             v1.3.0  Apache CouchDB
+Updated Test:   pts/cp2k                v1.4.1  CP2K Molecular Dynamics
+Updated Test:   pts/cpuminer-opt        v1.7.0  Cpuminer-Opt
+Updated Test:   pts/cryptopp            v1.1.0  Crypto++
+New Test:       pts/cs2                 v1.0.0  Counter-Strike 2
+Updated Test:   pts/csgo                v1.7.2  Counter-Strike: Global Offensive
+New Test:       pts/cyberpunk2077       v1.0.1  Cyberpunk 2077
+Updated Test:   pts/dacapobench         v1.1.0  DaCapo Benchmark
+Updated Test:   pts/daphne              v1.1.0  Darmstadt Automotive Parallel Heterogeneous Suite
+Updated Test:   pts/dav1d               v1.15.1 dav1d
+Updated Test:   pts/ddnet               v1.3.0  DDraceNetwork
+New Test:       pts/deeprec             v1.0.2  DeepRec
+New Test:       pts/deepsparse          v1.7.0  Neural Magic DeepSparse
+Updated Test:   pts/draco               v1.6.1  Google Draco
+New Test:       pts/dragonflydb         v1.1.0  Dragonflydb
+New Test:       pts/duckdb              v1.0.0  DuckDB
+New Test:       pts/easywave            v1.0.0  easyWave
+Updated Test:   pts/embree              v1.6.1  Embree
+Updated Test:   pts/encode-flac         v1.8.1  FLAC Audio Encoding
+Updated Test:   pts/encode-opus         v1.4.0  Opus Codec Encoding
+Updated Test:   pts/encode-wavpack      v1.5.0  WavPack Audio Encoding
+New Test:       pts/encodec             v1.0.1  EnCodec
+Updated Test:   pts/espeak              v1.7.0  eSpeak-NG Speech Engine
+New Test:       pts/etcd                v1.0.0  etcd
+Updated Test:   pts/ethr                v1.2.1  Ethr
+Updated Test:   pts/etlegacy            v1.3.0  ET: Legacy
+Updated Test:   pts/f12021              v1.0.1  F1 2021
+New Test:       pts/f122                v1.0.3  F1 22
+New Test:       pts/faiss               v1.0.1  Faiss
+Updated Test:   pts/ffmpeg              v7.0.1  FFmpeg
+Updated Test:   pts/fio                 v2.1.0  Flexible IO Tester
+New Test:       pts/fluidx3d            v1.2.0  FluidX3D
+New Test:       pts/furmark             v1.0.0  FurMark
+Updated Test:   pts/geekbench           v6.1.0  Geekbench
+Updated Test:   pts/glibc-bench         v1.8.0  Glibc Benchmarks
+Updated Test:   pts/glmark2             v1.4.0  GLmark2
+Updated Test:   pts/gpaw                v1.2.0  GPAW
+New Test:       pts/gpuowl              v1.1.0  GpuOwl
+Updated Test:   pts/graph500            v1.0.2  Graph500
+Updated Test:   pts/graphics-magick     v2.2.0  GraphicsMagick
+Updated Test:   pts/gravitymark         v1.9.0  GravityMark
+Updated Test:   pts/gromacs             v1.9.0  GROMACS
+New Test:       pts/gta5                v1.0.0  Grand Theft Auto V
+New Test:       pts/hadoop              v1.0.0  Apache Hadoop
+Updated Test:   pts/hammerdb-mariadb    v1.1.0  HammerDB - MariaDB
+Updated Test:   pts/hammerdb-postgresql v1.1.1  HammerDB - PostgreSQL
+Updated Test:   pts/hbase               v1.1.0  Apache HBase
+New Test:       pts/heffte              v1.1.0  HeFFTe - Highly Efficient FFT for Exascale
+Updated Test:   pts/hitman              v1.0.2  HITMAN
+Updated Test:   pts/hitman3             v1.0.1  HITMAN 3
+Updated Test:   pts/hpcg                v1.3.0  High Performance Conjugate Gradient
+Updated Test:   pts/influxdb            v1.0.2  InfluxDB
+Updated Test:   pts/intel-mlc           v1.1.0  Intel Memory Latency Checker
+New Test:       pts/intel-tensorflow    v1.0.0  Intel TensorFlow
+Updated Test:   pts/iperf               v1.2.0  iPerf
+Updated Test:   pts/java-scimark2       v1.2.0  Java SciMark
+Updated Test:   pts/john-the-ripper     v1.8.0  John The Ripper
+Updated Test:   pts/jpegxl              v1.6.0  JPEG-XL libjxl
+Updated Test:   pts/jpegxl-decode       v1.6.0  JPEG-XL Decoding libjxl
+Updated Test:   pts/keydb               v1.4.0  KeyDB
+Updated Test:   pts/kripke              v1.2.0  Kripke
+Updated Test:   pts/kvazaar             v1.2.0  Kvazaar
+Updated Test:   pts/l4d2                v1.0.1  Left 4 Dead 2
+New Test:       pts/laghos              v1.0.0  Laghos
+Updated Test:   pts/lammps              v1.4.0  LAMMPS Molecular Dynamics Simulator
+Updated Test:   pts/lczero              v1.7.0  LeelaChessZero
+Updated Test:   pts/leveldb             v1.1.0  LevelDB
+Updated Test:   pts/libplacebo          v1.2.0  Libplacebo
+New Test:       pts/libxsmm             v1.0.1  libxsmm
+Updated Test:   pts/liquid-dsp          v1.6.0  Liquid-DSP
+New Test:       pts/llama-cpp           v1.0.0  Llama.cpp
+New Test:       pts/llamafile           v1.1.0  Llamafile
+New Test:       pts/mariadb             v1.0.0  MariaDB
+New Test:       pts/memcached           v1.2.0  Memcached
+Updated Test:   pts/memtier-benchmark   v1.5.0  Redis 7.0.12 + memtier_benchmark
+New Test:       pts/minibude            v1.0.0  miniBUDE
+Updated Test:   pts/mnn                 v2.1.0  Mobile Neural Network
+Updated Test:   pts/mocassin            v1.1.0  Monte Carlo Simulations of Ionised Nebulae
+Updated Test:   pts/mysqlslap           v1.5.0  MariaDB mariadb-slap
+Updated Test:   pts/namd                v1.3.1  NAMD
+Updated Test:   pts/natron              v1.1.0  Natron
+Updated Test:   pts/ncnn                v1.5.0  NCNN
+New Test:       pts/nekrs               v1.1.0  nekRS
+Updated Test:   pts/nginx               v3.0.1  nginx
+Updated Test:   pts/node-web-tooling    v1.0.1  Node.js V8 Web Tooling Benchmark
+Updated Test:   pts/numenta-nab         v1.1.1  Numenta Anomaly Benchmark
+Updated Test:   pts/oidn                v2.2.0  Intel Open Image Denoise
+Updated Test:   pts/onednn              v3.4.0  oneDNN
+Updated Test:   pts/onnx                v1.17.0 ONNX Runtime
+New Test:       pts/opencl-benchmark    v1.0.0  ProjectPhysX OpenCL-Benchmark
+Updated Test:   pts/opencv              v1.3.0  OpenCV
+New Test:       pts/openems             v1.0.0  OpenEMS
+Updated Test:   pts/openfoam            v1.2.0  OpenFOAM
+New Test:       pts/openradioss         v1.1.1  OpenRadioss
+Updated Test:   pts/openssl             v3.3.0  OpenSSL
+Updated Test:   pts/openvino            v1.5.0  OpenVINO
+Updated Test:   pts/openvkl             v2.0.0  OpenVKL
+Updated Test:   pts/ospray              v3.1.0  OSPRay
+Updated Test:   pts/ospray-studio       v1.3.0  OSPRay Studio
+New Test:       pts/palabos             v1.0.0  Palabos
+Updated Test:   pts/perf-bench          v1.0.5  perf-bench
+New Test:       pts/petsc               v1.0.0  PETSc
+Updated Test:   pts/pgbench             v1.14.0 PostgreSQL
+Updated Test:   pts/portal2             v1.1.2  Portal 2
+Updated Test:   pts/primesieve          v1.10.0 Primesieve
+New Test:       pts/pytorch             v1.1.0  PyTorch
+Updated Test:   pts/qmcpack             v1.7.0  QMCPACK
+New Test:       pts/quadray             v1.0.0  QuadRay
+Updated Test:   pts/quantlib            v1.2.0  QuantLib
+New Test:       pts/quicksilver         v1.0.0  Quicksilver
+New Test:       pts/rabbitmq            v1.1.1  RabbitMQ
+Updated Test:   pts/rav1e               v1.8.0  rav1e
+Updated Test:   pts/redis               v1.4.0  Redis
+Updated Test:   pts/relion              v1.1.0  RELION
+New Test:       pts/remhos              v1.0.0  Remhos
+Updated Test:   pts/rnnoise             v1.1.0  RNNoise
+Updated Test:   pts/rocksdb             v1.6.0  RocksDB
+Updated Test:   pts/rtiv                v1.1.0  Ray Tracing In Vulkan
+Updated Test:   pts/schbench            v1.1.0  Schbench
+Updated Test:   pts/scikit-learn        v2.0.0  Scikit-Learn
+New Test:       pts/scylladb            v1.0.0  ScyllaDB
+Updated Test:   pts/smhasher            v1.1.0  SMHasher
+New Test:       pts/spacy               v1.0.0  spaCy
+New Test:       pts/spark               v1.0.1  Apache Spark
+New Test:       pts/spark-tpcds         v1.0.0  Apache Spark TPC-DS
+New Test:       pts/spark-tpch          v1.0.0  Apache Spark TPC-H
+Updated Test:   pts/spec-jbb2015        v1.1.0  SPECjbb 2015
+New Test:       pts/specfem3d           v1.1.0  SPECFEM3D
+New Test:       pts/speedb              v1.0.1  Speedb
+Updated Test:   pts/sqlite              v2.2.0  SQLite
+Updated Test:   pts/srsran              v2.3.0  srsRAN Project
+New Test:       pts/star-swarm          v1.0.0  Star Swarm Stress Test
+Updated Test:   pts/stargate            v1.1.0  Stargate Digital Audio Workstation
+Updated Test:   pts/stockfish           v1.5.0  Stockfish
+Updated Test:   pts/strange-brigade     v1.0.1  Strange Brigade
+Updated Test:   pts/stream              v1.3.4  Stream
+Updated Test:   pts/stress-ng           v1.12.0 Stress-NG
+Updated Test:   pts/svt-av1             v2.12.0 SVT-AV1
+Updated Test:   pts/tensorflow          v2.2.0  TensorFlow
+Updated Test:   pts/tf2                 v1.2.4  Team Fortress 2
+New Test:       pts/tidb                v1.0.3  TiDB Community Server
+Updated Test:   pts/tww3                v1.0.1  Total War: WARHAMMER III
+Updated Test:   pts/unigine-super       v1.0.8  Unigine Superposition
+Updated Test:   pts/unigine-valley      v1.1.9  Unigine Valley
+Updated Test:   pts/unpack-linux        v1.2.0  Unpacking The Linux Kernel
+Updated Test:   pts/unvanquished        v1.8.0  Unvanquished
+New Test:       pts/uvg266              v1.1.0  uvg266
+Updated Test:   pts/v-ray               v1.5.0  Chaos Group V-RAY
+Updated Test:   pts/vkfft               v1.3.0  VkFFT
+Updated Test:   pts/vkmark              v1.3.2  VKMark
+Updated Test:   pts/vkpeak              v1.1.0  vkpeak
+Updated Test:   pts/vkresample          v1.0.2  VkResample
+Updated Test:   pts/vpxenc              v3.2.0  VP9 libvpx Encoding
+New Test:       pts/vvenc               v1.11.0 VVenC
+Updated Test:   pts/webp                v1.4.0  WebP Image Encode
+Updated Test:   pts/webp2               v1.2.1  WebP2 Image Encode
+New Test:       pts/whisper-cpp         v1.0.0  Whisper.cpp
+New Test:       pts/will-it-scale       v1.0.0  will-it-scale
+Updated Test:   pts/x265                v1.4.0  x265
+Updated Test:   pts/xmrig               v1.2.0  Xmrig
+Updated Test:   pts/xonotic             v1.7.0  Xonotic
+New Test:       pts/xplane12            v1.0.1  X-Plane
+Updated Test:   pts/y-cruncher          v1.4.0  Y-Cruncher
+New Test:       pts/yugabytedb          v1.0.0  YugabyteDB
+New Test:       pts/z3                  v1.0.0  Z3 Theorem Prover
+New Test:       pts/zendnn-tensorflow   v1.0.0  AMD ZenDNN TensorFlow
+Updated Suite:  pts/compilation         v1.2.8  Timed Code Compilation
+Updated Suite:  pts/database            v1.3.12 Database Test Suite
+Updated Suite:  pts/electronic-design   v1.0.1  Electronic Design
+Updated Suite:  pts/hpc                 v1.1.11 HPC - High Performance Computing
+New Suite:      pts/llm                 v1.0.0  Large Language Models
+Updated Suite:  pts/machine-learning    v1.3.8  Machine Learning
+Updated Suite:  pts/opencl              v1.1.1  OpenCL
+Updated Suite:  pts/raytracing          v1.0.3  Raytracing
+Updated Suite:  pts/steam               v1.0.10 Steam
+Updated Suite:  pts/video-encoding      v1.3.4  Video Encoding
+Updated OpenBenchmarking.org Repository Index
+system: 42 Distinct Tests, 136 Test Versions
+Available Changes From 3 July 2022 To 10 May
+New Test:      system/cephfs-rados v1.0.1  CephFS RADOS Benchmark
+Updated Test:  system/inkscape     v1.0.1  Inkscape
+Updated Test:  system/openssl      v1.2.0  OpenSSL
+Updated Test:  system/selenium     v1.0.40 Selenium
+Updated OpenBenchmarking.org Repository Index
+git: 9 Distinct Tests, 12 Test Versions
+Available Changes From 3 July 2022 To 10 May
+New Test:  git/clickhouse v1.0.0 ClickHouse
+
+Phoronix Test Suite v10.8.4
+
+    To Install:    pts/namd-cuda-1.1.1
+
+    Determining File Requirements ..........................................
+    Searching Download Caches ..............................................
+
+    1 Test To Install
+        2 Files In Cache [189MB]
+        76MB Of Disk Space Is Needed
+        4 Seconds Estimated Install Time
+
+    pts/namd-cuda-1.1.1:
+        Test Installation 1 of 1
+        2 Files Needed [189 MB]
+        Copying From Cache: NAMD_2.14_Linux-x86_64-multicore-CU...   [162MB]
+        Copying From Cache: f1atpase.zip                           [26.93MB]
+        Approximate Install Size: 76 MB
+        Estimated Install Time: 4 Seconds
+        Installing Test @ 06:35:49::::::::::::::
+nvidia_smi_glmark2.txt
+::::::::::::::
+{"null": {"gpu-sum": 2824, "gpu-mem-sum": 305, "count": 182, "gpu-avg": 15.516483516483516, "gpu-variance": 120.29530690304169, "gpu-high-values": [2, 5, 9, 8, 10, 34, 27, 20, 15, 35, 14, 18, 16, 17, 22, 19, 45, 41, 28, 26, 30, 31, 37, 23, 42, 21, 36, 25, 29, 75], "gpu-mem-avg": 1.6758241758241759, "gpu-mem-variance": 15.88880456560015, "gpu-mem-high-values": [1, 2, 9, 14, 8, 5, 16, 6, 7, 21, 19, 36, 11, 13]}}::::::::::::::
+nvidia_smi_namd_0.txt
+::::::::::::::
+{"null": {"gpu-sum": 391, "gpu-mem-sum": 72, "count": 43, "gpu-avg": 9.093023255813954, "gpu-variance": 307.22923588039873, "gpu-high-values": [5, 50, 38, 34, 45, 36, 62, 42, 32], "gpu-mem-avg": 1.6744186046511629, "gpu-mem-variance": 10.891472868217054, "gpu-mem-high-values": [5, 7, 11, 6, 9, 10, 8]}}::::::::::::::
+nvidia_smi_namd_1.txt
+::::::::::::::
+{"null": {"gpu-sum": 337, "gpu-mem-sum": 74, "count": 27, "gpu-avg": 12.481481481481481, "gpu-variance": 308.49002849002846, "gpu-high-values": [3, 36, 35, 37, 40, 39, 33, 38], "gpu-mem-avg": 2.740740740740741, "gpu-mem-variance": 15.891737891737895, "gpu-mem-high-values": [8, 9, 10, 7]}}::::::::::::::
+nvidia_smi_namd_10.txt
+::::::::::::::
+{"null": {"gpu-sum": 727, "gpu-mem-sum": 155, "count": 54, "gpu-avg": 13.462962962962964, "gpu-variance": 305.5363382250174, "gpu-high-values": [3, 28, 36, 46, 34, 48, 41, 39, 31, 37, 42, 32, 38, 33], "gpu-mem-avg": 2.8703703703703702, "gpu-mem-variance": 15.171558350803634, "gpu-mem-high-values": [6, 8, 11, 7, 12, 9]}}::::::::::::::
+nvidia_smi_namd_11.txt
+::::::::::::::
+{"null": {"gpu-sum": 329, "gpu-mem-sum": 80, "count": 27, "gpu-avg": 12.185185185185185, "gpu-variance": 344.07977207977217, "gpu-high-values": [4, 30, 47, 44, 46, 43, 32], "gpu-mem-avg": 2.962962962962963, "gpu-mem-variance": 22.421652421652418, "gpu-mem-high-values": [7, 12, 13, 8, 11]}}::::::::::::::
+nvidia_smi_namd_12.txt
+::::::::::::::
+{"null": {"gpu-sum": 386, "gpu-mem-sum": 80, "count": 27, "gpu-avg": 14.296296296296296, "gpu-variance": 347.3703703703704, "gpu-high-values": [3, 34, 36, 45, 40, 41, 30], "gpu-mem-avg": 2.962962962962963, "gpu-mem-variance": 16.72934472934472, "gpu-mem-high-values": [6, 8, 10, 7, 9]}}::::::::::::::
+nvidia_smi_namd_13.txt
+::::::::::::::
+{"null": {"gpu-sum": 328, "gpu-mem-sum": 74, "count": 27, "gpu-avg": 12.148148148148149, "gpu-variance": 356.7464387464388, "gpu-high-values": [2, 40, 41, 45, 36, 44, 33], "gpu-mem-avg": 2.740740740740741, "gpu-mem-variance": 19.199430199430193, "gpu-mem-high-values": [8, 10, 11, 9, 12]}}::::::::::::::
+nvidia_smi_namd_14.txt
+::::::::::::::
+{"null": {"gpu-sum": 698, "gpu-mem-sum": 146, "count": 54, "gpu-avg": 12.925925925925926, "gpu-variance": 331.7302585604471, "gpu-high-values": [2, 40, 41, 45, 36, 44, 33, 29, 35, 37, 32, 31], "gpu-mem-avg": 2.7037037037037037, "gpu-mem-variance": 16.438853948287914, "gpu-mem-high-values": [8, 10, 11, 9, 12, 7]}}::::::::::::::
+nvidia_smi_namd_15.txt
+::::::::::::::
+{"null": {"gpu-sum": 365, "gpu-mem-sum": 67, "count": 29, "gpu-avg": 12.586206896551724, "gpu-variance": 265.46551724137936, "gpu-high-values": [3, 39, 37, 35, 34, 30, 28, 32, 38], "gpu-mem-avg": 2.310344827586207, "gpu-mem-variance": 10.864532019704436, "gpu-mem-high-values": [9, 8, 6, 7]}}::::::::::::::
+nvidia_smi_namd_2.txt
+::::::::::::::
+{"null": {"gpu-sum": 387, "gpu-mem-sum": 86, "count": 27, "gpu-avg": 14.333333333333334, "gpu-variance": 404.84615384615387, "gpu-high-values": [2, 40, 48, 41, 43, 46, 42, 29], "gpu-mem-avg": 3.185185185185185, "gpu-mem-variance": 21.156695156695168, "gpu-mem-high-values": [8, 11, 9]}}::::::::::::::
+nvidia_smi_namd_3.txt
+::::::::::::::
+{"null": {"gpu-sum": 373, "gpu-mem-sum": 78, "count": 27, "gpu-avg": 13.814814814814815, "gpu-variance": 321.92592592592587, "gpu-high-values": [2, 39, 35, 36, 25, 38, 41, 37], "gpu-mem-avg": 2.888888888888889, "gpu-mem-variance": 14.564102564102566, "gpu-mem-high-values": [8, 7, 6, 9]}}::::::::::::::
+nvidia_smi_namd_4.txt
+::::::::::::::
+{"null": {"gpu-sum": 656, "gpu-mem-sum": 138, "count": 53, "gpu-avg": 12.377358490566039, "gpu-variance": 284.5087082728592, "gpu-high-values": [2, 39, 35, 36, 25, 38, 41, 37, 34, 28, 43], "gpu-mem-avg": 2.6037735849056602, "gpu-mem-variance": 13.051523947750363, "gpu-mem-high-values": [8, 7, 6, 9]}}::::::::::::::
+nvidia_smi_namd_5.txt
+::::::::::::::
+{"null": {"gpu-sum": 327, "gpu-mem-sum": 72, "count": 27, "gpu-avg": 12.11111111111111, "gpu-variance": 284.79487179487165, "gpu-high-values": [2, 35, 29, 41, 37, 33, 36, 39], "gpu-mem-avg": 2.6666666666666665, "gpu-mem-variance": 14.615384615384611, "gpu-mem-high-values": [7, 8, 9, 10]}}::::::::::::::
+nvidia_smi_namd_6.txt
+::::::::::::::
+{"null": {"gpu-sum": 405, "gpu-mem-sum": 84, "count": 27, "gpu-avg": 15.0, "gpu-variance": 434.38461538461536, "gpu-high-values": [2, 33, 42, 30, 70, 34, 43], "gpu-mem-avg": 3.111111111111111, "gpu-mem-variance": 19.102564102564102, "gpu-mem-high-values": [4, 11, 10, 7, 9, 8]}}::::::::::::::
+nvidia_smi_namd_7.txt
+::::::::::::::
+{"null": {"gpu-sum": 407, "gpu-mem-sum": 82, "count": 27, "gpu-avg": 15.074074074074074, "gpu-variance": 404.2250712250713, "gpu-high-values": [3, 37, 39, 31, 46, 59, 36, 43], "gpu-mem-avg": 3.037037037037037, "gpu-mem-variance": 17.19088319088319, "gpu-mem-high-values": [7, 8, 6, 9, 11, 10]}}::::::::::::::
+nvidia_smi_namd_8.txt
+::::::::::::::
+{"null": {"gpu-sum": 323, "gpu-mem-sum": 73, "count": 27, "gpu-avg": 11.962962962962964, "gpu-variance": 320.11396011396016, "gpu-high-values": [2, 33, 34, 43, 46, 37, 41, 32], "gpu-mem-avg": 2.7037037037037037, "gpu-mem-variance": 17.6011396011396, "gpu-mem-high-values": [7, 8, 10, 11]}}::::::::::::::
+nvidia_smi_namd_9.txt
+::::::::::::::
+{"null": {"gpu-sum": 396, "gpu-mem-sum": 86, "count": 27, "gpu-avg": 14.666666666666666, "gpu-variance": 354.53846153846155, "gpu-high-values": [3, 28, 36, 46, 34, 48, 41, 39, 31, 37, 42], "gpu-mem-avg": 3.185185185185185, "gpu-mem-variance": 18.464387464387464, "gpu-mem-high-values": [6, 8, 11, 7, 12, 9]}}::::::::::::::
+nvidia_smi_pytorch.txt
+::::::::::::::
+{"null": {"gpu-sum": 34478, "gpu-mem-sum": 14724, "count": 819, "gpu-avg": 42.0976800976801, "gpu-variance": 786.7532831200318, "gpu-high-values": [60, 62, 63, 37, 51, 44, 45, 46, 98, 56, 55, 57, 78, 61, 94, 93, 64, 95, 42, 91, 83, 89, 92, 90, 53, 54, 52, 58, 96, 80, 49, 48, 88, 70, 72, 71, 69, 73, 87, 84, 59, 97, 74], "gpu-mem-avg": 17.978021978021978, "gpu-mem-variance": 154.24646014132577, "gpu-mem-high-values": [31, 32, 19, 22, 23, 28, 27, 37, 45, 44, 30, 33, 25, 38, 36, 26, 39, 43, 35, 29, 34, 24]}}::::::::::::::
+pytorch_benchmark_result.txt
+::::::::::::::
+
+    Evaluating External Test Dependencies ..................................
+    Evaluating System Dependencies .........................................
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/pytorch-1.0.1
+
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1
+    System Test Configuration
+        1: CPU
+        2: gpu
+        3: Test All Options
+        ** Multiple items can be selected, delimit by a comma. **
+        Device:
+
+        1: 1
+        2: 16
+        3: 32
+        4: 64
+        5: 256
+        6: 512
+        7: Test All Options
+        ** Multiple items can be selected, delimit by a comma. **
+        Batch Size:
+
+        1: ResNet-50
+        2: ResNet-152
+        3: Efficientnet_v2_l
+        4: Test All Options
+        ** Multiple items can be selected, delimit by a comma. **
+        Model:
+
+System Information
+
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8192 MB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          overlayfs
+    Disk Scheduler:       NONE
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server
+    Compiler:             GCC 9.4.0
+    System Layer:         docker
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 1 - Model: ResNet-50]
+    Test 1 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      7 Minutes
+    Estimated Time To Completion: 1 Hour, 17 Minutes [08:12 UTC]
+        Started Run 1 @ 06:56:44
+        Started Run 2 @ 06:57:02
+        Started Run 3 @ 06:57:21
+
+    Device: gpu - Batch Size: 1 - Model: ResNet-50:
+        150.10088283662
+        153.4968890643
+        154.52207107592
+
+    Average: 152.71 batches/sec
+    Minimum: 52.79
+    Maximum: 157.15
+    Deviation: 1.52%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 1 - Model: ResNet-152]
+    Test 2 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      1 Minute
+    Estimated Time To Completion: 8 Minutes [07:05 UTC]
+        Started Run 1 @ 06:57:44
+        Started Run 2 @ 06:58:19
+        Started Run 3 @ 06:58:49
+
+    Device: gpu - Batch Size: 1 - Model: ResNet-152:
+        44.787919965299
+        55.830209799013
+        56.268456700292
+
+    Average: 52.30 batches/sec
+    Minimum: 37.64
+    Maximum: 57.44
+    Deviation: 12.44%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 16 - Model: ResNet-50]
+    Test 3 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 11 Minutes [07:09 UTC]
+        Started Run 1 @ 06:59:26
+        Started Run 2 @ 06:59:52
+        Started Run 3 @ 07:00:18
+
+    Device: gpu - Batch Size: 16 - Model: ResNet-50:
+        130.15775778586
+        129.93925912973
+        130.01412648045
+
+    Average: 130.04 batches/sec
+    Minimum: 92.85
+    Maximum: 141.37
+    Deviation: 0.09%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 64 - Model: ResNet-50]
+    Test 4 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 10 Minutes [07:10 UTC]
+        Started Run 1 @ 07:00:50
+        Started Run 2 @ 07:01:16
+        Started Run 3 @ 07:01:41
+
+    Device: gpu - Batch Size: 64 - Model: ResNet-50:
+        129.9543560753
+        129.7054798412
+        129.76983865422
+
+    Average: 129.81 batches/sec
+    Minimum: 97.2
+    Maximum: 142.66
+    Deviation: 0.10%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 16 - Model: ResNet-152]
+    Test 5 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 9 Minutes [07:11 UTC]
+        Started Run 1 @ 07:02:14
+        Started Run 2 @ 07:03:10
+        Started Run 3 @ 07:04:02
+
+    Device: gpu - Batch Size: 16 - Model: ResNet-152:
+        50.978971268528
+        50.787708011003
+        52.242552362087
+
+    Average: 51.34 batches/sec
+    Minimum: 43.19
+    Maximum: 53.41
+    Deviation: 1.54%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 512 - Model: ResNet-50]
+    Test 6 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 10 Minutes [07:14 UTC]
+        Started Run 1 @ 07:05:00
+        Started Run 2 @ 07:05:26
+        Started Run 3 @ 07:05:52
+
+    Device: gpu - Batch Size: 512 - Model: ResNet-50:
+        129.7124384685
+        129.62575515494
+        129.82474687576
+
+    Average: 129.72 batches/sec
+    Minimum: 80.07
+    Maximum: 142.32
+    Deviation: 0.08%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 64 - Model: ResNet-152]
+    Test 7 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 9 Minutes [07:14 UTC]
+        Started Run 1 @ 07:06:24
+        Started Run 2 @ 07:07:21
+        Started Run 3 @ 07:08:22
+
+    Device: gpu - Batch Size: 64 - Model: ResNet-152:
+        50.631773116374
+        42.439468719336
+        49.834200243857
+
+    Average: 47.64 batches/sec
+    Minimum: 37.64
+    Maximum: 52.26
+    Deviation: 9.48%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 512 - Model: ResNet-152]
+    Test 8 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 8 Minutes [07:17 UTC]
+        Started Run 1 @ 07:09:23
+        Started Run 2 @ 07:10:14
+        Started Run 3 @ 07:11:15
+
+    Device: gpu - Batch Size: 512 - Model: ResNet-152:
+        52.51842678707
+        43.190734611925
+        51.419354906343
+
+    Average: 49.04 batches/sec
+    Minimum: 38.05
+    Maximum: 53.72
+    Deviation: 10.39%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 1 - Model: Efficientnet_v2_l]
+    Test 9 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 7 Minutes [07:18 UTC]
+        Started Run 1 @ 07:12:14
+        Started Run 2 @ 07:13:07
+        Started Run 3 @ 07:13:59
+
+    Device: gpu - Batch Size: 1 - Model: Efficientnet_v2_l:
+        26.500426644263
+        26.677361274672
+        26.583580845104
+
+    Average: 26.59 batches/sec
+    Minimum: 22.64
+    Maximum: 27.61
+    Deviation: 0.33%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 16 - Model: Efficientnet_v2_l]
+    Test 10 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 6 Minutes [07:20 UTC]
+        Started Run 1 @ 07:14:59
+        Started Run 2 @ 07:16:56
+        Started Run 3 @ 07:18:35
+
+    Device: gpu - Batch Size: 16 - Model: Efficientnet_v2_l:
+        20.672823272361
+        24.784404613555
+        24.641739314337
+
+    Average: 23.37 batches/sec
+    Minimum: 18.43
+    Maximum: 25.66
+    Deviation: 9.99%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 64 - Model: Efficientnet_v2_l]
+    Test 11 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 5 Minutes [07:24 UTC]
+        Started Run 1 @ 07:20:20
+        Started Run 2 @ 07:21:55
+        Started Run 3 @ 07:23:31
+
+    Device: gpu - Batch Size: 64 - Model: Efficientnet_v2_l:
+        25.855301826462
+        25.475979109752
+        24.944421599228
+
+    Average: 25.43 batches/sec
+    Minimum: 21.56
+    Maximum: 26.54
+    Deviation: 1.80%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 512 - Model: Efficientnet_v2_l]
+    Test 12 of 12
+    Estimated Trial Run Count:    3
+    Estimated Time To Completion: 3 Minutes [07:27 UTC]
+        Started Run 1 @ 07:25:16
+        Started Run 2 @ 07:27:14
+        Started Run 3 @ 07:28:50
+
+    Device: gpu - Batch Size: 512 - Model: Efficientnet_v2_l:
+        20.487996644367
+        25.376270707412
+        25.499209083202
+
+    Average: 23.79 batches/sec
+    Minimum: 17.85
+    Maximum: 26.11
+    Deviation: 12.02%::::::::::::::
+pytorch_install_result.txt
+::::::::::::::
+
+    Evaluating External Test Dependencies ..................................
+    Evaluating System Dependencies .........................................
+
+Phoronix Test Suite v10.8.4
+
+    To Install:    pts/pytorch-1.0.1
+
+    Determining File Requirements ..........................................
+    Searching Download Caches ..............................................
+
+    1 Test To Install
+        4800MB Of Disk Space Is Needed
+        6 Minutes, 41 Seconds Estimated Install Time
+
+    pts/pytorch-1.0.1:
+        Test Installation 1 of 1
+        Approximate Install Size: 4800 MB
+        Estimated Install Time: 6 Minutes, 41 Seconds
+        Installing Test @ 06:53:24

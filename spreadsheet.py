@@ -15,7 +15,7 @@ class SpreadsheetLogic:
     # openstack_service_name, then resolution
     def __init__(self, glmark_processors: dict[str, dict[str, glmark2_extractor.Glmark2ResultProcessor]],
                  namd_processors: dict[str, namd_extractor.NamdResultProcessor],
-                 pytorch_processors: dict[str, pytorch_extractor.PytorchResultProcessor]):
+                 pytorch_processors: dict[str, pytorch_extractor.PytorchResultProcessor], clear_sheet=False):
         self.gc = gspread.service_account("./key/key.json")
         self.document = self.gc.open_by_url("https://docs.google.com/spreadsheets/d/1tEoTYKBOAVweJ5HYzxigeq6tE--nBIjnK5f8EBO-JLk/edit#gid=0")
         self.glmark_processors = glmark_processors
@@ -24,6 +24,7 @@ class SpreadsheetLogic:
         self.worksheets: list[gspread.Worksheet] = self.document.worksheets()
         self.workers = WorkerPool()
         self.spreadsheet_prefix = "07 "
+        self.clear_sheet = clear_sheet
 
     def overview(self, glmark2_grouped_by_resolution: dict[str, list[Glmark2ResultProcessor]],
                  pytorch_grouped_by_model_batchsize_tc: dict[tuple[str, int, int], list]):
@@ -59,7 +60,8 @@ class SpreadsheetLogic:
                     stat_function(values) for values in transposed_list_of_values
                 ])
         rekap_ws = self.get_or_create_worksheets(self.spreadsheet_prefix + "Overview")
-        # glmark2_ws.clear()
+        if self.clear_sheet:
+            rekap_ws.clear()
         rekap_ws.update(table, "A1")
         self.merge_adjacent_equal_rows(rekap_ws, get_column(table, 0), 'A', 1)
         self.merge_adjacent_equal_rows(rekap_ws, get_column(table, 1), 'B', 1)
@@ -104,7 +106,8 @@ class SpreadsheetLogic:
             table.append([*key, *values])
 
         glmark2_ws = self.get_or_create_worksheets(self.spreadsheet_prefix + "Glmark2")
-        # glmark2_ws.clear()
+        if self.clear_sheet:
+            glmark2_ws.clear()
         glmark2_ws.update(table, "A1")
         self.merge_adjacent_equal_rows(glmark2_ws, get_column(table, 0), 'A', 1)
         return grouped_by_resolution
@@ -120,7 +123,8 @@ class SpreadsheetLogic:
         body_opstck_svc_as_col = transpose(body_opstck_svc_as_row)
 
         namd_ws = self.get_or_create_worksheets(self.spreadsheet_prefix + "NAMD")
-        # namd_ws.clear()
+        if self.clear_sheet:
+            namd_ws.clear()
         namd_ws.update([headers] + body_opstck_svc_as_col, "A1")
 
     def process_pytorch(self, openstack_service_ordering):
@@ -137,7 +141,8 @@ class SpreadsheetLogic:
             table.append([model, int(batch_size), tc_number, *values])
 
         pytorch_ws = self.get_or_create_worksheets(self.spreadsheet_prefix + "PyTorch")
-        # pytorch_ws.clear()
+        if self.clear_sheet:
+            pytorch_ws.clear()
         pytorch_ws.update(table, "A1")
         self.merge_adjacent_equal_rows(pytorch_ws, get_column(table, 0), 'A', 1)
         self.merge_adjacent_equal_rows(pytorch_ws, get_column(table, 1), 'B', 1)
