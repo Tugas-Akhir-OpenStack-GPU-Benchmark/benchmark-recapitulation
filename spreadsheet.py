@@ -1,3 +1,5 @@
+import time
+
 import gspread
 from gspread import Worksheet
 
@@ -5,10 +7,13 @@ import glmark2_extractor
 import namd_extractor
 import pytorch_extractor
 from glmark2_extractor import Glmark2ResultProcessor
-from stats import stat_functions
-from thread_pool_worker import WorkerPool
+from stats import stat_functions, T_test_less, T_test_greater, major_grouping_by_stat_name
+from thread_pool_worker import WorkerPool, maximum_backoff
 from utils import transpose, combine_dicts, flatten_dict_of_list, flatten_arrays, get_column, \
     iterate_dict_items_based_on_list_ordering, groupby_and_select
+
+
+INDEX_OF_T_TEST_COMPARISON = 0
 
 
 class SpreadsheetLogic:
@@ -27,22 +32,21 @@ class SpreadsheetLogic:
         self.spreadsheet_prefix = "07 "
         self.clear_sheet = clear_sheet
 
-    def overview(self, glmark2_grouped_by_resolution: dict[str, list[Glmark2ResultProcessor]],
+    def overview(self, openstack_services, glmark2_grouped_by_resolution: dict[str, list[Glmark2ResultProcessor]],
                  pytorch_grouped_by_model_batchsize_tc: dict[tuple[str, int, int], list]):
-        openstack_services = list(self.glmark_processors.keys())
+
         headers = ["Benchmark",	"Group", "Stats"] + openstack_services
         table = [headers]
         for resolution, benchmark_results in glmark2_grouped_by_resolution.items():
-            for stat_function in stat_functions:
-                row = ['Glmark2', resolution, stat_function.__name__]
+            t_test_function = T_test_less(benchmark_results[INDEX_OF_T_TEST_COMPARISON].get_values())
+            for stat_function in stat_functions + [t_test_function]:
+                row = ['Glmark2', resolution, func_to_str(stat_function)]
                 for benchmark_result in benchmark_results:
-                    select_by_fps_result = lambda x: x[1]
-                    list_of_tuple_of_category_fps_spf = list(benchmark_result.results.values())
-                    list_of_fps = list(map(select_by_fps_result, list_of_tuple_of_category_fps_spf))
+                    list_of_fps = benchmark_result.get_values()
                     row.append(stat_function(list_of_fps))
                 table.append(row)
-        for stat_function in stat_functions:
-            row = ['NAMD', '', stat_function.__name__]
+        for stat_function in stat_functions + [T_test_greater(self.namd_processors[openstack_services[INDEX_OF_T_TEST_COMPARISON]].results)]:
+            row = ['NAMD', '', func_to_str(stat_function)]
             for openstack_service in openstack_services:
                 benchmark_results_namd = self.namd_processors[openstack_service]
                 row.append(stat_function(benchmark_results_namd.results))
@@ -52,46 +56,44 @@ class SpreadsheetLogic:
         group_by_model = lambda x: x[0][0]
         select_values = lambda x: x[1]
         model_to_list_of_values = groupby_and_select(pytorch_list, group_by_model, select_values)
-        for model, list_of_values in model_to_list_of_values.items():
-            # list_of_values contains 2d list, 1st axis is batch_size & tc. 2nd index is the openstack_service
 
+        # list_of_values contains 2d list, 1st axis represents batch_size & tc. 2nd axis represents the openstack_service
+        for model, list_of_values in model_to_list_of_values.items():
             transposed_list_of_values = transpose(list_of_values)
-            for stat_function in stat_functions:
-                table.append(['PyTorch', model, stat_function.__name__, ] + [
+            t_test_function = T_test_less(transposed_list_of_values[INDEX_OF_T_TEST_COMPARISON])
+            for stat_function in stat_functions + [t_test_function]:
+                table.append(['PyTorch', model, func_to_str(stat_function), ] + [
                     stat_function(values) for values in transposed_list_of_values
                 ])
         self.draw_overview_table("Overview", table)
-        self.major_grouping_by_stat_name(table)
+        major_grouping_by_stat_name(table)
         self.draw_overview_table("Overview by Stats", table)
 
     def draw_overview_table(self, sheetName, table):
         rekap_ws = self.get_or_create_worksheets(self.spreadsheet_prefix + sheetName)
         if self.clear_sheet:
             rekap_ws.clear()
-        rekap_ws.update(table, "A1")
+        handle_write_req_limit(rekap_ws.update)(table, "A1")
+        self.unmerge_sheet(rekap_ws)
         self.merge_adjacent_equal_rows(rekap_ws, get_column(table, 0), 'A', 1)
         self.merge_adjacent_equal_rows(rekap_ws, get_column(table, 1), 'B', 1)
 
-    def major_grouping_by_stat_name(self, table):
-        sorting_key_by_stat_name = lambda x: x[2]
-        table[1:] = sorted(table[1:], key=sorting_key_by_stat_name)
-        for columns in table:
-            columns[0], columns[1], columns[2] = columns[0], columns[2], columns[1]
 
 
 
-    def process_spreadsheet(self,):
+    async def process_spreadsheet(self,):
         self.workers.start_workers(2)
 
         openstack_service_ordering = list(self.namd_processors.keys())
-        glmark2_grouped_by_resolution = self.process_glmark2(openstack_service_ordering)
+        glmark2_grouped_by_resolution = await self.process_glmark2(openstack_service_ordering)
         self.process_namd(openstack_service_ordering)
-        pytorch_grouped_by_model_batchsize_tc = self.process_pytorch(openstack_service_ordering)
-        self.overview(glmark2_grouped_by_resolution, pytorch_grouped_by_model_batchsize_tc)
+        pytorch_grouped_by_model_batchsize_tc = await self.process_pytorch(openstack_service_ordering)
+        self.overview(openstack_service_ordering, glmark2_grouped_by_resolution, pytorch_grouped_by_model_batchsize_tc)
 
         self.workers.stop_workers()
+        print("Done")
 
-    def process_glmark2(self, openstack_service_ordering):
+    async def process_glmark2(self, openstack_service_ordering):
         openstack_service_names = openstack_service_ordering
         dictionaries = []
         for ops_svc_name in openstack_service_ordering:
@@ -119,8 +121,9 @@ class SpreadsheetLogic:
 
         glmark2_ws = self.get_or_create_worksheets(self.spreadsheet_prefix + "Glmark2")
         if self.clear_sheet:
-            glmark2_ws.clear()
-        glmark2_ws.update(table, "A1")
+            handle_write_req_limit(glmark2_ws.clear)()
+        handle_write_req_limit(glmark2_ws.update)(table, "A1")
+        self.unmerge_sheet(glmark2_ws)
         self.merge_adjacent_equal_rows(glmark2_ws, get_column(table, 0), 'A', 1)
         return grouped_by_resolution
 
@@ -136,10 +139,10 @@ class SpreadsheetLogic:
 
         namd_ws = self.get_or_create_worksheets(self.spreadsheet_prefix + "NAMD")
         if self.clear_sheet:
-            namd_ws.clear()
-        namd_ws.update([headers] + body_opstck_svc_as_col, "A1")
+            handle_write_req_limit(namd_ws.clear)()
+        handle_write_req_limit(namd_ws.update)([headers] + body_opstck_svc_as_col, "A1")
 
-    def process_pytorch(self, openstack_service_ordering):
+    async def process_pytorch(self, openstack_service_ordering):
         dictionaries = []
         for openstack_service, benchmark in iterate_dict_items_based_on_list_ordering(self.pytorch_processors, openstack_service_ordering):
             flatten_benchmark_results = flatten_dict_of_list(benchmark.results)
@@ -154,8 +157,9 @@ class SpreadsheetLogic:
 
         pytorch_ws = self.get_or_create_worksheets(self.spreadsheet_prefix + "PyTorch")
         if self.clear_sheet:
-            pytorch_ws.clear()
-        pytorch_ws.update(table, "A1")
+            handle_write_req_limit(pytorch_ws.clear)()
+        handle_write_req_limit(pytorch_ws.update)(table, "A1")
+        self.unmerge_sheet(pytorch_ws)
         self.merge_adjacent_equal_rows(pytorch_ws, get_column(table, 0), 'A', 1)
         self.merge_adjacent_equal_rows(pytorch_ws, get_column(table, 1), 'B', 1)
         return combined_dict
@@ -188,8 +192,33 @@ class SpreadsheetLogic:
             end = i
         self.workers.add_task(get_task(start, end))
 
+    def unmerge_sheet(self, worksheet):
+        requests = [
+            {
+                "unmergeCells": {
+                    "range": {"sheetId": worksheet.id}
+                }
+            }
+        ]
+        handle_write_req_limit(self.document.batch_update)({"requests": requests})
+
+def handle_write_req_limit(func):
+    sleep_time = 1
+    def wrapper(*args):
+        nonlocal  sleep_time
+        while True:
+            try:
+                return func(*args)
+            except gspread.exceptions.APIError as e:
+                if 'Quota exceeded for quota metric' not in e.response.text:
+                    raise e
+                time.sleep(sleep_time)
+                sleep_time = min(sleep_time*2 , maximum_backoff)
+    return wrapper
 
 
 
+def func_to_str(func):
+    return func.get_name()
 
 

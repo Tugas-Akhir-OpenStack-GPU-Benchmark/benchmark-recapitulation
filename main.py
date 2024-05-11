@@ -1,3 +1,4 @@
+import asyncio
 import os.path
 import re
 from glob import glob
@@ -11,7 +12,7 @@ glmark2_resolutions = ['1920x1080', '1366x768', '360x800', '192x108']
 openstack_namd_batch_range = range(0, 15)
 
 
-def main():
+async def main():
     file_names = get_file_list()
     files = get_file_content_dict(file_names)
 
@@ -28,7 +29,7 @@ def main():
                               namd_processors[openstack_service_name], glmark2_processors[openstack_service_name])
     spreadsheet_logic = SpreadsheetLogic(glmark2_processors, namd_processors, pytorch_processors)
     print(spreadsheet_logic.url)
-    spreadsheet_logic.process_spreadsheet()
+    await spreadsheet_logic.process_spreadsheet()
 
 
 def handle_processing(benchmark_type, content, pytorch_processor, namd_processor, glmark2_processors: dict[str, Glmark2ResultProcessor]):
@@ -96,5 +97,6 @@ class NopProcessor:
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
+
 

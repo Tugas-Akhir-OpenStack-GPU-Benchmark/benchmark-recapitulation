@@ -1,4 +1,5 @@
 import itertools
+from typing import Any
 
 
 def transpose(two_d_arr, jagged_fill_value=None):
@@ -51,6 +52,14 @@ def iterate_dict_items_based_on_list_ordering(dct: dict, keys_ordering: list):
     for key in keys_ordering:
         assert key in keys_ordering
         yield key, dct[key]
+
+def get_column_from_dict_of_list(dct_of_list: dict[Any, list[Any]], column_index: int, sorter=lambda x: x):
+    two_d_list = list(dct_of_list.items())
+    two_d_list = sorter(two_d_list)
+    ret = []
+    for key, value in two_d_list:
+        ret.append(value[column_index])
+    return ret
 
 
 
