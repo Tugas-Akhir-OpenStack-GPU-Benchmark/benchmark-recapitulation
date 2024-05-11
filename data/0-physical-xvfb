@@ -1,0 +1,2207 @@
+::::::::::::::
+glmark2_benchmark_result_1366x768.txt
+::::::::::::::
+=======================================================
+    glmark2 2021.02
+=======================================================
+    OpenGL Information
+    GL_VENDOR:     NVIDIA Corporation
+    GL_RENDERER:   Tesla T4/PCIe/SSE2
+    GL_VERSION:    4.6.0 NVIDIA 535.171.04
+=======================================================
+[build] use-vbo=false: FPS: 593 FrameTime: 1.686 ms
+[build] use-vbo=true: FPS: 597 FrameTime: 1.675 ms
+[texture] texture-filter=nearest: FPS: 600 FrameTime: 1.667 ms
+[texture] texture-filter=linear: FPS: 602 FrameTime: 1.661 ms
+[texture] texture-filter=mipmap: FPS: 624 FrameTime: 1.603 ms
+[shading] shading=gouraud: FPS: 608 FrameTime: 1.645 ms
+[shading] shading=blinn-phong-inf: FPS: 627 FrameTime: 1.595 ms
+[shading] shading=phong: FPS: 588 FrameTime: 1.701 ms
+[shading] shading=cel: FPS: 618 FrameTime: 1.618 ms
+[bump] bump-render=high-poly: FPS: 597 FrameTime: 1.675 ms
+[bump] bump-render=normals: FPS: 617 FrameTime: 1.621 ms
+[bump] bump-render=height: FPS: 607 FrameTime: 1.647 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 624 FrameTime: 1.603 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 600 FrameTime: 1.667 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 604 FrameTime: 1.656 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 536 FrameTime: 1.866 ms
+[desktop] effect=shadow:windows=4: FPS: 591 FrameTime: 1.692 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 400 FrameTime: 2.500 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 339 FrameTime: 2.950 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 370 FrameTime: 2.703 ms
+[ideas] speed=duration: FPS: 574 FrameTime: 1.742 ms
+[jellyfish] <default>: FPS: 615 FrameTime: 1.626 ms
+[terrain] <default>: FPS: 387 FrameTime: 2.584 ms
+[shadow] <default>: FPS: 624 FrameTime: 1.603 ms
+[refract] <default>: FPS: 570 FrameTime: 1.754 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 649 FrameTime: 1.541 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 618 FrameTime: 1.618 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 597 FrameTime: 1.675 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 617 FrameTime: 1.621 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 602 FrameTime: 1.661 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 617 FrameTime: 1.621 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 602 FrameTime: 1.661 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 600 FrameTime: 1.667 ms
+=======================================================
+                                  glmark2 Score: 576
+=======================================================::::::::::::::
+glmark2_benchmark_result_1920x1080.txt
+::::::::::::::
+=======================================================
+    glmark2 2021.02
+=======================================================
+    OpenGL Information
+    GL_VENDOR:     NVIDIA Corporation
+    GL_RENDERER:   Tesla T4/PCIe/SSE2
+    GL_VERSION:    4.6.0 NVIDIA 535.171.04
+=======================================================
+[build] use-vbo=false: FPS: 288 FrameTime: 3.472 ms
+[build] use-vbo=true: FPS: 279 FrameTime: 3.584 ms
+[texture] texture-filter=nearest: FPS: 269 FrameTime: 3.717 ms
+[texture] texture-filter=linear: FPS: 290 FrameTime: 3.448 ms
+[texture] texture-filter=mipmap: FPS: 280 FrameTime: 3.571 ms
+[shading] shading=gouraud: FPS: 283 FrameTime: 3.534 ms
+[shading] shading=blinn-phong-inf: FPS: 290 FrameTime: 3.448 ms
+[shading] shading=phong: FPS: 272 FrameTime: 3.676 ms
+[shading] shading=cel: FPS: 287 FrameTime: 3.484 ms
+[bump] bump-render=high-poly: FPS: 275 FrameTime: 3.636 ms
+[bump] bump-render=normals: FPS: 289 FrameTime: 3.460 ms
+[bump] bump-render=height: FPS: 289 FrameTime: 3.460 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 284 FrameTime: 3.521 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 278 FrameTime: 3.597 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 269 FrameTime: 3.717 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 265 FrameTime: 3.774 ms
+[desktop] effect=shadow:windows=4: FPS: 275 FrameTime: 3.636 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 213 FrameTime: 4.695 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 206 FrameTime: 4.854 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 213 FrameTime: 4.695 ms
+[ideas] speed=duration: FPS: 260 FrameTime: 3.846 ms
+[jellyfish] <default>: FPS: 289 FrameTime: 3.460 ms
+[terrain] <default>: FPS: 182 FrameTime: 5.495 ms
+[shadow] <default>: FPS: 296 FrameTime: 3.378 ms
+[refract] <default>: FPS: 268 FrameTime: 3.731 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 297 FrameTime: 3.367 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 273 FrameTime: 3.663 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 265 FrameTime: 3.774 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 293 FrameTime: 3.413 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 276 FrameTime: 3.623 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 284 FrameTime: 3.521 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 274 FrameTime: 3.650 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 290 FrameTime: 3.448 ms
+=======================================================
+                                  glmark2 Score: 270
+=======================================================::::::::::::::
+glmark2_benchmark_result_192x108.txt
+::::::::::::::
+=======================================================
+    glmark2 2021.02
+=======================================================
+    OpenGL Information
+    GL_VENDOR:     NVIDIA Corporation
+    GL_RENDERER:   Tesla T4/PCIe/SSE2
+    GL_VERSION:    4.6.0 NVIDIA 535.171.04
+=======================================================
+[build] use-vbo=false: FPS: 3837 FrameTime: 0.261 ms
+[build] use-vbo=true: FPS: 13499 FrameTime: 0.074 ms
+[texture] texture-filter=nearest: FPS: 14035 FrameTime: 0.071 ms
+[texture] texture-filter=linear: FPS: 14065 FrameTime: 0.071 ms
+[texture] texture-filter=mipmap: FPS: 13951 FrameTime: 0.072 ms
+[shading] shading=gouraud: FPS: 13601 FrameTime: 0.074 ms
+[shading] shading=blinn-phong-inf: FPS: 13632 FrameTime: 0.073 ms
+[shading] shading=phong: FPS: 13163 FrameTime: 0.076 ms
+[shading] shading=cel: FPS: 13482 FrameTime: 0.074 ms
+[bump] bump-render=high-poly: FPS: 12364 FrameTime: 0.081 ms
+[bump] bump-render=normals: FPS: 14118 FrameTime: 0.071 ms
+[bump] bump-render=height: FPS: 14029 FrameTime: 0.071 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 14564 FrameTime: 0.069 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 14285 FrameTime: 0.070 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 13559 FrameTime: 0.074 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 4414 FrameTime: 0.227 ms
+[desktop] effect=shadow:windows=4: FPS: 6063 FrameTime: 0.165 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 979 FrameTime: 1.021 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 854 FrameTime: 1.171 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 978 FrameTime: 1.022 ms
+[ideas] speed=duration: FPS: 6469 FrameTime: 0.155 ms
+[jellyfish] <default>: FPS: 11758 FrameTime: 0.085 ms
+[terrain] <default>: FPS: 1601 FrameTime: 0.625 ms
+[shadow] <default>: FPS: 9387 FrameTime: 0.107 ms
+[refract] <default>: FPS: 6488 FrameTime: 0.154 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 14380 FrameTime: 0.070 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 14330 FrameTime: 0.070 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 14411 FrameTime: 0.069 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 14440 FrameTime: 0.069 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 14325 FrameTime: 0.070 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 14462 FrameTime: 0.069 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 14472 FrameTime: 0.069 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 14460 FrameTime: 0.069 ms
+=======================================================
+                                  glmark2 Score: 10922
+=======================================================::::::::::::::
+glmark2_benchmark_result_360x800.txt
+::::::::::::::
+=======================================================
+    glmark2 2021.02
+=======================================================
+    OpenGL Information
+    GL_VENDOR:     NVIDIA Corporation
+    GL_RENDERER:   Tesla T4/PCIe/SSE2
+    GL_VERSION:    4.6.0 NVIDIA 535.171.04
+=======================================================
+[build] use-vbo=false: FPS: 1594 FrameTime: 0.627 ms
+[build] use-vbo=true: FPS: 2124 FrameTime: 0.471 ms
+[texture] texture-filter=nearest: FPS: 2185 FrameTime: 0.458 ms
+[texture] texture-filter=linear: FPS: 2177 FrameTime: 0.459 ms
+[texture] texture-filter=mipmap: FPS: 2177 FrameTime: 0.459 ms
+[shading] shading=gouraud: FPS: 2167 FrameTime: 0.461 ms
+[shading] shading=blinn-phong-inf: FPS: 2163 FrameTime: 0.462 ms
+[shading] shading=phong: FPS: 2160 FrameTime: 0.463 ms
+[shading] shading=cel: FPS: 2159 FrameTime: 0.463 ms
+[bump] bump-render=high-poly: FPS: 2136 FrameTime: 0.468 ms
+[bump] bump-render=normals: FPS: 2201 FrameTime: 0.454 ms
+[bump] bump-render=height: FPS: 2197 FrameTime: 0.455 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 2181 FrameTime: 0.459 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 2127 FrameTime: 0.470 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 2152 FrameTime: 0.465 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 1438 FrameTime: 0.695 ms
+[desktop] effect=shadow:windows=4: FPS: 1736 FrameTime: 0.576 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 494 FrameTime: 2.024 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 529 FrameTime: 1.890 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 697 FrameTime: 1.435 ms
+[ideas] speed=duration: FPS: 1734 FrameTime: 0.577 ms
+[jellyfish] <default>: FPS: 2020 FrameTime: 0.495 ms
+[terrain] <default>: FPS: 847 FrameTime: 1.181 ms
+[shadow] <default>: FPS: 2053 FrameTime: 0.487 ms
+[refract] <default>: FPS: 1673 FrameTime: 0.598 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 2311 FrameTime: 0.433 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 2264 FrameTime: 0.442 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 2195 FrameTime: 0.456 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 2190 FrameTime: 0.457 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 2257 FrameTime: 0.443 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 2199 FrameTime: 0.455 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 2194 FrameTime: 0.456 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 2182 FrameTime: 0.458 ms
+=======================================================
+                                  glmark2 Score: 1906
+=======================================================::::::::::::::
+namd_benchmark_result_0.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server 1.21.1.4
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [19:03 WIB]
+        Started Run 1 @ 19:02:47
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:03:14
+
+    ATPase Simulation - 327,506 Atoms:
+        0.207183
+        0.210235
+
+    Average: 0.20871 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 28 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (32nd Percentile): 0.20871 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_10.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server 1.21.1.4
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [19:16 WIB]
+        Started Run 1 @ 19:15:19
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:15:47
+
+    ATPase Simulation - 327,506 Atoms:
+        0.222043
+        0.259379
+
+    Average: 0.24071 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 28 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (24th Percentile): 0.24071 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_11.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server 1.21.1.4
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [19:17 WIB]
+        Started Run 1 @ 19:16:34
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:17:01
+
+    ATPase Simulation - 327,506 Atoms:
+        0.221119
+        0.239541
+
+    Average: 0.23033 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 28 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (27th Percentile): 0.23033 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_12.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Desktop:              GNOME Shell 42.9
+    Display Server:       X Server 1.21.1.4
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [19:38 WIB]
+        Started Run 1 @ 19:37:51
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:38:16
+
+    ATPase Simulation - 327,506 Atoms:
+        0.206196
+        0.204799
+
+    Average: 0.20550 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 28 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (33rd Percentile): 0.20550 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_13.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Desktop:              GNOME Shell 42.9
+    Display Server:       X Server 1.21.1.4
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [19:39 WIB]
+        Started Run 1 @ 19:38:55
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:39:23
+
+    ATPase Simulation - 327,506 Atoms:
+        0.30737
+        0.294732
+
+    Average: 0.30105 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 28 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                   This Result (19th Percentile): 0.30105 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                          GTX 1080: 0.19607 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_14.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Desktop:              GNOME Shell 42.9
+    Display Server:       X Server 1.21.1.4
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [19:40 WIB]
+        Started Run 1 @ 19:40:05
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:40:31
+
+    ATPase Simulation - 327,506 Atoms:
+        0.231315
+        0.287246
+
+    Average: 0.25928 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 28 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*--*#*!#*]
+                                    This Result (22nd Percentile): 0.25928 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                             Gigabyte  RTX 3070: 0.35359 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_15.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Desktop:              GNOME Shell 42.9
+    Display Server:       X Server 1.21.1.4
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [19:42 WIB]
+        Started Run 1 @ 19:41:14
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:41:41
+
+    ATPase Simulation - 327,506 Atoms:
+        0.269098
+        0.286369
+
+    Average: 0.27773 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 28 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*--*#*!#*]
+                                    This Result (21st Percentile): 0.27773 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                             Gigabyte  RTX 3070: 0.35359 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_1.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server 1.21.1.4
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [19:04 WIB]
+        Started Run 1 @ 19:04:03
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:04:30
+
+    ATPase Simulation - 327,506 Atoms:
+        0.224429
+        0.242491
+
+    Average: 0.23346 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 28 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (25th Percentile): 0.23346 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_2.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server 1.21.1.4
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [19:06 WIB]
+        Started Run 1 @ 19:05:14
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:05:41
+
+    ATPase Simulation - 327,506 Atoms:
+        0.209661
+        0.223047
+
+    Average: 0.21635 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 28 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (31st Percentile): 0.21635 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_3.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server 1.21.1.4
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [19:07 WIB]
+        Started Run 1 @ 19:06:24
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:06:52
+
+    ATPase Simulation - 327,506 Atoms:
+        0.25526
+        0.221491
+
+    Average: 0.23838 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 28 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (25th Percentile): 0.23838 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_4.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server 1.21.1.4
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [19:08 WIB]
+        Started Run 1 @ 19:07:40
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:08:09
+
+    ATPase Simulation - 327,506 Atoms:
+        0.261718
+        0.204245
+
+    Average: 0.23298 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 28 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (25th Percentile): 0.23298 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_5.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server 1.21.1.4
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [19:09 WIB]
+        Started Run 1 @ 19:08:56
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:09:23
+
+    ATPase Simulation - 327,506 Atoms:
+        0.214084
+        0.228017
+
+    Average: 0.22105 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 28 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (31st Percentile): 0.22105 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_6.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server 1.21.1.4
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [19:10 WIB]
+        Started Run 1 @ 19:10:13
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:10:41
+
+    ATPase Simulation - 327,506 Atoms:
+        0.257454
+        0.226212
+
+    Average: 0.24183 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 28 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (24th Percentile): 0.24183 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_7.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server 1.21.1.4
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [19:12 WIB]
+        Started Run 1 @ 19:11:29
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:11:58
+
+    ATPase Simulation - 327,506 Atoms:
+        0.217502
+        0.266555
+
+    Average: 0.24203 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 28 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (24th Percentile): 0.24203 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_8.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server 1.21.1.4
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [19:13 WIB]
+        Started Run 1 @ 19:12:46
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:13:13
+
+    ATPase Simulation - 327,506 Atoms:
+        0.214047
+        0.22039
+
+    Average: 0.21722 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 28 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (31st Percentile): 0.21722 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_benchmark_result_9.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    BAR1 / Visible vRAM:  256 MiB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Display Server:       X Server 1.21.1.4
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+NAMD CUDA 2.14:
+    pts/namd-cuda-1.1.1
+    Test 1 of 1
+    Estimated Trial Run Count:    2
+    Estimated Time To Completion: 1 Minute [19:14 WIB]
+        Started Run 1 @ 19:14:02
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+        Started Run 2 @ 19:14:29
+
+    ATPase Simulation - 327,506 Atoms:
+        0.217889
+        0.230614
+
+    Average: 0.22425 days/ns
+    Samples: 2
+
+    Comparison of 579 OpenBenchmarking.org samples since 28 August 2020; median result: 0.17 days/ns. Box plot of samples:
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (29th Percentile): 0.22425 ^
+                                                  Zotac  RTX 4070 Ti: 0.08315 ^
+                                                         ADL GT2: 0.33937 ^
+                                                Quadro P2000: 0.54606 ^
+                                             eVGA  GTX 950: 0.6932 ^::::::::::::::
+namd_cuda_install_result.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/namd-cuda-1.1.1::::::::::::::
+nvidia_smi_glmark2.txt
+::::::::::::::
+{"": {"gpu-sum": 47, "gpu-mem-sum": 0, "count": 232, "gpu-avg": 0.2025862068965517, "gpu-variance": 9.521551724137932, "gpu-high-values": [47], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "glmark2": {"gpu-sum": 6054, "gpu-mem-sum": 268, "count": 174, "gpu-avg": 34.793103448275865, "gpu-variance": 134.1187960932828, "gpu-high-values": [23, 24, 25, 48, 51, 52, 44, 46, 45, 41, 40, 49, 54, 55, 59, 50, 47, 56, 81, 57, 39, 42, 60, 61], "gpu-mem-avg": 1.5402298850574712, "gpu-mem-variance": 25.602418443957216, "gpu-mem-high-values": [1, 5, 7, 3, 4, 13, 14, 8, 9, 44, 16, 10, 20, 32]}}::::::::::::::
+nvidia_smi_namd_0.txt
+::::::::::::::
+{"": {"gpu-sum": 0, "gpu-mem-sum": 0, "count": 13, "gpu-avg": 0.0, "gpu-variance": 0.0, "gpu-high-values": [], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "./namd2": {"gpu-sum": 276, "gpu-mem-sum": 60, "count": 17, "gpu-avg": 16.235294117647058, "gpu-variance": 236.44117647058826, "gpu-high-values": [3, 34, 32, 28, 30, 37, 26, 35], "gpu-mem-avg": 3.5294117647058822, "gpu-mem-variance": 12.389705882352942, "gpu-mem-high-values": [7, 8]}}::::::::::::::
+nvidia_smi_namd_10.txt
+::::::::::::::
+{"": {"gpu-sum": 1, "gpu-mem-sum": 0, "count": 13, "gpu-avg": 0.07692307692307693, "gpu-variance": 0.07692307692307691, "gpu-high-values": [1], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "./namd2": {"gpu-sum": 312, "gpu-mem-sum": 59, "count": 19, "gpu-avg": 16.42105263157895, "gpu-variance": 319.14619883040933, "gpu-high-values": [3, 49, 24, 33, 28, 38, 37, 40, 31, 25], "gpu-mem-avg": 3.1052631578947367, "gpu-mem-variance": 12.321637426900583, "gpu-mem-high-values": [5, 4, 7, 8]}}::::::::::::::
+nvidia_smi_namd_11.txt
+::::::::::::::
+{"": {"gpu-sum": 6, "gpu-mem-sum": 1, "count": 12, "gpu-avg": 0.5, "gpu-variance": 3.0000000000000004, "gpu-high-values": [6], "gpu-mem-avg": 0.08333333333333333, "gpu-mem-variance": 0.08333333333333334, "gpu-mem-high-values": [1]}, "./namd2": {"gpu-sum": 265, "gpu-mem-sum": 60, "count": 16, "gpu-avg": 16.5625, "gpu-variance": 302.2625, "gpu-high-values": [3, 43, 33, 37, 38, 22, 35], "gpu-mem-avg": 3.75, "gpu-mem-variance": 16.999999999999996, "gpu-mem-high-values": [7, 8, 9, 10]}}::::::::::::::
+nvidia_smi_namd_12.txt
+::::::::::::::
+{"": {"gpu-sum": 0, "gpu-mem-sum": 0, "count": 8, "gpu-avg": 0.0, "gpu-variance": 0.0, "gpu-high-values": [], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "./namd2": {"gpu-sum": 314, "gpu-mem-sum": 66, "count": 17, "gpu-avg": 18.470588235294116, "gpu-variance": 360.139705882353, "gpu-high-values": [3, 32, 33, 36, 35, 46, 45, 41], "gpu-mem-avg": 3.8823529411764706, "gpu-mem-variance": 18.235294117647058, "gpu-mem-high-values": [6, 8, 7, 11, 10]}}::::::::::::::
+nvidia_smi_namd_13.txt
+::::::::::::::
+{"": {"gpu-sum": 0, "gpu-mem-sum": 0, "count": 9, "gpu-avg": 0.0, "gpu-variance": 0.0, "gpu-high-values": [], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "./namd2": {"gpu-sum": 334, "gpu-mem-sum": 68, "count": 18, "gpu-avg": 18.555555555555557, "gpu-variance": 280.7320261437908, "gpu-high-values": [3, 38, 22, 36, 29, 32, 37, 33, 34, 35], "gpu-mem-avg": 3.7777777777777777, "gpu-mem-variance": 13.006535947712415, "gpu-mem-high-values": [8, 7]}}::::::::::::::
+nvidia_smi_namd_14.txt
+::::::::::::::
+{"": {"gpu-sum": 10, "gpu-mem-sum": 2, "count": 11, "gpu-avg": 0.9090909090909091, "gpu-variance": 4.290909090909091, "gpu-high-values": [4, 6], "gpu-mem-avg": 0.18181818181818182, "gpu-mem-variance": 0.16363636363636364, "gpu-mem-high-values": [1]}, "./namd2": {"gpu-sum": 275, "gpu-mem-sum": 58, "count": 16, "gpu-avg": 17.1875, "gpu-variance": 267.49583333333334, "gpu-high-values": [3, 35, 31, 41, 38, 26, 34, 33], "gpu-mem-avg": 3.625, "gpu-mem-variance": 15.316666666666666, "gpu-mem-high-values": [5, 7, 10, 8]}}::::::::::::::
+nvidia_smi_namd_15.txt
+::::::::::::::
+{"": {"gpu-sum": 0, "gpu-mem-sum": 0, "count": 9, "gpu-avg": 0.0, "gpu-variance": 0.0, "gpu-high-values": [], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "./namd2": {"gpu-sum": 318, "gpu-mem-sum": 64, "count": 18, "gpu-avg": 17.666666666666668, "gpu-variance": 264.8235294117647, "gpu-high-values": [2, 36, 22, 31, 39, 30, 38, 24, 26, 35, 32], "gpu-mem-avg": 3.5555555555555554, "gpu-mem-variance": 12.1437908496732, "gpu-mem-high-values": [6, 4, 7, 10]}}::::::::::::::
+nvidia_smi_namd_1.txt
+::::::::::::::
+{"": {"gpu-sum": 4, "gpu-mem-sum": 1, "count": 26, "gpu-avg": 0.15384615384615385, "gpu-variance": 0.6153846153846154, "gpu-high-values": [4], "gpu-mem-avg": 0.038461538461538464, "gpu-mem-variance": 0.038461538461538464, "gpu-mem-high-values": [1]}, "./namd2": {"gpu-sum": 580, "gpu-mem-sum": 123, "count": 34, "gpu-avg": 17.058823529411764, "gpu-variance": 260.36007130124773, "gpu-high-values": [3, 34, 32, 28, 30, 37, 26, 35, 39, 40, 38, 29], "gpu-mem-avg": 3.6176470588235294, "gpu-mem-variance": 12.849376114081995, "gpu-mem-high-values": [7, 8, 9]}}::::::::::::::
+nvidia_smi_namd_2.txt
+::::::::::::::
+{"": {"gpu-sum": 10, "gpu-mem-sum": 2, "count": 11, "gpu-avg": 0.9090909090909091, "gpu-variance": 9.090909090909092, "gpu-high-values": [10], "gpu-mem-avg": 0.18181818181818182, "gpu-mem-variance": 0.36363636363636365, "gpu-mem-high-values": [2]}, "./namd2": {"gpu-sum": 283, "gpu-mem-sum": 57, "count": 18, "gpu-avg": 15.722222222222221, "gpu-variance": 261.859477124183, "gpu-high-values": [3, 27, 42, 29, 38], "gpu-mem-avg": 3.1666666666666665, "gpu-mem-variance": 12.617647058823529, "gpu-mem-high-values": [4, 5, 10, 8, 7]}}::::::::::::::
+nvidia_smi_namd_3.txt
+::::::::::::::
+{"": {"gpu-sum": 0, "gpu-mem-sum": 0, "count": 13, "gpu-avg": 0.0, "gpu-variance": 0.0, "gpu-high-values": [], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "./namd2": {"gpu-sum": 338, "gpu-mem-sum": 68, "count": 18, "gpu-avg": 18.77777777777778, "gpu-variance": 289.24183006535947, "gpu-high-values": [3, 30, 29, 36, 39, 31, 43], "gpu-mem-avg": 3.7777777777777777, "gpu-mem-variance": 14.065359477124183, "gpu-mem-high-values": [6, 8, 9, 7, 10]}}::::::::::::::
+nvidia_smi_namd_4.txt
+::::::::::::::
+{"": {"gpu-sum": 0, "gpu-mem-sum": 0, "count": 13, "gpu-avg": 0.0, "gpu-variance": 0.0, "gpu-high-values": [], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "./namd2": {"gpu-sum": 359, "gpu-mem-sum": 70, "count": 18, "gpu-avg": 19.944444444444443, "gpu-variance": 357.1143790849673, "gpu-high-values": [3, 51, 35, 29, 22, 34, 44, 33, 24, 37], "gpu-mem-avg": 3.888888888888889, "gpu-mem-variance": 14.457516339869281, "gpu-mem-high-values": [8, 7, 10, 9]}}::::::::::::::
+nvidia_smi_namd_5.txt
+::::::::::::::
+{"": {"gpu-sum": 8, "gpu-mem-sum": 2, "count": 14, "gpu-avg": 0.5714285714285714, "gpu-variance": 2.2637362637362637, "gpu-high-values": [5, 3], "gpu-mem-avg": 0.14285714285714285, "gpu-mem-variance": 0.13186813186813187, "gpu-mem-high-values": [1]}, "./namd2": {"gpu-sum": 244, "gpu-mem-sum": 57, "count": 16, "gpu-avg": 15.25, "gpu-variance": 262.3333333333333, "gpu-high-values": [4, 20, 35, 37, 41, 28, 32, 30], "gpu-mem-avg": 3.5625, "gpu-mem-variance": 16.2625, "gpu-mem-high-values": [4, 9, 10]}}::::::::::::::
+nvidia_smi_namd_6.txt
+::::::::::::::
+{"": {"gpu-sum": 0, "gpu-mem-sum": 0, "count": 13, "gpu-avg": 0.0, "gpu-variance": 0.0, "gpu-high-values": [], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "./namd2": {"gpu-sum": 319, "gpu-mem-sum": 63, "count": 17, "gpu-avg": 18.764705882352942, "gpu-variance": 249.06617647058815, "gpu-high-values": [3, 32, 31, 37, 30, 36, 21, 29, 27, 33], "gpu-mem-avg": 3.7058823529411766, "gpu-mem-variance": 12.095588235294116, "gpu-mem-high-values": [6, 8, 7]}}::::::::::::::
+nvidia_smi_namd_7.txt
+::::::::::::::
+{"": {"gpu-sum": 0, "gpu-mem-sum": 0, "count": 27, "gpu-avg": 0.0, "gpu-variance": 0.0, "gpu-high-values": [], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "./namd2": {"gpu-sum": 613, "gpu-mem-sum": 116, "count": 35, "gpu-avg": 17.514285714285716, "gpu-variance": 223.963025210084, "gpu-high-values": [3, 32, 31, 37, 30, 36, 21, 29, 27, 33, 23, 25, 28], "gpu-mem-avg": 3.3142857142857145, "gpu-mem-variance": 9.810084033613448, "gpu-mem-high-values": [6, 8, 7]}}::::::::::::::
+nvidia_smi_namd_8.txt
+::::::::::::::
+{"": {"gpu-sum": 48, "gpu-mem-sum": 10, "count": 15, "gpu-avg": 3.2, "gpu-variance": 82.88571428571429, "gpu-high-values": [33, 15], "gpu-mem-avg": 0.6666666666666666, "gpu-mem-variance": 3.6666666666666665, "gpu-mem-high-values": [7]}, "./namd2": {"gpu-sum": 319, "gpu-mem-sum": 62, "count": 18, "gpu-avg": 17.72222222222222, "gpu-variance": 409.0359477124183, "gpu-high-values": [3, 60, 41, 43, 27, 40, 38, 31], "gpu-mem-avg": 3.4444444444444446, "gpu-mem-variance": 16.1437908496732, "gpu-mem-high-values": [7, 10, 8]}}::::::::::::::
+nvidia_smi_namd_9.txt
+::::::::::::::
+{"": {"gpu-sum": 10, "gpu-mem-sum": 2, "count": 14, "gpu-avg": 0.7142857142857143, "gpu-variance": 3.4505494505494516, "gpu-high-values": [6, 4], "gpu-mem-avg": 0.14285714285714285, "gpu-mem-variance": 0.13186813186813187, "gpu-mem-high-values": [1]}, "./namd2": {"gpu-sum": 278, "gpu-mem-sum": 60, "count": 16, "gpu-avg": 17.375, "gpu-variance": 299.98333333333335, "gpu-high-values": [3, 33, 36, 41, 39, 24, 30, 34], "gpu-mem-avg": 3.75, "gpu-mem-variance": 16.999999999999996, "gpu-mem-high-values": [6, 8, 10, 9]}}::::::::::::::
+nvidia_smi_pytorch.txt
+::::::::::::::
+{"": {"gpu-sum": 61, "gpu-mem-sum": 11, "count": 883, "gpu-avg": 0.06908267270668177, "gpu-variance": 0.6562199058558875, "gpu-high-values": [7, 9, 15], "gpu-mem-avg": 0.01245753114382786, "gpu-mem-variance": 0.023654157774850235, "gpu-mem-high-values": [1, 2, 3]}, "python3": {"gpu-sum": 37521, "gpu-mem-sum": 16041, "count": 732, "gpu-avg": 51.25819672131148, "gpu-variance": 396.9742829270484, "gpu-high-values": [48, 51, 50, 60, 59, 73, 53, 54, 55, 71, 80, 81, 82, 61, 94, 77, 95, 62, 74, 83, 70, 69, 72, 88, 85, 89, 87, 90, 86, 63, 93, 78, 75, 91, 68, 97, 66, 58, 57], "gpu-mem-avg": 21.91393442622951, "gpu-mem-variance": 85.46864277544795, "gpu-mem-high-values": [25, 26, 31, 30, 35, 27, 28, 29, 40, 45, 44, 38, 43, 41, 39, 36, 37, 34, 33]}, "null": {"gpu-sum": 0, "gpu-mem-sum": 0, "count": 1, "gpu-avg": 0.0, "gpu-variance": 0, "gpu-high-values": [], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0, "gpu-mem-high-values": []}}::::::::::::::
+pytorch_benchmark_result.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+    Evaluating External Test Dependencies ..................................
+    Evaluating System Dependencies .........................................
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/pytorch-1.0.1
+
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1
+    System Test Configuration
+        1: CPU
+        2: gpu
+        3: Test All Options
+        ** Multiple items can be selected, delimit by a comma. **
+        Device:
+
+        1: 1
+        2: 16
+        3: 32
+        4: 64
+        5: 256
+        6: 512
+        7: Test All Options
+        ** Multiple items can be selected, delimit by a comma. **
+        Batch Size:
+
+        1: ResNet-50
+        2: ResNet-152
+        3: Efficientnet_v2_l
+        4: Test All Options
+        ** Multiple items can be selected, delimit by a comma. **
+        Model:
+
+System Information
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_gpu:344
+
+  PROCESSOR:              2 x Intel Xeon Silver 4210R @ 3.20GHz
+    Core Count:           20
+    Thread Count:         40
+    Extensions:           SSE 4.2
+                          + AVX512_VNNI
+                          + AVX512CD
+                          + AVX2
+                          + AVX
+                          + RDRAND
+                          + FSGSBASE
+    Cache Size:           27.5 MB
+    Microcode:            0x5003604
+    Core Family:          Cascade Lake
+    Scaling Driver:       intel_pstate powersave (EPP: balance_performance)
+
+  GRAPHICS:               ASPEED 15GB
+    Display Driver:       NVIDIA
+    Screen:               1024x768
+
+  MOTHERBOARD:            ASUS Z11PG-D24
+    BIOS Version:         6701
+    Chipset:              Intel Sky Lake-E DMI3 Registers
+    Network:              2 x Broadcom BCM57840 NetXtreme II 10 + 2 x Intel I350
+
+  MEMORY:                 2 x 8 GB DDR4-2400MT/s Samsung M393A1K43BB1-CTD
+
+  DISK:                   Apacer AS2280P4 240GB
+    File-System:          ext4
+    Mount Options:        errors=remount-ro relatime rw
+    Disk Scheduler:       NONE
+    Disk Details:         Block Size: 4096
+
+  OPERATING SYSTEM:       Ubuntu 22.04
+    Kernel:               6.5.0-28-generic (x86_64)
+    Desktop:              GNOME Shell 42.9
+    Display Server:       X Server 1.21.1.4
+    Compiler:             GCC 12.3.0 + CUDA 11.5
+    Security:             gather_data_sampling: Mitigation of Microcode
+                          + itlb_multihit: KVM: Mitigation of VMX disabled
+                          + l1tf: Not affected
+                          + mds: Not affected
+                          + meltdown: Not affected
+                          + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable
+                          + retbleed: Mitigation of Enhanced IBRS
+                          + spec_rstack_overflow: Not affected
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                          + spectre_v2: Mitigation of Enhanced / Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence
+                          + srbds: Not affected
+                          + tsx_async_abort: Mitigation of TSX disabled
+
+    Would you like to save these test results (Y/n):
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 1 - Model: ResNet-50]
+    Test 1 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      1 Minute
+    Estimated Time To Completion: 31 Minutes [20:38 WIB]
+        Started Run 1 @ 20:07:39
+        Started Run 2 @ 20:07:59
+        Started Run 3 @ 20:08:16
+
+    Device: gpu - Batch Size: 1 - Model: ResNet-50:
+        123.40158043282
+        147.9615600421
+        147.12377085602
+
+    Average: 139.50 batches/sec
+    Minimum: 99.97
+    Maximum: 150.15
+    Deviation: 10.00%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 1 - Model: ResNet-152]
+    Test 2 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 30 Minutes [20:38 WIB]
+        Started Run 1 @ 20:08:39
+        Started Run 2 @ 20:09:09
+        Started Run 3 @ 20:09:44
+
+    Device: gpu - Batch Size: 1 - Model: ResNet-152:
+        53.703444045416
+        44.582093609435
+        45.478869050279
+
+    Average: 47.92 batches/sec
+    Minimum: 39.54
+    Maximum: 54.94
+    Deviation: 10.49%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 16 - Model: ResNet-50]
+    Test 3 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 29 Minutes [20:38 WIB]
+        Started Run 1 @ 20:10:25
+        Started Run 2 @ 20:10:52
+        Started Run 3 @ 20:11:18
+
+    Device: gpu - Batch Size: 16 - Model: ResNet-50:
+        115.82393419459
+        129.5512899707
+        129.4377881421
+
+    Average: 124.94 batches/sec
+    Minimum: 87.02
+    Maximum: 135.97
+    Deviation: 6.32%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 64 - Model: ResNet-50]
+    Test 4 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 28 Minutes [20:39 WIB]
+        Started Run 1 @ 20:11:50
+        Started Run 2 @ 20:12:15
+        Started Run 3 @ 20:12:41
+
+    Device: gpu - Batch Size: 64 - Model: ResNet-50:
+        129.85645222645
+        129.63306599296
+        116.136204007
+
+    Average: 125.21 batches/sec
+    Minimum: 92.49
+    Maximum: 137.56
+    Deviation: 6.28%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 16 - Model: ResNet-152]
+    Test 5 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 27 Minutes [20:39 WIB]
+        Started Run 1 @ 20:13:16
+        Started Run 2 @ 20:14:17
+        Started Run 3 @ 20:15:13
+
+    Device: gpu - Batch Size: 16 - Model: ResNet-152:
+        42.156536842145
+        49.530017920028
+        49.369336863975
+
+    Average: 47.02 batches/sec
+    Minimum: 34.93
+    Maximum: 50.68
+    Deviation: 8.96%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 512 - Model: ResNet-50]
+    Test 6 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 24 Minutes [20:39 WIB]
+        Started Run 1 @ 20:16:16
+        Started Run 2 @ 20:16:41
+        Started Run 3 @ 20:17:09
+
+    Device: gpu - Batch Size: 512 - Model: ResNet-50:
+        129.37367402347
+        115.89935102607
+        129.08620793439
+
+    Average: 124.79 batches/sec
+    Minimum: 89.62
+    Maximum: 137.13
+    Deviation: 6.17%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 64 - Model: ResNet-152]
+    Test 7 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 23 Minutes [20:40 WIB]
+        Started Run 1 @ 20:17:41
+        Started Run 2 @ 20:18:41
+        Started Run 3 @ 20:19:34
+
+    Device: gpu - Batch Size: 64 - Model: ResNet-152:
+        42.479983557196
+        49.920502419014
+        42.830351413621
+
+    Average: 45.08 batches/sec
+    Minimum: 37.73
+    Maximum: 50.76
+    Deviation: 9.31%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 512 - Model: ResNet-152]
+    Test 8 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 20 Minutes [20:40 WIB]
+        Started Run 1 @ 20:20:42
+        Started Run 2 @ 20:21:35
+        Started Run 3 @ 20:22:28
+
+    Device: gpu - Batch Size: 512 - Model: ResNet-152:
+        49.989887041698
+        49.538309061401
+        42.542622774091
+
+    Average: 47.36 batches/sec
+    Minimum: 38.56
+    Maximum: 50.72
+    Deviation: 8.82%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 1 - Model: Efficientnet_v2_l]
+    Test 9 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 18 Minutes [20:40 WIB]
+        Started Run 1 @ 20:23:35
+        Started Run 2 @ 20:24:27
+        Started Run 3 @ 20:25:22
+
+    Device: gpu - Batch Size: 1 - Model: Efficientnet_v2_l:
+        26.96876457736
+        25.264914023018
+        22.097111707079
+
+    Average: 24.78 batches/sec
+    Minimum: 18.23
+    Maximum: 27.69
+    Deviation: 9.98%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 16 - Model: Efficientnet_v2_l]
+    Test 10 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      5 Minutes
+    Estimated Time To Completion: 15 Minutes [20:40 WIB]
+        Started Run 1 @ 20:26:29
+        Started Run 2 @ 20:28:07
+        Started Run 3 @ 20:29:44
+
+    Device: gpu - Batch Size: 16 - Model: Efficientnet_v2_l:
+        24.87498258921
+        24.825291484377
+        24.815525020347
+
+    Average: 24.84 batches/sec
+    Minimum: 22.43
+    Maximum: 25.32
+    Deviation: 0.13%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 64 - Model: Efficientnet_v2_l]
+    Test 11 of 12
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      5 Minutes
+    Estimated Time To Completion: 10 Minutes [20:41 WIB]
+        Started Run 1 @ 20:31:29
+        Started Run 2 @ 20:33:06
+        Started Run 3 @ 20:34:46
+
+    Device: gpu - Batch Size: 64 - Model: Efficientnet_v2_l:
+        24.998165713464
+        25.055807397526
+        24.499495802791
+
+    Average: 24.85 batches/sec
+    Minimum: 21.72
+    Maximum: 25.53
+    Deviation: 1.23%
+
+PyTorch 2.1:
+    pts/pytorch-1.0.1 [Device: gpu - Batch Size: 512 - Model: Efficientnet_v2_l]
+    Test 12 of 12
+    Estimated Trial Run Count:    3
+    Estimated Time To Completion: 5 Minutes [20:41 WIB]
+        Started Run 1 @ 20:36:32
+        Started Run 2 @ 20:38:10
+        Started Run 3 @ 20:39:47
+
+    Device: gpu - Batch Size: 512 - Model: Efficientnet_v2_l:
+        24.776813332864
+        24.821101977465
+        24.915499551802
+
+    Average: 24.84 batches/sec
+    Minimum: 21.88
+    Maximum: 25.34
+    Deviation: 0.29%::::::::::::::
+pytorch_install_result.txt
+::::::::::::::
+
+
+    [8192] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in phodevi_parser:35
+    Evaluating External Test Dependencies ..................................
+    Evaluating System Dependencies .........................................
+
+Phoronix Test Suite v10.8.4
+
+    Installed:     pts/pytorch-1.0.1

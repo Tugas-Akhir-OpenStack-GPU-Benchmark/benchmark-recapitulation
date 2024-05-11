@@ -9,41 +9,41 @@ glmark2_benchmark_result_1366x768.txt
     GL_RENDERER:   Tesla T4/PCIe/SSE2
     GL_VERSION:    4.6.0 NVIDIA 535.161.08
 =======================================================
-[build] use-vbo=false: FPS: 35 FrameTime: 28.571 ms
-[build] use-vbo=true: FPS: 35 FrameTime: 28.571 ms
-[texture] texture-filter=nearest: FPS: 35 FrameTime: 28.571 ms
-[texture] texture-filter=linear: FPS: 35 FrameTime: 28.571 ms
-[texture] texture-filter=mipmap: FPS: 35 FrameTime: 28.571 ms
-[shading] shading=gouraud: FPS: 35 FrameTime: 28.571 ms
-[shading] shading=blinn-phong-inf: FPS: 35 FrameTime: 28.571 ms
-[shading] shading=phong: FPS: 35 FrameTime: 28.571 ms
-[shading] shading=cel: FPS: 35 FrameTime: 28.571 ms
-[bump] bump-render=high-poly: FPS: 35 FrameTime: 28.571 ms
-[bump] bump-render=normals: FPS: 35 FrameTime: 28.571 ms
-[bump] bump-render=height: FPS: 35 FrameTime: 28.571 ms
-[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 35 FrameTime: 28.571 ms
-[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 35 FrameTime: 28.571 ms
-[pulsar] light=false:quads=5:texture=false: FPS: 35 FrameTime: 28.571 ms
-[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 35 FrameTime: 28.571 ms
-[desktop] effect=shadow:windows=4: FPS: 35 FrameTime: 28.571 ms
-[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 35 FrameTime: 28.571 ms
-[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 35 FrameTime: 28.571 ms
-[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 35 FrameTime: 28.571 ms
-[ideas] speed=duration: FPS: 35 FrameTime: 28.571 ms
-[jellyfish] <default>: FPS: 35 FrameTime: 28.571 ms
-[terrain] <default>: FPS: 30 FrameTime: 33.333 ms
-[shadow] <default>: FPS: 35 FrameTime: 28.571 ms
-[refract] <default>: FPS: 35 FrameTime: 28.571 ms
-[conditionals] fragment-steps=0:vertex-steps=0: FPS: 35 FrameTime: 28.571 ms
-[conditionals] fragment-steps=5:vertex-steps=0: FPS: 35 FrameTime: 28.571 ms
-[conditionals] fragment-steps=0:vertex-steps=5: FPS: 35 FrameTime: 28.571 ms
-[function] fragment-complexity=low:fragment-steps=5: FPS: 35 FrameTime: 28.571 ms
-[function] fragment-complexity=medium:fragment-steps=5: FPS: 35 FrameTime: 28.571 ms
-[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 35 FrameTime: 28.571 ms
-[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 35 FrameTime: 28.571 ms
-[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 35 FrameTime: 28.571 ms
+[build] use-vbo=false: FPS: 585 FrameTime: 1.709 ms
+[build] use-vbo=true: FPS: 587 FrameTime: 1.704 ms
+[texture] texture-filter=nearest: FPS: 618 FrameTime: 1.618 ms
+[texture] texture-filter=linear: FPS: 585 FrameTime: 1.709 ms
+[texture] texture-filter=mipmap: FPS: 610 FrameTime: 1.639 ms
+[shading] shading=gouraud: FPS: 540 FrameTime: 1.852 ms
+[shading] shading=blinn-phong-inf: FPS: 522 FrameTime: 1.916 ms
+[shading] shading=phong: FPS: 506 FrameTime: 1.976 ms
+[shading] shading=cel: FPS: 502 FrameTime: 1.992 ms
+[bump] bump-render=high-poly: FPS: 524 FrameTime: 1.908 ms
+[bump] bump-render=normals: FPS: 513 FrameTime: 1.949 ms
+[bump] bump-render=height: FPS: 513 FrameTime: 1.949 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 534 FrameTime: 1.873 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 488 FrameTime: 2.049 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 538 FrameTime: 1.859 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 442 FrameTime: 2.262 ms
+[desktop] effect=shadow:windows=4: FPS: 508 FrameTime: 1.969 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 324 FrameTime: 3.086 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 302 FrameTime: 3.311 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 343 FrameTime: 2.915 ms
+[ideas] speed=duration: FPS: 485 FrameTime: 2.062 ms
+[jellyfish] <default>: FPS: 511 FrameTime: 1.957 ms
+[terrain] <default>: FPS: 353 FrameTime: 2.833 ms
+[shadow] <default>: FPS: 540 FrameTime: 1.852 ms
+[refract] <default>: FPS: 478 FrameTime: 2.092 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 551 FrameTime: 1.815 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 499 FrameTime: 2.004 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 504 FrameTime: 1.984 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 528 FrameTime: 1.894 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 513 FrameTime: 1.949 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 510 FrameTime: 1.961 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 526 FrameTime: 1.901 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 567 FrameTime: 1.764 ms
 =======================================================
-                                  glmark2 Score: 34
+                                  glmark2 Score: 504
 =======================================================::::::::::::::
 glmark2_benchmark_result_1920x1080.txt
 ::::::::::::::
@@ -55,41 +55,41 @@ glmark2_benchmark_result_1920x1080.txt
     GL_RENDERER:   Tesla T4/PCIe/SSE2
     GL_VERSION:    4.6.0 NVIDIA 535.161.08
 =======================================================
-[build] use-vbo=false: FPS: 21 FrameTime: 47.619 ms
-[build] use-vbo=true: FPS: 21 FrameTime: 47.619 ms
-[texture] texture-filter=nearest: FPS: 20 FrameTime: 50.000 ms
-[texture] texture-filter=linear: FPS: 20 FrameTime: 50.000 ms
-[texture] texture-filter=mipmap: FPS: 20 FrameTime: 50.000 ms
-[shading] shading=gouraud: FPS: 20 FrameTime: 50.000 ms
-[shading] shading=blinn-phong-inf: FPS: 20 FrameTime: 50.000 ms
-[shading] shading=phong: FPS: 20 FrameTime: 50.000 ms
-[shading] shading=cel: FPS: 20 FrameTime: 50.000 ms
-[bump] bump-render=high-poly: FPS: 20 FrameTime: 50.000 ms
-[bump] bump-render=normals: FPS: 20 FrameTime: 50.000 ms
-[bump] bump-render=height: FPS: 20 FrameTime: 50.000 ms
-[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 20 FrameTime: 50.000 ms
-[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 20 FrameTime: 50.000 ms
-[pulsar] light=false:quads=5:texture=false: FPS: 20 FrameTime: 50.000 ms
-[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 20 FrameTime: 50.000 ms
-[desktop] effect=shadow:windows=4: FPS: 20 FrameTime: 50.000 ms
-[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 20 FrameTime: 50.000 ms
-[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 20 FrameTime: 50.000 ms
-[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 20 FrameTime: 50.000 ms
-[ideas] speed=duration: FPS: 20 FrameTime: 50.000 ms
-[jellyfish] <default>: FPS: 20 FrameTime: 50.000 ms
-[terrain] <default>: FPS: 15 FrameTime: 66.667 ms
-[shadow] <default>: FPS: 20 FrameTime: 50.000 ms
-[refract] <default>: FPS: 18 FrameTime: 55.556 ms
-[conditionals] fragment-steps=0:vertex-steps=0: FPS: 20 FrameTime: 50.000 ms
-[conditionals] fragment-steps=5:vertex-steps=0: FPS: 20 FrameTime: 50.000 ms
-[conditionals] fragment-steps=0:vertex-steps=5: FPS: 20 FrameTime: 50.000 ms
-[function] fragment-complexity=low:fragment-steps=5: FPS: 20 FrameTime: 50.000 ms
-[function] fragment-complexity=medium:fragment-steps=5: FPS: 20 FrameTime: 50.000 ms
-[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 20 FrameTime: 50.000 ms
-[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 20 FrameTime: 50.000 ms
-[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 20 FrameTime: 50.000 ms
+[build] use-vbo=false: FPS: 258 FrameTime: 3.876 ms
+[build] use-vbo=true: FPS: 252 FrameTime: 3.968 ms
+[texture] texture-filter=nearest: FPS: 266 FrameTime: 3.759 ms
+[texture] texture-filter=linear: FPS: 266 FrameTime: 3.759 ms
+[texture] texture-filter=mipmap: FPS: 264 FrameTime: 3.788 ms
+[shading] shading=gouraud: FPS: 259 FrameTime: 3.861 ms
+[shading] shading=blinn-phong-inf: FPS: 265 FrameTime: 3.774 ms
+[shading] shading=phong: FPS: 265 FrameTime: 3.774 ms
+[shading] shading=cel: FPS: 262 FrameTime: 3.817 ms
+[bump] bump-render=high-poly: FPS: 263 FrameTime: 3.802 ms
+[bump] bump-render=normals: FPS: 255 FrameTime: 3.922 ms
+[bump] bump-render=height: FPS: 266 FrameTime: 3.759 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 262 FrameTime: 3.817 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 256 FrameTime: 3.906 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 257 FrameTime: 3.891 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 236 FrameTime: 4.237 ms
+[desktop] effect=shadow:windows=4: FPS: 250 FrameTime: 4.000 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 188 FrameTime: 5.319 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 179 FrameTime: 5.587 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 206 FrameTime: 4.854 ms
+[ideas] speed=duration: FPS: 249 FrameTime: 4.016 ms
+[jellyfish] <default>: FPS: 234 FrameTime: 4.274 ms
+[terrain] <default>: FPS: 173 FrameTime: 5.780 ms
+[shadow] <default>: FPS: 245 FrameTime: 4.082 ms
+[refract] <default>: FPS: 226 FrameTime: 4.425 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 255 FrameTime: 3.922 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 225 FrameTime: 4.444 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 227 FrameTime: 4.405 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 246 FrameTime: 4.065 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 239 FrameTime: 4.184 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 227 FrameTime: 4.405 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 238 FrameTime: 4.202 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 246 FrameTime: 4.065 ms
 =======================================================
-                                  glmark2 Score: 19
+                                  glmark2 Score: 242
 =======================================================::::::::::::::
 glmark2_benchmark_result_192x108.txt
 ::::::::::::::
@@ -101,41 +101,41 @@ glmark2_benchmark_result_192x108.txt
     GL_RENDERER:   Tesla T4/PCIe/SSE2
     GL_VERSION:    4.6.0 NVIDIA 535.161.08
 =======================================================
-[build] use-vbo=false: FPS: 2127 FrameTime: 0.470 ms
-[build] use-vbo=true: FPS: 3030 FrameTime: 0.330 ms
-[texture] texture-filter=nearest: FPS: 3030 FrameTime: 0.330 ms
-[texture] texture-filter=linear: FPS: 3020 FrameTime: 0.331 ms
-[texture] texture-filter=mipmap: FPS: 2098 FrameTime: 0.477 ms
-[shading] shading=gouraud: FPS: 2888 FrameTime: 0.346 ms
-[shading] shading=blinn-phong-inf: FPS: 2892 FrameTime: 0.346 ms
-[shading] shading=phong: FPS: 2852 FrameTime: 0.351 ms
-[shading] shading=cel: FPS: 2855 FrameTime: 0.350 ms
-[bump] bump-render=high-poly: FPS: 2575 FrameTime: 0.388 ms
-[bump] bump-render=normals: FPS: 3035 FrameTime: 0.329 ms
-[bump] bump-render=height: FPS: 3011 FrameTime: 0.332 ms
-[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 3029 FrameTime: 0.330 ms
-[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 2992 FrameTime: 0.334 ms
-[pulsar] light=false:quads=5:texture=false: FPS: 3032 FrameTime: 0.330 ms
-[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 1723 FrameTime: 0.580 ms
-[desktop] effect=shadow:windows=4: FPS: 2265 FrameTime: 0.442 ms
-[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 658 FrameTime: 1.520 ms
-[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 710 FrameTime: 1.408 ms
-[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 716 FrameTime: 1.397 ms
-[ideas] speed=duration: FPS: 2393 FrameTime: 0.418 ms
-[jellyfish] <default>: FPS: 2812 FrameTime: 0.356 ms
-[terrain] <default>: FPS: 1081 FrameTime: 0.925 ms
-[shadow] <default>: FPS: 3107 FrameTime: 0.322 ms
-[refract] <default>: FPS: 2212 FrameTime: 0.452 ms
-[conditionals] fragment-steps=0:vertex-steps=0: FPS: 3359 FrameTime: 0.298 ms
-[conditionals] fragment-steps=5:vertex-steps=0: FPS: 3133 FrameTime: 0.319 ms
-[conditionals] fragment-steps=0:vertex-steps=5: FPS: 2990 FrameTime: 0.334 ms
-[function] fragment-complexity=low:fragment-steps=5: FPS: 2991 FrameTime: 0.334 ms
-[function] fragment-complexity=medium:fragment-steps=5: FPS: 2987 FrameTime: 0.335 ms
-[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 2982 FrameTime: 0.335 ms
-[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 2985 FrameTime: 0.335 ms
-[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 2981 FrameTime: 0.335 ms
+[build] use-vbo=false: FPS: 3858 FrameTime: 0.259 ms
+[build] use-vbo=true: FPS: 13915 FrameTime: 0.072 ms
+[texture] texture-filter=nearest: FPS: 14232 FrameTime: 0.070 ms
+[texture] texture-filter=linear: FPS: 14064 FrameTime: 0.071 ms
+[texture] texture-filter=mipmap: FPS: 14103 FrameTime: 0.071 ms
+[shading] shading=gouraud: FPS: 13703 FrameTime: 0.073 ms
+[shading] shading=blinn-phong-inf: FPS: 13751 FrameTime: 0.073 ms
+[shading] shading=phong: FPS: 13607 FrameTime: 0.073 ms
+[shading] shading=cel: FPS: 13570 FrameTime: 0.074 ms
+[bump] bump-render=high-poly: FPS: 12444 FrameTime: 0.080 ms
+[bump] bump-render=normals: FPS: 14279 FrameTime: 0.070 ms
+[bump] bump-render=height: FPS: 14159 FrameTime: 0.071 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 14431 FrameTime: 0.069 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 14252 FrameTime: 0.070 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 13562 FrameTime: 0.074 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 4340 FrameTime: 0.230 ms
+[desktop] effect=shadow:windows=4: FPS: 5975 FrameTime: 0.167 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 948 FrameTime: 1.055 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 837 FrameTime: 1.195 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 862 FrameTime: 1.160 ms
+[ideas] speed=duration: FPS: 5835 FrameTime: 0.171 ms
+[jellyfish] <default>: FPS: 11595 FrameTime: 0.086 ms
+[terrain] <default>: FPS: 1572 FrameTime: 0.636 ms
+[shadow] <default>: FPS: 9503 FrameTime: 0.105 ms
+[refract] <default>: FPS: 6515 FrameTime: 0.153 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 14428 FrameTime: 0.069 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 14313 FrameTime: 0.070 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 14326 FrameTime: 0.070 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 14307 FrameTime: 0.070 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 14340 FrameTime: 0.070 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 14305 FrameTime: 0.070 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 14343 FrameTime: 0.070 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 14322 FrameTime: 0.070 ms
 =======================================================
-                                  glmark2 Score: 2562
+                                  glmark2 Score: 10927
 =======================================================::::::::::::::
 glmark2_benchmark_result_360x800.txt
 ::::::::::::::
@@ -147,41 +147,41 @@ glmark2_benchmark_result_360x800.txt
     GL_RENDERER:   Tesla T4/PCIe/SSE2
     GL_VERSION:    4.6.0 NVIDIA 535.161.08
 =======================================================
-[build] use-vbo=false: FPS: 129 FrameTime: 7.752 ms
-[build] use-vbo=true: FPS: 128 FrameTime: 7.812 ms
-[texture] texture-filter=nearest: FPS: 129 FrameTime: 7.752 ms
-[texture] texture-filter=linear: FPS: 128 FrameTime: 7.812 ms
-[texture] texture-filter=mipmap: FPS: 128 FrameTime: 7.812 ms
-[shading] shading=gouraud: FPS: 128 FrameTime: 7.812 ms
-[shading] shading=blinn-phong-inf: FPS: 128 FrameTime: 7.812 ms
-[shading] shading=phong: FPS: 129 FrameTime: 7.752 ms
-[shading] shading=cel: FPS: 128 FrameTime: 7.812 ms
-[bump] bump-render=high-poly: FPS: 128 FrameTime: 7.812 ms
-[bump] bump-render=normals: FPS: 128 FrameTime: 7.812 ms
-[bump] bump-render=height: FPS: 128 FrameTime: 7.812 ms
-[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 128 FrameTime: 7.812 ms
-[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 128 FrameTime: 7.812 ms
-[pulsar] light=false:quads=5:texture=false: FPS: 128 FrameTime: 7.812 ms
-[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 128 FrameTime: 7.812 ms
-[desktop] effect=shadow:windows=4: FPS: 128 FrameTime: 7.812 ms
-[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 131 FrameTime: 7.634 ms
-[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 118 FrameTime: 8.475 ms
-[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 131 FrameTime: 7.634 ms
-[ideas] speed=duration: FPS: 127 FrameTime: 7.874 ms
-[jellyfish] <default>: FPS: 128 FrameTime: 7.812 ms
-[terrain] <default>: FPS: 109 FrameTime: 9.174 ms
-[shadow] <default>: FPS: 126 FrameTime: 7.937 ms
-[refract] <default>: FPS: 118 FrameTime: 8.475 ms
-[conditionals] fragment-steps=0:vertex-steps=0: FPS: 126 FrameTime: 7.937 ms
-[conditionals] fragment-steps=5:vertex-steps=0: FPS: 128 FrameTime: 7.812 ms
-[conditionals] fragment-steps=0:vertex-steps=5: FPS: 128 FrameTime: 7.812 ms
-[function] fragment-complexity=low:fragment-steps=5: FPS: 128 FrameTime: 7.812 ms
-[function] fragment-complexity=medium:fragment-steps=5: FPS: 128 FrameTime: 7.812 ms
-[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 128 FrameTime: 7.812 ms
-[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 128 FrameTime: 7.812 ms
-[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 128 FrameTime: 7.812 ms
+[build] use-vbo=false: FPS: 1586 FrameTime: 0.631 ms
+[build] use-vbo=true: FPS: 2097 FrameTime: 0.477 ms
+[texture] texture-filter=nearest: FPS: 2162 FrameTime: 0.463 ms
+[texture] texture-filter=linear: FPS: 2166 FrameTime: 0.462 ms
+[texture] texture-filter=mipmap: FPS: 2163 FrameTime: 0.462 ms
+[shading] shading=gouraud: FPS: 2110 FrameTime: 0.474 ms
+[shading] shading=blinn-phong-inf: FPS: 2108 FrameTime: 0.474 ms
+[shading] shading=phong: FPS: 2132 FrameTime: 0.469 ms
+[shading] shading=cel: FPS: 2096 FrameTime: 0.477 ms
+[bump] bump-render=high-poly: FPS: 2070 FrameTime: 0.483 ms
+[bump] bump-render=normals: FPS: 2192 FrameTime: 0.456 ms
+[bump] bump-render=height: FPS: 2203 FrameTime: 0.454 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 2190 FrameTime: 0.457 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 2070 FrameTime: 0.483 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 2182 FrameTime: 0.458 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 1474 FrameTime: 0.678 ms
+[desktop] effect=shadow:windows=4: FPS: 1726 FrameTime: 0.579 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 581 FrameTime: 1.721 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 524 FrameTime: 1.908 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 686 FrameTime: 1.458 ms
+[ideas] speed=duration: FPS: 1670 FrameTime: 0.599 ms
+[jellyfish] <default>: FPS: 2013 FrameTime: 0.497 ms
+[terrain] <default>: FPS: 830 FrameTime: 1.205 ms
+[shadow] <default>: FPS: 2056 FrameTime: 0.486 ms
+[refract] <default>: FPS: 1670 FrameTime: 0.599 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 2320 FrameTime: 0.431 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 2272 FrameTime: 0.440 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 2196 FrameTime: 0.455 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 2205 FrameTime: 0.454 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 2195 FrameTime: 0.456 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 2264 FrameTime: 0.442 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 2203 FrameTime: 0.454 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 2234 FrameTime: 0.448 ms
 =======================================================
-                                  glmark2 Score: 126
+                                  glmark2 Score: 1898
 =======================================================::::::::::::::
 namd_benchmark_result_0.txt
 ::::::::::::::
@@ -249,22 +249,22 @@ NAMD CUDA 2.14:
     pts/namd-cuda-1.1.1
     Test 1 of 1
     Estimated Trial Run Count:    2
-    Estimated Time To Completion: 2 Minutes [06:37 UTC]
-        Started Run 1 @ 06:36:01
-        Started Run 2 @ 06:37:06
+    Estimated Time To Completion: 2 Minutes [16:54 UTC]
+        Started Run 1 @ 16:53:02
+        Started Run 2 @ 16:54:09
 
     ATPase Simulation - 327,506 Atoms:
-        0.230606
-        0.201978
+        0.246305
+        0.271273
 
-    Average: 0.21629 days/ns
+    Average: 0.25879 days/ns
     Samples: 2
 
     Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
-    [                                                   |----------*--*---*#*#*]
-                                     This Result (31st Percentile): 0.21629 ^
+    [                                                   |----------*--*--*#*!#*]
+                                    This Result (22nd Percentile): 0.25879 ^
                                                   Zotac  RTX 4070 Ti: 0.08315 ^
-                                                         ADL GT2: 0.33937 ^
+                                             Gigabyte  RTX 3070: 0.35359 ^
                                                 Quadro P2000: 0.54606 ^
                                              eVGA  GTX 950: 0.6932 ^::::::::::::::
 namd_benchmark_result_1.txt
@@ -333,20 +333,20 @@ NAMD CUDA 2.14:
     pts/namd-cuda-1.1.1
     Test 1 of 1
     Estimated Trial Run Count:    2
-    Estimated Time To Completion: 2 Minutes [06:39 UTC]
-        Started Run 1 @ 06:37:41
-        Started Run 2 @ 06:38:07
+    Estimated Time To Completion: 2 Minutes [16:56 UTC]
+        Started Run 1 @ 16:54:48
+        Started Run 2 @ 16:55:18
 
     ATPase Simulation - 327,506 Atoms:
-        0.216582
-        0.270204
+        0.315564
+        0.267736
 
-    Average: 0.24339 days/ns
+    Average: 0.29165 days/ns
     Samples: 2
 
     Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
     [                                                   |----------*--*--*#*!#*]
-                                    This Result (23rd Percentile): 0.24339 ^
+                                    This Result (19th Percentile): 0.29165 ^
                                                   Zotac  RTX 4070 Ti: 0.08315 ^
                                              Gigabyte  RTX 3070: 0.35359 ^
                                                 Quadro P2000: 0.54606 ^
@@ -417,20 +417,20 @@ NAMD CUDA 2.14:
     pts/namd-cuda-1.1.1
     Test 1 of 1
     Estimated Trial Run Count:    2
-    Estimated Time To Completion: 1 Minute [06:47 UTC]
-        Started Run 1 @ 06:47:04
-        Started Run 2 @ 06:47:31
+    Estimated Time To Completion: 1 Minute [17:05 UTC]
+        Started Run 1 @ 17:04:50
+        Started Run 2 @ 17:05:18
 
     ATPase Simulation - 327,506 Atoms:
-        0.23351
-        0.270541
+        0.263184
+        0.267576
 
-    Average: 0.25203 days/ns
+    Average: 0.26538 days/ns
     Samples: 2
 
     Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
     [                                                   |----------*--*--*#*!#*]
-                                    This Result (23rd Percentile): 0.25203 ^
+                                    This Result (21st Percentile): 0.26538 ^
                                                   Zotac  RTX 4070 Ti: 0.08315 ^
                                              Gigabyte  RTX 3070: 0.35359 ^
                                                 Quadro P2000: 0.54606 ^
@@ -501,22 +501,22 @@ NAMD CUDA 2.14:
     pts/namd-cuda-1.1.1
     Test 1 of 1
     Estimated Trial Run Count:    2
-    Estimated Time To Completion: 1 Minute [06:48 UTC]
-        Started Run 1 @ 06:48:07
-        Started Run 2 @ 06:48:33
+    Estimated Time To Completion: 1 Minute [17:06 UTC]
+        Started Run 1 @ 17:05:54
+        Started Run 2 @ 17:06:22
 
     ATPase Simulation - 327,506 Atoms:
-        0.228191
-        0.231742
+        0.278321
+        0.279984
 
-    Average: 0.22997 days/ns
+    Average: 0.27915 days/ns
     Samples: 2
 
     Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
-    [                                                   |----------*--*---*#*#*]
-                                     This Result (27th Percentile): 0.22997 ^
+    [                                                   |----------*--*--*#*!#*]
+                                    This Result (21st Percentile): 0.27915 ^
                                                   Zotac  RTX 4070 Ti: 0.08315 ^
-                                                         ADL GT2: 0.33937 ^
+                                             Gigabyte  RTX 3070: 0.35359 ^
                                                 Quadro P2000: 0.54606 ^
                                              eVGA  GTX 950: 0.6932 ^::::::::::::::
 namd_benchmark_result_12.txt
@@ -585,22 +585,22 @@ NAMD CUDA 2.14:
     pts/namd-cuda-1.1.1
     Test 1 of 1
     Estimated Trial Run Count:    2
-    Estimated Time To Completion: 1 Minute [06:49 UTC]
-        Started Run 1 @ 06:49:09
-        Started Run 2 @ 06:49:37
+    Estimated Time To Completion: 1 Minute [17:07 UTC]
+        Started Run 1 @ 17:06:57
+        Started Run 2 @ 17:07:27
 
     ATPase Simulation - 327,506 Atoms:
-        0.249044
-        0.229442
+        0.315823
+        0.328093
 
-    Average: 0.23924 days/ns
+    Average: 0.32196 days/ns
     Samples: 2
 
     Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
     [                                                   |----------*--*---*#*#*]
-                                     This Result (25th Percentile): 0.23924 ^
+                                   This Result (17th Percentile): 0.32196 ^
                                                   Zotac  RTX 4070 Ti: 0.08315 ^
-                                                         ADL GT2: 0.33937 ^
+                                                          GTX 1080: 0.19607 ^
                                                 Quadro P2000: 0.54606 ^
                                              eVGA  GTX 950: 0.6932 ^::::::::::::::
 namd_benchmark_result_13.txt
@@ -669,20 +669,20 @@ NAMD CUDA 2.14:
     pts/namd-cuda-1.1.1
     Test 1 of 1
     Estimated Trial Run Count:    2
-    Estimated Time To Completion: 1 Minute [06:51 UTC]
-        Started Run 1 @ 06:50:12
-        Started Run 2 @ 06:50:38
+    Estimated Time To Completion: 1 Minute [17:08 UTC]
+        Started Run 1 @ 17:08:06
+        Started Run 2 @ 17:08:35
 
     ATPase Simulation - 327,506 Atoms:
-        0.212645
-        0.211025
+        0.216761
+        0.239979
 
-    Average: 0.21184 days/ns
+    Average: 0.22837 days/ns
     Samples: 2
 
     Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
     [                                                   |----------*--*---*#*#*]
-                                     This Result (31st Percentile): 0.21184 ^
+                                     This Result (27th Percentile): 0.22837 ^
                                                   Zotac  RTX 4070 Ti: 0.08315 ^
                                                          ADL GT2: 0.33937 ^
                                                 Quadro P2000: 0.54606 ^
@@ -753,20 +753,20 @@ NAMD CUDA 2.14:
     pts/namd-cuda-1.1.1
     Test 1 of 1
     Estimated Trial Run Count:    2
-    Estimated Time To Completion: 1 Minute [06:52 UTC]
-        Started Run 1 @ 06:51:14
-        Started Run 2 @ 06:51:43
+    Estimated Time To Completion: 1 Minute [17:10 UTC]
+        Started Run 1 @ 17:09:09
+        Started Run 2 @ 17:09:37
 
     ATPase Simulation - 327,506 Atoms:
-        0.295506
-        0.235164
+        0.219179
+        0.345986
 
-    Average: 0.26534 days/ns
+    Average: 0.28258 days/ns
     Samples: 2
 
     Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
     [                                                   |----------*--*--*#*!#*]
-                                    This Result (21st Percentile): 0.26534 ^
+                                    This Result (20th Percentile): 0.28258 ^
                                                   Zotac  RTX 4070 Ti: 0.08315 ^
                                              Gigabyte  RTX 3070: 0.35359 ^
                                                 Quadro P2000: 0.54606 ^
@@ -837,22 +837,22 @@ NAMD CUDA 2.14:
     pts/namd-cuda-1.1.1
     Test 1 of 1
     Estimated Trial Run Count:    2
-    Estimated Time To Completion: 1 Minute [06:53 UTC]
-        Started Run 1 @ 06:52:17
-        Started Run 2 @ 06:52:45
+    Estimated Time To Completion: 1 Minute [17:11 UTC]
+        Started Run 1 @ 17:10:17
+        Started Run 2 @ 17:10:43
 
     ATPase Simulation - 327,506 Atoms:
-        0.282757
-        0.272816
+        0.217503
+        0.209827
 
-    Average: 0.27779 days/ns
+    Average: 0.21367 days/ns
     Samples: 2
 
     Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
-    [                                                   |----------*--*--*#*!#*]
-                                    This Result (21st Percentile): 0.27779 ^
+    [                                                   |----------*--*---*#*#*]
+                                     This Result (31st Percentile): 0.21367 ^
                                                   Zotac  RTX 4070 Ti: 0.08315 ^
-                                             Gigabyte  RTX 3070: 0.35359 ^
+                                                         ADL GT2: 0.33937 ^
                                                 Quadro P2000: 0.54606 ^
                                              eVGA  GTX 950: 0.6932 ^::::::::::::::
 namd_benchmark_result_2.txt
@@ -921,22 +921,22 @@ NAMD CUDA 2.14:
     pts/namd-cuda-1.1.1
     Test 1 of 1
     Estimated Trial Run Count:    2
-    Estimated Time To Completion: 2 Minutes [06:39 UTC]
-        Started Run 1 @ 06:38:44
-        Started Run 2 @ 06:39:12
+    Estimated Time To Completion: 2 Minutes [16:57 UTC]
+        Started Run 1 @ 16:55:55
+        Started Run 2 @ 16:56:25
 
     ATPase Simulation - 327,506 Atoms:
-        0.431011
-        0.238974
+        0.320712
+        0.264
 
-    Average: 0.33499 days/ns
+    Average: 0.29236 days/ns
     Samples: 2
 
     Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
-    [                                                   |----------*--*---*#*#*]
-                                   This Result (17th Percentile): 0.33499 ^
+    [                                                   |----------*--*--*#*!#*]
+                                    This Result (19th Percentile): 0.29236 ^
                                                   Zotac  RTX 4070 Ti: 0.08315 ^
-                                                          GTX 1080: 0.19607 ^
+                                             Gigabyte  RTX 3070: 0.35359 ^
                                                 Quadro P2000: 0.54606 ^
                                              eVGA  GTX 950: 0.6932 ^::::::::::::::
 namd_benchmark_result_3.txt
@@ -1005,22 +1005,22 @@ NAMD CUDA 2.14:
     pts/namd-cuda-1.1.1
     Test 1 of 1
     Estimated Trial Run Count:    2
-    Estimated Time To Completion: 2 Minutes [06:40 UTC]
-        Started Run 1 @ 06:39:46
-        Started Run 2 @ 06:40:15
+    Estimated Time To Completion: 2 Minutes [16:58 UTC]
+        Started Run 1 @ 16:56:59
+        Started Run 2 @ 16:57:29
 
     ATPase Simulation - 327,506 Atoms:
-        0.221339
-        0.262105
+        0.353461
+        0.273638
 
-    Average: 0.24172 days/ns
+    Average: 0.31355 days/ns
     Samples: 2
 
     Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
     [                                                   |----------*--*---*#*#*]
-                                     This Result (24th Percentile): 0.24172 ^
+                                   This Result (18th Percentile): 0.31355 ^
                                                   Zotac  RTX 4070 Ti: 0.08315 ^
-                                                         ADL GT2: 0.33937 ^
+                                                          GTX 1080: 0.19607 ^
                                                 Quadro P2000: 0.54606 ^
                                              eVGA  GTX 950: 0.6932 ^::::::::::::::
 namd_benchmark_result_4.txt
@@ -1089,22 +1089,22 @@ NAMD CUDA 2.14:
     pts/namd-cuda-1.1.1
     Test 1 of 1
     Estimated Trial Run Count:    2
-    Estimated Time To Completion: 1 Minute [06:41 UTC]
-        Started Run 1 @ 06:40:50
-        Started Run 2 @ 06:41:19
+    Estimated Time To Completion: 2 Minutes [16:59 UTC]
+        Started Run 1 @ 16:58:07
+        Started Run 2 @ 16:58:39
 
     ATPase Simulation - 327,506 Atoms:
-        0.229432
-        0.216958
+        0.304509
+        0.299131
 
-    Average: 0.22320 days/ns
+    Average: 0.30182 days/ns
     Samples: 2
 
     Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
     [                                                   |----------*--*---*#*#*]
-                                     This Result (29th Percentile): 0.22320 ^
+                                   This Result (19th Percentile): 0.30182 ^
                                                   Zotac  RTX 4070 Ti: 0.08315 ^
-                                                         ADL GT2: 0.33937 ^
+                                                          GTX 1080: 0.19607 ^
                                                 Quadro P2000: 0.54606 ^
                                              eVGA  GTX 950: 0.6932 ^::::::::::::::
 namd_benchmark_result_5.txt
@@ -1173,22 +1173,22 @@ NAMD CUDA 2.14:
     pts/namd-cuda-1.1.1
     Test 1 of 1
     Estimated Trial Run Count:    2
-    Estimated Time To Completion: 1 Minute [06:42 UTC]
-        Started Run 1 @ 06:41:51
-        Started Run 2 @ 06:42:20
+    Estimated Time To Completion: 2 Minutes [17:00 UTC]
+        Started Run 1 @ 16:59:16
+        Started Run 2 @ 16:59:45
 
     ATPase Simulation - 327,506 Atoms:
-        0.222185
-        0.22851
+        0.303363
+        0.303522
 
-    Average: 0.22535 days/ns
+    Average: 0.30344 days/ns
     Samples: 2
 
     Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
     [                                                   |----------*--*---*#*#*]
-                                     This Result (28th Percentile): 0.22535 ^
+                                   This Result (19th Percentile): 0.30344 ^
                                                   Zotac  RTX 4070 Ti: 0.08315 ^
-                                                         ADL GT2: 0.33937 ^
+                                                          GTX 1080: 0.19607 ^
                                                 Quadro P2000: 0.54606 ^
                                              eVGA  GTX 950: 0.6932 ^::::::::::::::
 namd_benchmark_result_6.txt
@@ -1257,22 +1257,22 @@ NAMD CUDA 2.14:
     pts/namd-cuda-1.1.1
     Test 1 of 1
     Estimated Trial Run Count:    2
-    Estimated Time To Completion: 1 Minute [06:43 UTC]
-        Started Run 1 @ 06:42:54
-        Started Run 2 @ 06:43:21
+    Estimated Time To Completion: 1 Minute [17:01 UTC]
+        Started Run 1 @ 17:00:25
+        Started Run 2 @ 17:00:53
 
     ATPase Simulation - 327,506 Atoms:
-        0.2248
-        0.20802
+        0.289544
+        0.277689
 
-    Average: 0.21641 days/ns
+    Average: 0.28362 days/ns
     Samples: 2
 
     Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
-    [                                                   |----------*--*---*#*#*]
-                                     This Result (31st Percentile): 0.21641 ^
+    [                                                   |----------*--*--*#*!#*]
+                                    This Result (20th Percentile): 0.28362 ^
                                                   Zotac  RTX 4070 Ti: 0.08315 ^
-                                                         ADL GT2: 0.33937 ^
+                                             Gigabyte  RTX 3070: 0.35359 ^
                                                 Quadro P2000: 0.54606 ^
                                              eVGA  GTX 950: 0.6932 ^::::::::::::::
 namd_benchmark_result_7.txt
@@ -1341,22 +1341,22 @@ NAMD CUDA 2.14:
     pts/namd-cuda-1.1.1
     Test 1 of 1
     Estimated Trial Run Count:    2
-    Estimated Time To Completion: 1 Minute [06:44 UTC]
-        Started Run 1 @ 06:43:56
-        Started Run 2 @ 06:44:23
+    Estimated Time To Completion: 1 Minute [17:02 UTC]
+        Started Run 1 @ 17:01:28
+        Started Run 2 @ 17:02:00
 
     ATPase Simulation - 327,506 Atoms:
-        0.235637
-        0.209809
+        0.33822
+        0.399369
 
-    Average: 0.22272 days/ns
+    Average: 0.36879 days/ns
     Samples: 2
 
     Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
-    [                                                   |----------*--*---*#*#*]
-                                     This Result (30th Percentile): 0.22272 ^
+    [                                                   |----------*--*--*##*#*]
+                                  This Result (13th Percentile): 0.36879 ^
                                                   Zotac  RTX 4070 Ti: 0.08315 ^
-                                                         ADL GT2: 0.33937 ^
+                                                          GTX 1080: 0.19607 ^
                                                 Quadro P2000: 0.54606 ^
                                              eVGA  GTX 950: 0.6932 ^::::::::::::::
 namd_benchmark_result_8.txt
@@ -1425,22 +1425,22 @@ NAMD CUDA 2.14:
     pts/namd-cuda-1.1.1
     Test 1 of 1
     Estimated Trial Run Count:    2
-    Estimated Time To Completion: 1 Minute [06:45 UTC]
-        Started Run 1 @ 06:44:59
-        Started Run 2 @ 06:45:25
+    Estimated Time To Completion: 1 Minute [17:03 UTC]
+        Started Run 1 @ 17:02:38
+        Started Run 2 @ 17:03:07
 
     ATPase Simulation - 327,506 Atoms:
-        0.233753
-        0.216325
+        0.318178
+        0.269668
 
-    Average: 0.22504 days/ns
+    Average: 0.29392 days/ns
     Samples: 2
 
     Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
-    [                                                   |----------*--*---*#*#*]
-                                     This Result (28th Percentile): 0.22504 ^
+    [                                                   |----------*--*--*#*!#*]
+                                    This Result (19th Percentile): 0.29392 ^
                                                   Zotac  RTX 4070 Ti: 0.08315 ^
-                                                         ADL GT2: 0.33937 ^
+                                             Gigabyte  RTX 3070: 0.35359 ^
                                                 Quadro P2000: 0.54606 ^
                                              eVGA  GTX 950: 0.6932 ^::::::::::::::
 namd_benchmark_result_9.txt
@@ -1509,20 +1509,20 @@ NAMD CUDA 2.14:
     pts/namd-cuda-1.1.1
     Test 1 of 1
     Estimated Trial Run Count:    2
-    Estimated Time To Completion: 1 Minute [06:46 UTC]
-        Started Run 1 @ 06:46:02
-        Started Run 2 @ 06:46:28
+    Estimated Time To Completion: 1 Minute [17:04 UTC]
+        Started Run 1 @ 17:03:47
+        Started Run 2 @ 17:04:16
 
     ATPase Simulation - 327,506 Atoms:
-        0.233632
-        0.283075
+        0.308063
+        0.273671
 
-    Average: 0.25835 days/ns
+    Average: 0.29087 days/ns
     Samples: 2
 
     Comparison of 579 OpenBenchmarking.org samples since 27 August 2020; median result: 0.17 days/ns. Box plot of samples:
     [                                                   |----------*--*--*#*!#*]
-                                    This Result (22nd Percentile): 0.25835 ^
+                                    This Result (20th Percentile): 0.29087 ^
                                                   Zotac  RTX 4070 Ti: 0.08315 ^
                                              Gigabyte  RTX 3070: 0.35359 ^
                                                 Quadro P2000: 0.54606 ^
@@ -1783,61 +1783,61 @@ Phoronix Test Suite v10.8.4
         Copying From Cache: f1atpase.zip                           [26.93MB]
         Approximate Install Size: 76 MB
         Estimated Install Time: 4 Seconds
-        Installing Test @ 06:35:49::::::::::::::
+        Installing Test @ 16:52:50::::::::::::::
 nvidia_smi_glmark2.txt
 ::::::::::::::
-{"null": {"gpu-sum": 2824, "gpu-mem-sum": 305, "count": 182, "gpu-avg": 15.516483516483516, "gpu-variance": 120.29530690304169, "gpu-high-values": [2, 5, 9, 8, 10, 34, 27, 20, 15, 35, 14, 18, 16, 17, 22, 19, 45, 41, 28, 26, 30, 31, 37, 23, 42, 21, 36, 25, 29, 75], "gpu-mem-avg": 1.6758241758241759, "gpu-mem-variance": 15.88880456560015, "gpu-mem-high-values": [1, 2, 9, 14, 8, 5, 16, 6, 7, 21, 19, 36, 11, 13]}}::::::::::::::
+{"": {"gpu-sum": 17, "gpu-mem-sum": 0, "count": 182, "gpu-avg": 0.09340659340659341, "gpu-variance": 1.5879120879120872, "gpu-high-values": [17], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "null": {"gpu-sum": 5862, "gpu-mem-sum": 163, "count": 179, "gpu-avg": 32.74860335195531, "gpu-variance": 137.58251208335946, "gpu-high-values": [31, 33, 35, 47, 48, 40, 45, 53, 54, 41, 57, 34, 37, 42, 36, 51, 50, 52, 56, 49, 39, 59, 43, 61], "gpu-mem-avg": 0.9106145251396648, "gpu-mem-variance": 12.317808047203574, "gpu-mem-high-values": [1, 13, 5, 14, 8, 4, 20, 32]}}::::::::::::::
 nvidia_smi_namd_0.txt
 ::::::::::::::
-{"null": {"gpu-sum": 391, "gpu-mem-sum": 72, "count": 43, "gpu-avg": 9.093023255813954, "gpu-variance": 307.22923588039873, "gpu-high-values": [5, 50, 38, 34, 45, 36, 62, 42, 32], "gpu-mem-avg": 1.6744186046511629, "gpu-mem-variance": 10.891472868217054, "gpu-mem-high-values": [5, 7, 11, 6, 9, 10, 8]}}::::::::::::::
+{"": {"gpu-sum": 0, "gpu-mem-sum": 0, "count": 9, "gpu-avg": 0.0, "gpu-variance": 0.0, "gpu-high-values": [], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "null": {"gpu-sum": 408, "gpu-mem-sum": 80, "count": 36, "gpu-avg": 11.333333333333334, "gpu-variance": 302.97142857142865, "gpu-high-values": [3, 36, 37, 41, 26, 38, 20, 39, 43], "gpu-mem-avg": 2.2222222222222223, "gpu-mem-variance": 12.234920634920634, "gpu-mem-high-values": [7, 8, 9, 5]}}::::::::::::::
 nvidia_smi_namd_1.txt
 ::::::::::::::
-{"null": {"gpu-sum": 337, "gpu-mem-sum": 74, "count": 27, "gpu-avg": 12.481481481481481, "gpu-variance": 308.49002849002846, "gpu-high-values": [3, 36, 35, 37, 40, 39, 33, 38], "gpu-mem-avg": 2.740740740740741, "gpu-mem-variance": 15.891737891737895, "gpu-mem-high-values": [8, 9, 10, 7]}}::::::::::::::
+{"": {"gpu-sum": 7, "gpu-mem-sum": 1, "count": 9, "gpu-avg": 0.7777777777777778, "gpu-variance": 5.444444444444445, "gpu-high-values": [7], "gpu-mem-avg": 0.1111111111111111, "gpu-mem-variance": 0.11111111111111113, "gpu-mem-high-values": [1]}, "null": {"gpu-sum": 364, "gpu-mem-sum": 70, "count": 18, "gpu-avg": 20.22222222222222, "gpu-variance": 327.00653594771245, "gpu-high-values": [4, 38, 33, 40, 26, 31, 42, 36, 37], "gpu-mem-avg": 3.888888888888889, "gpu-mem-variance": 13.869281045751634, "gpu-mem-high-values": [7, 6, 9, 8]}}::::::::::::::
 nvidia_smi_namd_10.txt
 ::::::::::::::
-{"null": {"gpu-sum": 727, "gpu-mem-sum": 155, "count": 54, "gpu-avg": 13.462962962962964, "gpu-variance": 305.5363382250174, "gpu-high-values": [3, 28, 36, 46, 34, 48, 41, 39, 31, 37, 42, 32, 38, 33], "gpu-mem-avg": 2.8703703703703702, "gpu-mem-variance": 15.171558350803634, "gpu-mem-high-values": [6, 8, 11, 7, 12, 9]}}::::::::::::::
+{"": {"gpu-sum": 0, "gpu-mem-sum": 0, "count": 9, "gpu-avg": 0.0, "gpu-variance": 0.0, "gpu-high-values": [], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "null": {"gpu-sum": 352, "gpu-mem-sum": 70, "count": 18, "gpu-avg": 19.555555555555557, "gpu-variance": 314.3790849673203, "gpu-high-values": [4, 40, 31, 37, 39, 43, 29, 33], "gpu-mem-avg": 3.888888888888889, "gpu-mem-variance": 14.33986928104575, "gpu-mem-high-values": [7, 6, 9, 10, 8]}}::::::::::::::
 nvidia_smi_namd_11.txt
 ::::::::::::::
-{"null": {"gpu-sum": 329, "gpu-mem-sum": 80, "count": 27, "gpu-avg": 12.185185185185185, "gpu-variance": 344.07977207977217, "gpu-high-values": [4, 30, 47, 44, 46, 43, 32], "gpu-mem-avg": 2.962962962962963, "gpu-mem-variance": 22.421652421652418, "gpu-mem-high-values": [7, 12, 13, 8, 11]}}::::::::::::::
+{"": {"gpu-sum": 0, "gpu-mem-sum": 0, "count": 8, "gpu-avg": 0.0, "gpu-variance": 0.0, "gpu-high-values": [], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "null": {"gpu-sum": 405, "gpu-mem-sum": 77, "count": 19, "gpu-avg": 21.31578947368421, "gpu-variance": 333.4502923976608, "gpu-high-values": [4, 33, 42, 29, 44, 26, 36, 32, 39, 43], "gpu-mem-avg": 4.052631578947368, "gpu-mem-variance": 15.05263157894737, "gpu-mem-high-values": [5, 6, 9, 7, 8]}}::::::::::::::
 nvidia_smi_namd_12.txt
 ::::::::::::::
-{"null": {"gpu-sum": 386, "gpu-mem-sum": 80, "count": 27, "gpu-avg": 14.296296296296296, "gpu-variance": 347.3703703703704, "gpu-high-values": [3, 34, 36, 45, 40, 41, 30], "gpu-mem-avg": 2.962962962962963, "gpu-mem-variance": 16.72934472934472, "gpu-mem-high-values": [6, 8, 10, 7, 9]}}::::::::::::::
+{"": {"gpu-sum": 2, "gpu-mem-sum": 0, "count": 17, "gpu-avg": 0.11764705882352941, "gpu-variance": 0.23529411764705876, "gpu-high-values": [2], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "null": {"gpu-sum": 813, "gpu-mem-sum": 147, "count": 40, "gpu-avg": 20.325, "gpu-variance": 330.5326923076923, "gpu-high-values": [4, 33, 42, 29, 44, 26, 36, 32, 39, 43, 37, 38, 40, 34], "gpu-mem-avg": 3.675, "gpu-mem-variance": 12.891666666666666, "gpu-mem-high-values": [5, 6, 9, 7, 8]}}::::::::::::::
 nvidia_smi_namd_13.txt
 ::::::::::::::
-{"null": {"gpu-sum": 328, "gpu-mem-sum": 74, "count": 27, "gpu-avg": 12.148148148148149, "gpu-variance": 356.7464387464388, "gpu-high-values": [2, 40, 41, 45, 36, 44, 33], "gpu-mem-avg": 2.740740740740741, "gpu-mem-variance": 19.199430199430193, "gpu-mem-high-values": [8, 10, 11, 9, 12]}}::::::::::::::
+{"": {"gpu-sum": 2, "gpu-mem-sum": 0, "count": 26, "gpu-avg": 0.07692307692307693, "gpu-variance": 0.1538461538461538, "gpu-high-values": [2], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "null": {"gpu-sum": 1131, "gpu-mem-sum": 214, "count": 59, "gpu-avg": 19.16949152542373, "gpu-variance": 332.4880187025131, "gpu-high-values": [4, 33, 42, 29, 44, 26, 36, 32, 39, 43, 37, 38, 40, 34], "gpu-mem-avg": 3.6271186440677967, "gpu-mem-variance": 14.030976037405024, "gpu-mem-high-values": [5, 6, 9, 7, 8, 11, 10]}}::::::::::::::
 nvidia_smi_namd_14.txt
 ::::::::::::::
-{"null": {"gpu-sum": 698, "gpu-mem-sum": 146, "count": 54, "gpu-avg": 12.925925925925926, "gpu-variance": 331.7302585604471, "gpu-high-values": [2, 40, 41, 45, 36, 44, 33, 29, 35, 37, 32, 31], "gpu-mem-avg": 2.7037037037037037, "gpu-mem-variance": 16.438853948287914, "gpu-mem-high-values": [8, 10, 11, 9, 12, 7]}}::::::::::::::
+{"": {"gpu-sum": 9, "gpu-mem-sum": 2, "count": 20, "gpu-avg": 0.45, "gpu-variance": 1.9447368421052633, "gpu-high-values": [4, 5], "gpu-mem-avg": 0.1, "gpu-mem-variance": 0.09473684210526312, "gpu-mem-high-values": [1]}, "null": {"gpu-sum": 674, "gpu-mem-sum": 135, "count": 37, "gpu-avg": 18.216216216216218, "gpu-variance": 312.39639639639637, "gpu-high-values": [3, 36, 39, 27, 44, 38, 31, 41, 37, 33, 34, 30, 24], "gpu-mem-avg": 3.6486486486486487, "gpu-mem-variance": 14.178678678678683, "gpu-mem-high-values": [7, 8, 9]}}::::::::::::::
 nvidia_smi_namd_15.txt
 ::::::::::::::
-{"null": {"gpu-sum": 365, "gpu-mem-sum": 67, "count": 29, "gpu-avg": 12.586206896551724, "gpu-variance": 265.46551724137936, "gpu-high-values": [3, 39, 37, 35, 34, 30, 28, 32, 38], "gpu-mem-avg": 2.310344827586207, "gpu-mem-variance": 10.864532019704436, "gpu-mem-high-values": [9, 8, 6, 7]}}::::::::::::::
+{"": {"gpu-sum": 5, "gpu-mem-sum": 1, "count": 11, "gpu-avg": 0.45454545454545453, "gpu-variance": 2.2727272727272725, "gpu-high-values": [5], "gpu-mem-avg": 0.09090909090909091, "gpu-mem-variance": 0.0909090909090909, "gpu-mem-high-values": [1]}, "null": {"gpu-sum": 304, "gpu-mem-sum": 70, "count": 16, "gpu-avg": 19.0, "gpu-variance": 373.06666666666666, "gpu-high-values": [1, 43, 38, 36, 37, 35], "gpu-mem-avg": 4.375, "gpu-mem-variance": 20.516666666666662, "gpu-mem-high-values": [8, 9]}}::::::::::::::
 nvidia_smi_namd_2.txt
 ::::::::::::::
-{"null": {"gpu-sum": 387, "gpu-mem-sum": 86, "count": 27, "gpu-avg": 14.333333333333334, "gpu-variance": 404.84615384615387, "gpu-high-values": [2, 40, 48, 41, 43, 46, 42, 29], "gpu-mem-avg": 3.185185185185185, "gpu-mem-variance": 21.156695156695168, "gpu-mem-high-values": [8, 11, 9]}}::::::::::::::
+{"": {"gpu-sum": 7, "gpu-mem-sum": 1, "count": 9, "gpu-avg": 0.7777777777777778, "gpu-variance": 5.444444444444444, "gpu-high-values": [7], "gpu-mem-avg": 0.1111111111111111, "gpu-mem-variance": 0.11111111111111113, "gpu-mem-high-values": [1]}, "null": {"gpu-sum": 352, "gpu-mem-sum": 70, "count": 18, "gpu-avg": 19.555555555555557, "gpu-variance": 312.4967320261438, "gpu-high-values": [3, 31, 35, 32, 28, 38, 36, 40, 42], "gpu-mem-avg": 3.888888888888889, "gpu-mem-variance": 14.33986928104575, "gpu-mem-high-values": [5, 7, 8, 9, 10]}}::::::::::::::
 nvidia_smi_namd_3.txt
 ::::::::::::::
-{"null": {"gpu-sum": 373, "gpu-mem-sum": 78, "count": 27, "gpu-avg": 13.814814814814815, "gpu-variance": 321.92592592592587, "gpu-high-values": [2, 39, 35, 36, 25, 38, 41, 37], "gpu-mem-avg": 2.888888888888889, "gpu-mem-variance": 14.564102564102566, "gpu-mem-high-values": [8, 7, 6, 9]}}::::::::::::::
+{"": {"gpu-sum": 9, "gpu-mem-sum": 1, "count": 19, "gpu-avg": 0.47368421052631576, "gpu-variance": 2.7076023391812862, "gpu-high-values": [7], "gpu-mem-avg": 0.05263157894736842, "gpu-mem-variance": 0.05263157894736842, "gpu-mem-high-values": [1]}, "null": {"gpu-sum": 717, "gpu-mem-sum": 136, "count": 38, "gpu-avg": 18.86842105263158, "gpu-variance": 315.1984352773825, "gpu-high-values": [3, 31, 35, 32, 28, 38, 36, 40, 42, 29, 39, 33, 41], "gpu-mem-avg": 3.5789473684210527, "gpu-mem-variance": 13.115220483641536, "gpu-mem-high-values": [5, 7, 8, 9, 10]}}::::::::::::::
 nvidia_smi_namd_4.txt
 ::::::::::::::
-{"null": {"gpu-sum": 656, "gpu-mem-sum": 138, "count": 53, "gpu-avg": 12.377358490566039, "gpu-variance": 284.5087082728592, "gpu-high-values": [2, 39, 35, 36, 25, 38, 41, 37, 34, 28, 43], "gpu-mem-avg": 2.6037735849056602, "gpu-mem-variance": 13.051523947750363, "gpu-mem-high-values": [8, 7, 6, 9]}}::::::::::::::
+{"": {"gpu-sum": 14, "gpu-mem-sum": 2, "count": 27, "gpu-avg": 0.5185185185185185, "gpu-variance": 2.7207977207977203, "gpu-high-values": [7, 5], "gpu-mem-avg": 0.07407407407407407, "gpu-mem-variance": 0.07122507122507123, "gpu-mem-high-values": [1]}, "null": {"gpu-sum": 1098, "gpu-mem-sum": 202, "count": 59, "gpu-avg": 18.610169491525422, "gpu-variance": 314.31092928112207, "gpu-high-values": [3, 31, 35, 32, 28, 38, 36, 40, 42, 29, 39, 33, 41], "gpu-mem-avg": 3.4237288135593222, "gpu-mem-variance": 12.110461718293395, "gpu-mem-high-values": [5, 7, 8, 9, 10]}}::::::::::::::
 nvidia_smi_namd_5.txt
 ::::::::::::::
-{"null": {"gpu-sum": 327, "gpu-mem-sum": 72, "count": 27, "gpu-avg": 12.11111111111111, "gpu-variance": 284.79487179487165, "gpu-high-values": [2, 35, 29, 41, 37, 33, 36, 39], "gpu-mem-avg": 2.6666666666666665, "gpu-mem-variance": 14.615384615384611, "gpu-mem-high-values": [7, 8, 9, 10]}}::::::::::::::
+{"": {"gpu-sum": 9, "gpu-mem-sum": 1, "count": 11, "gpu-avg": 0.8181818181818182, "gpu-variance": 7.363636363636364, "gpu-high-values": [9], "gpu-mem-avg": 0.09090909090909091, "gpu-mem-variance": 0.0909090909090909, "gpu-mem-high-values": [1]}, "null": {"gpu-sum": 355, "gpu-mem-sum": 59, "count": 18, "gpu-avg": 19.72222222222222, "gpu-variance": 300.91830065359477, "gpu-high-values": [4, 37, 32, 36, 34, 33, 31], "gpu-mem-avg": 3.2777777777777777, "gpu-mem-variance": 9.624183006535947, "gpu-mem-high-values": [6, 5, 7, 8]}}::::::::::::::
 nvidia_smi_namd_6.txt
 ::::::::::::::
-{"null": {"gpu-sum": 405, "gpu-mem-sum": 84, "count": 27, "gpu-avg": 15.0, "gpu-variance": 434.38461538461536, "gpu-high-values": [2, 33, 42, 30, 70, 34, 43], "gpu-mem-avg": 3.111111111111111, "gpu-mem-variance": 19.102564102564102, "gpu-mem-high-values": [4, 11, 10, 7, 9, 8]}}::::::::::::::
+{"": {"gpu-sum": 0, "gpu-mem-sum": 0, "count": 8, "gpu-avg": 0.0, "gpu-variance": 0.0, "gpu-high-values": [], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "null": {"gpu-sum": 374, "gpu-mem-sum": 70, "count": 19, "gpu-avg": 19.68421052631579, "gpu-variance": 338.4502923976609, "gpu-high-values": [4, 34, 41, 32, 33, 30, 37, 40, 42], "gpu-mem-avg": 3.6842105263157894, "gpu-mem-variance": 13.672514619883044, "gpu-mem-high-values": [5, 6, 8, 7, 9]}}::::::::::::::
 nvidia_smi_namd_7.txt
 ::::::::::::::
-{"null": {"gpu-sum": 407, "gpu-mem-sum": 82, "count": 27, "gpu-avg": 15.074074074074074, "gpu-variance": 404.2250712250713, "gpu-high-values": [3, 37, 39, 31, 46, 59, 36, 43], "gpu-mem-avg": 3.037037037037037, "gpu-mem-variance": 17.19088319088319, "gpu-mem-high-values": [7, 8, 6, 9, 11, 10]}}::::::::::::::
+{"": {"gpu-sum": 2, "gpu-mem-sum": 0, "count": 16, "gpu-avg": 0.125, "gpu-variance": 0.25, "gpu-high-values": [2], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "null": {"gpu-sum": 833, "gpu-mem-sum": 142, "count": 41, "gpu-avg": 20.317073170731707, "gpu-variance": 346.2719512195123, "gpu-high-values": [4, 34, 41, 32, 33, 30, 37, 40, 42, 36, 39, 56, 29], "gpu-mem-avg": 3.4634146341463414, "gpu-mem-variance": 11.254878048780494, "gpu-mem-high-values": [5, 6, 8, 7, 9]}}::::::::::::::
 nvidia_smi_namd_8.txt
 ::::::::::::::
-{"null": {"gpu-sum": 323, "gpu-mem-sum": 73, "count": 27, "gpu-avg": 11.962962962962964, "gpu-variance": 320.11396011396016, "gpu-high-values": [2, 33, 34, 43, 46, 37, 41, 32], "gpu-mem-avg": 2.7037037037037037, "gpu-mem-variance": 17.6011396011396, "gpu-mem-high-values": [7, 8, 10, 11]}}::::::::::::::
+{"": {"gpu-sum": 0, "gpu-mem-sum": 0, "count": 10, "gpu-avg": 0.0, "gpu-variance": 0.0, "gpu-high-values": [], "gpu-mem-avg": 0.0, "gpu-mem-variance": 0.0, "gpu-mem-high-values": []}, "null": {"gpu-sum": 377, "gpu-mem-sum": 69, "count": 19, "gpu-avg": 19.842105263157894, "gpu-variance": 338.9181286549708, "gpu-high-values": [4, 36, 37, 28, 27, 33, 32, 53, 42], "gpu-mem-avg": 3.6315789473684212, "gpu-mem-variance": 12.023391812865494, "gpu-mem-high-values": [6, 8, 7]}}::::::::::::::
 nvidia_smi_namd_9.txt
 ::::::::::::::
-{"null": {"gpu-sum": 396, "gpu-mem-sum": 86, "count": 27, "gpu-avg": 14.666666666666666, "gpu-variance": 354.53846153846155, "gpu-high-values": [3, 28, 36, 46, 34, 48, 41, 39, 31, 37, 42], "gpu-mem-avg": 3.185185185185185, "gpu-mem-variance": 18.464387464387464, "gpu-mem-high-values": [6, 8, 11, 7, 12, 9]}}::::::::::::::
+{"": {"gpu-sum": 5, "gpu-mem-sum": 1, "count": 9, "gpu-avg": 0.5555555555555556, "gpu-variance": 2.7777777777777772, "gpu-high-values": [5], "gpu-mem-avg": 0.1111111111111111, "gpu-mem-variance": 0.11111111111111113, "gpu-mem-high-values": [1]}, "null": {"gpu-sum": 336, "gpu-mem-sum": 63, "count": 18, "gpu-avg": 18.666666666666668, "gpu-variance": 295.41176470588243, "gpu-high-values": [1, 41, 38, 36, 28, 33, 32, 30, 31], "gpu-mem-avg": 3.5, "gpu-mem-variance": 11.088235294117647, "gpu-mem-high-values": [7, 8]}}::::::::::::::
 nvidia_smi_pytorch.txt
 ::::::::::::::
-{"null": {"gpu-sum": 34478, "gpu-mem-sum": 14724, "count": 819, "gpu-avg": 42.0976800976801, "gpu-variance": 786.7532831200318, "gpu-high-values": [60, 62, 63, 37, 51, 44, 45, 46, 98, 56, 55, 57, 78, 61, 94, 93, 64, 95, 42, 91, 83, 89, 92, 90, 53, 54, 52, 58, 96, 80, 49, 48, 88, 70, 72, 71, 69, 73, 87, 84, 59, 97, 74], "gpu-mem-avg": 17.978021978021978, "gpu-mem-variance": 154.24646014132577, "gpu-mem-high-values": [31, 32, 19, 22, 23, 28, 27, 37, 45, 44, 30, 33, 25, 38, 36, 26, 39, 43, 35, 29, 34, 24]}}::::::::::::::
+{"": {"gpu-sum": 54, "gpu-mem-sum": 9, "count": 895, "gpu-avg": 0.060335195530726256, "gpu-variance": 0.5623511179433349, "gpu-high-values": [7, 2, 9, 15], "gpu-mem-avg": 0.01005586592178771, "gpu-mem-variance": 0.01891442640570908, "gpu-mem-high-values": [1, 2, 3]}, "null": {"gpu-sum": 37144, "gpu-mem-sum": 15805, "count": 743, "gpu-avg": 49.991924629878866, "gpu-variance": 477.5578861829914, "gpu-high-values": [91, 61, 60, 62, 76, 56, 57, 55, 53, 54, 52, 58, 95, 94, 80, 81, 82, 96, 69, 64, 92, 93, 90, 89, 97, 79, 72, 73, 70, 71, 67, 85, 74, 66, 59], "gpu-mem-avg": 21.271870794078062, "gpu-mem-variance": 102.43811603719162, "gpu-mem-high-values": [23, 31, 32, 37, 28, 27, 26, 46, 45, 40, 41, 44, 38, 36, 39]}}::::::::::::::
 pytorch_benchmark_result.txt
 ::::::::::::::
 
@@ -1934,239 +1934,239 @@ PyTorch 2.1:
     Test 1 of 12
     Estimated Trial Run Count:    3
     Estimated Test Run-Time:      7 Minutes
-    Estimated Time To Completion: 1 Hour, 17 Minutes [08:12 UTC]
-        Started Run 1 @ 06:56:44
-        Started Run 2 @ 06:57:02
-        Started Run 3 @ 06:57:21
+    Estimated Time To Completion: 1 Hour, 17 Minutes [18:33 UTC]
+        Started Run 1 @ 17:16:22
+        Started Run 2 @ 17:16:41
+        Started Run 3 @ 17:16:57
 
     Device: gpu - Batch Size: 1 - Model: ResNet-50:
-        150.10088283662
-        153.4968890643
-        154.52207107592
+        150.12223680737
+        151.60733346527
+        152.03929553746
 
-    Average: 152.71 batches/sec
-    Minimum: 52.79
-    Maximum: 157.15
-    Deviation: 1.52%
+    Average: 151.26 batches/sec
+    Minimum: 108.89
+    Maximum: 155.27
+    Deviation: 0.66%
 
 PyTorch 2.1:
     pts/pytorch-1.0.1 [Device: gpu - Batch Size: 1 - Model: ResNet-152]
     Test 2 of 12
     Estimated Trial Run Count:    3
     Estimated Test Run-Time:      1 Minute
-    Estimated Time To Completion: 8 Minutes [07:05 UTC]
-        Started Run 1 @ 06:57:44
-        Started Run 2 @ 06:58:19
-        Started Run 3 @ 06:58:49
+    Estimated Time To Completion: 8 Minutes [17:25 UTC]
+        Started Run 1 @ 17:17:21
+        Started Run 2 @ 17:17:51
+        Started Run 3 @ 17:18:21
 
     Device: gpu - Batch Size: 1 - Model: ResNet-152:
-        44.787919965299
-        55.830209799013
-        56.268456700292
+        56.098226349472
+        53.660542009871
+        56.074500412022
 
-    Average: 52.30 batches/sec
-    Minimum: 37.64
-    Maximum: 57.44
-    Deviation: 12.44%
+    Average: 55.28 batches/sec
+    Minimum: 28.39
+    Maximum: 57.4
+    Deviation: 2.53%
 
 PyTorch 2.1:
     pts/pytorch-1.0.1 [Device: gpu - Batch Size: 16 - Model: ResNet-50]
     Test 3 of 12
     Estimated Trial Run Count:    3
     Estimated Test Run-Time:      2 Minutes
-    Estimated Time To Completion: 11 Minutes [07:09 UTC]
-        Started Run 1 @ 06:59:26
-        Started Run 2 @ 06:59:52
-        Started Run 3 @ 07:00:18
+    Estimated Time To Completion: 11 Minutes [17:28 UTC]
+        Started Run 1 @ 17:18:58
+        Started Run 2 @ 17:19:23
+        Started Run 3 @ 17:19:52
 
     Device: gpu - Batch Size: 16 - Model: ResNet-50:
-        130.15775778586
-        129.93925912973
-        130.01412648045
+        130.22615662052
+        116.39643505721
+        129.69198578723
 
-    Average: 130.04 batches/sec
-    Minimum: 92.85
-    Maximum: 141.37
-    Deviation: 0.09%
+    Average: 125.44 batches/sec
+    Minimum: 91.22
+    Maximum: 140.25
+    Deviation: 6.25%
 
 PyTorch 2.1:
     pts/pytorch-1.0.1 [Device: gpu - Batch Size: 64 - Model: ResNet-50]
     Test 4 of 12
     Estimated Trial Run Count:    3
     Estimated Test Run-Time:      2 Minutes
-    Estimated Time To Completion: 10 Minutes [07:10 UTC]
-        Started Run 1 @ 07:00:50
-        Started Run 2 @ 07:01:16
-        Started Run 3 @ 07:01:41
+    Estimated Time To Completion: 10 Minutes [17:29 UTC]
+        Started Run 1 @ 17:20:25
+        Started Run 2 @ 17:20:51
+        Started Run 3 @ 17:21:19
 
     Device: gpu - Batch Size: 64 - Model: ResNet-50:
-        129.9543560753
-        129.7054798412
-        129.76983865422
+        129.66568685091
+        115.93994406966
+        129.46273898623
 
-    Average: 129.81 batches/sec
-    Minimum: 97.2
-    Maximum: 142.66
-    Deviation: 0.10%
+    Average: 125.02 batches/sec
+    Minimum: 87.54
+    Maximum: 138.49
+    Deviation: 6.29%
 
 PyTorch 2.1:
     pts/pytorch-1.0.1 [Device: gpu - Batch Size: 16 - Model: ResNet-152]
     Test 5 of 12
     Estimated Trial Run Count:    3
     Estimated Test Run-Time:      2 Minutes
-    Estimated Time To Completion: 9 Minutes [07:11 UTC]
-        Started Run 1 @ 07:02:14
-        Started Run 2 @ 07:03:10
-        Started Run 3 @ 07:04:02
+    Estimated Time To Completion: 9 Minutes [17:30 UTC]
+        Started Run 1 @ 17:21:52
+        Started Run 2 @ 17:22:44
+        Started Run 3 @ 17:23:36
 
     Device: gpu - Batch Size: 16 - Model: ResNet-152:
-        50.978971268528
-        50.787708011003
-        52.242552362087
+        51.155097371683
+        51.834302257529
+        51.696209401629
 
-    Average: 51.34 batches/sec
-    Minimum: 43.19
-    Maximum: 53.41
-    Deviation: 1.54%
+    Average: 51.56 batches/sec
+    Minimum: 27.9
+    Maximum: 53.3
+    Deviation: 0.70%
 
 PyTorch 2.1:
     pts/pytorch-1.0.1 [Device: gpu - Batch Size: 512 - Model: ResNet-50]
     Test 6 of 12
     Estimated Trial Run Count:    3
     Estimated Test Run-Time:      2 Minutes
-    Estimated Time To Completion: 10 Minutes [07:14 UTC]
-        Started Run 1 @ 07:05:00
-        Started Run 2 @ 07:05:26
-        Started Run 3 @ 07:05:52
+    Estimated Time To Completion: 10 Minutes [17:34 UTC]
+        Started Run 1 @ 17:24:35
+        Started Run 2 @ 17:25:00
+        Started Run 3 @ 17:25:26
 
     Device: gpu - Batch Size: 512 - Model: ResNet-50:
-        129.7124384685
-        129.62575515494
-        129.82474687576
+        129.61770854242
+        129.28752746353
+        116.42933084039
 
-    Average: 129.72 batches/sec
-    Minimum: 80.07
-    Maximum: 142.32
-    Deviation: 0.08%
+    Average: 125.11 batches/sec
+    Minimum: 56.31
+    Maximum: 141.01
+    Deviation: 6.01%
 
 PyTorch 2.1:
     pts/pytorch-1.0.1 [Device: gpu - Batch Size: 64 - Model: ResNet-152]
     Test 7 of 12
     Estimated Trial Run Count:    3
     Estimated Test Run-Time:      2 Minutes
-    Estimated Time To Completion: 9 Minutes [07:14 UTC]
-        Started Run 1 @ 07:06:24
-        Started Run 2 @ 07:07:21
-        Started Run 3 @ 07:08:22
+    Estimated Time To Completion: 9 Minutes [17:34 UTC]
+        Started Run 1 @ 17:26:01
+        Started Run 2 @ 17:26:53
+        Started Run 3 @ 17:27:54
 
     Device: gpu - Batch Size: 64 - Model: ResNet-152:
-        50.631773116374
-        42.439468719336
-        49.834200243857
+        51.622698384503
+        42.447182188399
+        51.252695903536
 
-    Average: 47.64 batches/sec
-    Minimum: 37.64
-    Maximum: 52.26
-    Deviation: 9.48%
+    Average: 48.44 batches/sec
+    Minimum: 37.54
+    Maximum: 53.01
+    Deviation: 10.72%
 
 PyTorch 2.1:
     pts/pytorch-1.0.1 [Device: gpu - Batch Size: 512 - Model: ResNet-152]
     Test 8 of 12
     Estimated Trial Run Count:    3
     Estimated Test Run-Time:      2 Minutes
-    Estimated Time To Completion: 8 Minutes [07:17 UTC]
-        Started Run 1 @ 07:09:23
-        Started Run 2 @ 07:10:14
-        Started Run 3 @ 07:11:15
+    Estimated Time To Completion: 8 Minutes [17:36 UTC]
+        Started Run 1 @ 17:28:54
+        Started Run 2 @ 17:29:54
+        Started Run 3 @ 17:30:55
 
     Device: gpu - Batch Size: 512 - Model: ResNet-152:
-        52.51842678707
-        43.190734611925
-        51.419354906343
+        42.771606417671
+        43.151215214478
+        52.056491697922
 
-    Average: 49.04 batches/sec
-    Minimum: 38.05
-    Maximum: 53.72
-    Deviation: 10.39%
+    Average: 45.99 batches/sec
+    Minimum: 27.04
+    Maximum: 53.39
+    Deviation: 11.42%
 
 PyTorch 2.1:
     pts/pytorch-1.0.1 [Device: gpu - Batch Size: 1 - Model: Efficientnet_v2_l]
     Test 9 of 12
     Estimated Trial Run Count:    3
     Estimated Test Run-Time:      2 Minutes
-    Estimated Time To Completion: 7 Minutes [07:18 UTC]
-        Started Run 1 @ 07:12:14
-        Started Run 2 @ 07:13:07
-        Started Run 3 @ 07:13:59
+    Estimated Time To Completion: 7 Minutes [17:38 UTC]
+        Started Run 1 @ 17:31:53
+        Started Run 2 @ 17:32:46
+        Started Run 3 @ 17:33:39
 
     Device: gpu - Batch Size: 1 - Model: Efficientnet_v2_l:
-        26.500426644263
-        26.677361274672
-        26.583580845104
+        26.382591847663
+        26.872636060022
+        27.749457426592
 
-    Average: 26.59 batches/sec
-    Minimum: 22.64
-    Maximum: 27.61
-    Deviation: 0.33%
+    Average: 27.00 batches/sec
+    Minimum: 23.43
+    Maximum: 28.23
+    Deviation: 2.56%
 
 PyTorch 2.1:
     pts/pytorch-1.0.1 [Device: gpu - Batch Size: 16 - Model: Efficientnet_v2_l]
     Test 10 of 12
     Estimated Trial Run Count:    3
     Estimated Test Run-Time:      2 Minutes
-    Estimated Time To Completion: 6 Minutes [07:20 UTC]
-        Started Run 1 @ 07:14:59
-        Started Run 2 @ 07:16:56
-        Started Run 3 @ 07:18:35
+    Estimated Time To Completion: 6 Minutes [17:39 UTC]
+        Started Run 1 @ 17:34:37
+        Started Run 2 @ 17:36:13
+        Started Run 3 @ 17:38:09
 
     Device: gpu - Batch Size: 16 - Model: Efficientnet_v2_l:
-        20.672823272361
-        24.784404613555
-        24.641739314337
+        25.777994580414
+        20.643808461154
+        20.72914631239
 
-    Average: 23.37 batches/sec
-    Minimum: 18.43
-    Maximum: 25.66
-    Deviation: 9.99%
+    Average: 22.38 batches/sec
+    Minimum: 18.05
+    Maximum: 26.38
+    Deviation: 13.13%
 
 PyTorch 2.1:
     pts/pytorch-1.0.1 [Device: gpu - Batch Size: 64 - Model: Efficientnet_v2_l]
     Test 11 of 12
     Estimated Trial Run Count:    3
     Estimated Test Run-Time:      3 Minutes
-    Estimated Time To Completion: 5 Minutes [07:24 UTC]
-        Started Run 1 @ 07:20:20
-        Started Run 2 @ 07:21:55
-        Started Run 3 @ 07:23:31
+    Estimated Time To Completion: 5 Minutes [17:44 UTC]
+        Started Run 1 @ 17:40:11
+        Started Run 2 @ 17:42:04
+        Started Run 3 @ 17:43:42
 
     Device: gpu - Batch Size: 64 - Model: Efficientnet_v2_l:
-        25.855301826462
-        25.475979109752
-        24.944421599228
+        20.577112867022
+        24.994005279425
+        25.545113425868
 
-    Average: 25.43 batches/sec
-    Minimum: 21.56
-    Maximum: 26.54
-    Deviation: 1.80%
+    Average: 23.71 batches/sec
+    Minimum: 18.77
+    Maximum: 26.12
+    Deviation: 11.49%
 
 PyTorch 2.1:
     pts/pytorch-1.0.1 [Device: gpu - Batch Size: 512 - Model: Efficientnet_v2_l]
     Test 12 of 12
     Estimated Trial Run Count:    3
-    Estimated Time To Completion: 3 Minutes [07:27 UTC]
-        Started Run 1 @ 07:25:16
-        Started Run 2 @ 07:27:14
-        Started Run 3 @ 07:28:50
+    Estimated Time To Completion: 3 Minutes [17:47 UTC]
+        Started Run 1 @ 17:45:26
+        Started Run 2 @ 17:47:04
+        Started Run 3 @ 17:49:01
 
     Device: gpu - Batch Size: 512 - Model: Efficientnet_v2_l:
-        20.487996644367
-        25.376270707412
-        25.499209083202
+        24.676772446746
+        20.544283393027
+        24.739947893978
 
-    Average: 23.79 batches/sec
-    Minimum: 17.85
-    Maximum: 26.11
-    Deviation: 12.02%::::::::::::::
+    Average: 23.32 batches/sec
+    Minimum: 16.63
+    Maximum: 25.45
+    Deviation: 10.31%::::::::::::::
 pytorch_install_result.txt
 ::::::::::::::
 
@@ -2182,10 +2182,10 @@ Phoronix Test Suite v10.8.4
 
     1 Test To Install
         4800MB Of Disk Space Is Needed
-        6 Minutes, 41 Seconds Estimated Install Time
+        6 Minutes, 36 Seconds Estimated Install Time
 
     pts/pytorch-1.0.1:
         Test Installation 1 of 1
         Approximate Install Size: 4800 MB
-        Estimated Install Time: 6 Minutes, 41 Seconds
-        Installing Test @ 06:53:24
+        Estimated Install Time: 6 Minutes, 36 Seconds
+        Installing Test @ 17:11:18

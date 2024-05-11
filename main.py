@@ -27,6 +27,7 @@ def main():
             handle_processing(benchmark_type, content, pytorch_processors[openstack_service_name],
                               namd_processors[openstack_service_name], glmark2_processors[openstack_service_name])
     spreadsheet_logic = SpreadsheetLogic(glmark2_processors, namd_processors, pytorch_processors)
+    print(spreadsheet_logic.url)
     spreadsheet_logic.process_spreadsheet()
 
 

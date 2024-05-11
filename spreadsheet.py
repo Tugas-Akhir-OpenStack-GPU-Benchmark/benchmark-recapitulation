@@ -15,9 +15,10 @@ class SpreadsheetLogic:
     # openstack_service_name, then resolution
     def __init__(self, glmark_processors: dict[str, dict[str, glmark2_extractor.Glmark2ResultProcessor]],
                  namd_processors: dict[str, namd_extractor.NamdResultProcessor],
-                 pytorch_processors: dict[str, pytorch_extractor.PytorchResultProcessor], clear_sheet=False):
+                 pytorch_processors: dict[str, pytorch_extractor.PytorchResultProcessor], clear_sheet=True):
         self.gc = gspread.service_account("./key/key.json")
-        self.document = self.gc.open_by_url("https://docs.google.com/spreadsheets/d/1tEoTYKBOAVweJ5HYzxigeq6tE--nBIjnK5f8EBO-JLk/edit#gid=0")
+        self.url = "https://docs.google.com/spreadsheets/d/1tEoTYKBOAVweJ5HYzxigeq6tE--nBIjnK5f8EBO-JLk/edit#gid=0"
+        self.document = self.gc.open_by_url(self.url)
         self.glmark_processors = glmark_processors
         self.namd_processors = namd_processors
         self.pytorch_processors = pytorch_processors
