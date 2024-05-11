@@ -1,17 +1,17 @@
 import statistics
 
-def average(arr):
+def Avg(arr):
     if not arr:
         return ''
     return sum(arr) / len(arr)
 
 
-def stdev(arr):
+def Stdev(arr):
     return statistics.stdev(arr)
 
 
-def count(arr):
+def Count(arr):
     return len(arr)
 
 
-stat_functions = [average, stdev, count]
+stat_functions = [Avg, Stdev, Count]

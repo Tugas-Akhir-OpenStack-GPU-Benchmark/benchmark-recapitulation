@@ -60,12 +60,23 @@ class SpreadsheetLogic:
                 table.append(['PyTorch', model, stat_function.__name__, ] + [
                     stat_function(values) for values in transposed_list_of_values
                 ])
-        rekap_ws = self.get_or_create_worksheets(self.spreadsheet_prefix + "Overview")
+        self.draw_overview_table("Overview", table)
+        self.major_grouping_by_stat_name(table)
+        self.draw_overview_table("Overview by Stats", table)
+
+    def draw_overview_table(self, sheetName, table):
+        rekap_ws = self.get_or_create_worksheets(self.spreadsheet_prefix + sheetName)
         if self.clear_sheet:
             rekap_ws.clear()
         rekap_ws.update(table, "A1")
         self.merge_adjacent_equal_rows(rekap_ws, get_column(table, 0), 'A', 1)
         self.merge_adjacent_equal_rows(rekap_ws, get_column(table, 1), 'B', 1)
+
+    def major_grouping_by_stat_name(self, table):
+        sorting_key_by_stat_name = lambda x: x[2]
+        table[1:] = sorted(table[1:], key=sorting_key_by_stat_name)
+        for columns in table:
+            columns[0], columns[1], columns[2] = columns[0], columns[2], columns[1]
 
 
 
