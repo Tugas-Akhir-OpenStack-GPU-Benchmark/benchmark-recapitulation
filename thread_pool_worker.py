@@ -28,28 +28,27 @@ class WorkerPool:
                 break
             readd_to_queue = None
             func, finished_flag, worker_sleep = item, FakeFuture(), 0
-            if isinstance(item, tuple):
-                func, finished_flag, worker_sleep = item
-            try:
-                func()
-                finished_flag.set_result('')  # mark as finished
-            except asyncio.exceptions.InvalidStateError as e:
-                with open("log.txt", "a") as f:
-                    print(f"Warning: {repr(e)}", file=f)
-            except gspread.exceptions.APIError as e:
-                if 'Quota exceeded for quota metric' not in e.response.text:
-                    raise e
-                with open("log.txt", "a") as f:
-                    print("Quota exceeded... Sleeping...", file=f)
-                time.sleep(worker_sleep)
-                readd_to_queue = (func, finished_flag, min(worker_sleep*2+0.1, maximum_backoff))
-            finally:
-                self.queue.task_done()
-                if readd_to_queue is not None:
-                    self.queue.put(readd_to_queue)
+            while True:
+                try:
+                    func()
+                    finished_flag.set_result('')  # mark as finished
+                    break
+                except asyncio.exceptions.InvalidStateError as e:
+                    with open("log.txt", "a") as f:
+                        print(f"Warning: {repr(e)}", file=f)
+                except gspread.exceptions.APIError as e:
+                    if 'Quota exceeded for quota metric' not in e.response.text:
+                        raise e
+                    with open("log.txt", "a") as f:
+                        print("Quota exceeded... Sleeping...", file=f)
+                    time.sleep(worker_sleep)
+                    worker_sleep = worker_sleep*2+0.1
+
+            self.queue.task_done()
 
 
-    def start_workers(self, worker_pool=1000):
+
+    def start_workers(self, worker_pool):
         threads = []
         for i in range(worker_pool):
             t = threading.Thread(target=self.worker)

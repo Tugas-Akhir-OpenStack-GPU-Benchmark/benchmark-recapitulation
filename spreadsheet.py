@@ -7,7 +7,7 @@ import glmark2_extractor
 import namd_extractor
 import pytorch_extractor
 from glmark2_extractor import Glmark2ResultProcessor
-from stats import stat_functions, T_test_less, T_test_greater, major_grouping_by_stat_name
+from stats import stat_functions, T_test_equal, T_test_greater, major_grouping_by_stat_name, T_test_less
 from thread_pool_worker import WorkerPool, maximum_backoff
 from utils import transpose, combine_dicts, flatten_dict_of_list, flatten_arrays, get_column, \
     iterate_dict_items_based_on_list_ordering, groupby_and_select
@@ -38,14 +38,21 @@ class SpreadsheetLogic:
         headers = ["Benchmark",	"Group", "Stats"] + openstack_services
         table = [headers]
         for resolution, benchmark_results in glmark2_grouped_by_resolution.items():
-            t_test_function = T_test_less(benchmark_results[INDEX_OF_T_TEST_COMPARISON].get_values())
-            for stat_function in stat_functions + [t_test_function]:
+            comparison = benchmark_results[INDEX_OF_T_TEST_COMPARISON].get_values()
+            t_test_function = T_test_less(comparison)
+            t_test_function_equal = T_test_equal(comparison)
+            for stat_function in stat_functions + [t_test_function, t_test_function_equal]:
                 row = ['Glmark2', resolution, func_to_str(stat_function)]
                 for benchmark_result in benchmark_results:
                     list_of_fps = benchmark_result.get_values()
                     row.append(stat_function(list_of_fps))
                 table.append(row)
-        for stat_function in stat_functions + [T_test_greater(self.namd_processors[openstack_services[INDEX_OF_T_TEST_COMPARISON]].results)]:
+
+
+        namd_comparison = self.namd_processors[openstack_services[INDEX_OF_T_TEST_COMPARISON]].results
+        t_test_function = T_test_greater(namd_comparison)
+        t_test_function_equal = T_test_equal(namd_comparison)
+        for stat_function in stat_functions + [t_test_function, t_test_function_equal]:
             row = ['NAMD', '', func_to_str(stat_function)]
             for openstack_service in openstack_services:
                 benchmark_results_namd = self.namd_processors[openstack_service]
@@ -60,8 +67,11 @@ class SpreadsheetLogic:
         # list_of_values contains 2d list, 1st axis represents batch_size & tc. 2nd axis represents the openstack_service
         for model, list_of_values in model_to_list_of_values.items():
             transposed_list_of_values = transpose(list_of_values)
-            t_test_function = T_test_less(transposed_list_of_values[INDEX_OF_T_TEST_COMPARISON])
-            for stat_function in stat_functions + [t_test_function]:
+
+            comparison_pytorch = transposed_list_of_values[INDEX_OF_T_TEST_COMPARISON]
+            t_test_function = T_test_less(comparison_pytorch)
+            t_test_function_equal = T_test_equal(comparison_pytorch)
+            for stat_function in stat_functions + [t_test_function, t_test_function_equal]:
                 table.append(['PyTorch', model, func_to_str(stat_function), ] + [
                     stat_function(values) for values in transposed_list_of_values
                 ])
@@ -73,8 +83,8 @@ class SpreadsheetLogic:
         rekap_ws = self.get_or_create_worksheets(self.spreadsheet_prefix + sheetName)
         if self.clear_sheet:
             rekap_ws.clear()
-        handle_write_req_limit(rekap_ws.update)(table, "A1")
         self.unmerge_sheet(rekap_ws)
+        handle_write_req_limit(rekap_ws.update)(table, "A1")
         self.merge_adjacent_equal_rows(rekap_ws, get_column(table, 0), 'A', 1)
         self.merge_adjacent_equal_rows(rekap_ws, get_column(table, 1), 'B', 1)
 
@@ -122,8 +132,8 @@ class SpreadsheetLogic:
         glmark2_ws = self.get_or_create_worksheets(self.spreadsheet_prefix + "Glmark2")
         if self.clear_sheet:
             handle_write_req_limit(glmark2_ws.clear)()
-        handle_write_req_limit(glmark2_ws.update)(table, "A1")
         self.unmerge_sheet(glmark2_ws)
+        handle_write_req_limit(glmark2_ws.update)(table, "A1")
         self.merge_adjacent_equal_rows(glmark2_ws, get_column(table, 0), 'A', 1)
         return grouped_by_resolution
 
@@ -158,8 +168,8 @@ class SpreadsheetLogic:
         pytorch_ws = self.get_or_create_worksheets(self.spreadsheet_prefix + "PyTorch")
         if self.clear_sheet:
             handle_write_req_limit(pytorch_ws.clear)()
-        handle_write_req_limit(pytorch_ws.update)(table, "A1")
         self.unmerge_sheet(pytorch_ws)
+        handle_write_req_limit(pytorch_ws.update)(table, "A1")
         self.merge_adjacent_equal_rows(pytorch_ws, get_column(table, 0), 'A', 1)
         self.merge_adjacent_equal_rows(pytorch_ws, get_column(table, 1), 'B', 1)
         return combined_dict

@@ -16,14 +16,18 @@ def Count(arr):
     return len(arr)
 
 def T_test_greater(physical_result: list):
-    return CustomNamedFunction('> physical T test', lambda arr: t_test_wrappee(physical_result, arr, 'greater'))
+    return CustomNamedFunction('> physical; p-value', lambda arr: t_test_wrappee(physical_result, arr, 'greater'))
 
 def T_test_less(physical_result: list):
-    return CustomNamedFunction('< physical T test', lambda arr: t_test_wrappee(physical_result, arr, 'less'))
+    return CustomNamedFunction('< physical; p-value', lambda arr: t_test_wrappee(physical_result, arr, 'less'))
+
+def T_test_equal(physical_result: list):
+    return CustomNamedFunction('= physical; p-value', lambda arr: t_test_wrappee(physical_result, arr, 'two-sided'))
+
 
 def t_test_wrappee(comparison, arr, alternative):
     ret: TtestResult = ttest_ind(comparison, arr, alternative=alternative)
-    return ret.statistic
+    return ret.pvalue
 
 class CustomNamedFunction:
     def __init__(self, name, func):
@@ -51,6 +55,7 @@ def major_grouping_by_stat_name__sort_key(item):
     benchmark_name, benchmark_group, function_name, *_ = item
     benchmark_name_ordering = ['Glmark2', 'NAMD', 'PyTorch']
     stat_function_name_ordering = list(map(lambda x: x.get_name(), stat_functions))
+    stat_function_name_ordering.append(T_test_equal([]).get_name())
     try:
         return stat_function_name_ordering.index(function_name)
     except ValueError:
