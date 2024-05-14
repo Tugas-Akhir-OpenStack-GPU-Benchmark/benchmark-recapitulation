@@ -1,7 +1,9 @@
 import re
 
+from ResultProcessors import ResultProcessors
 
-class NamdResultProcessor:
+
+class NamdResultProcessor(ResultProcessors):
     def __init__(self):
         self.results = []
 
@@ -11,4 +13,7 @@ class NamdResultProcessor:
         extracted_content = re.split(r"Average:", content2)[0]
         benchmark_results_as_str = extracted_content.strip().split()
         self.results += list(map(float, benchmark_results_as_str))
+
+    def groups_to_values_mapping(self) -> dict[str, list[float]]:
+        return {'': self.results}
 

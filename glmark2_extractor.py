@@ -1,5 +1,44 @@
 import re
 
+from ResultProcessors import ResultProcessors
+
+
+class MultiresolutionGlmark2ResultProcessor(ResultProcessors):
+    def __init__(self):
+        self.resolution_to_processor_mapping = {}
+
+    @property
+    def as_dict(self):
+        return self.resolution_to_processor_mapping
+
+    def items(self):
+        return self.resolution_to_processor_mapping.items()
+
+    def groups_to_values_mapping(self) -> dict[str, list[float]]:
+        ret = {}
+        glmark2Processor: Glmark2ResultProcessor
+        for resolution, glmark2Processor in self.resolution_to_processor_mapping.items():
+            ret[resolution] = glmark2Processor.get_values()
+        return ret
+
+    @property
+    def resolutions(self):
+        return self.resolution_to_processor_mapping.keys()
+
+    def add_resolutions(self, resolutions):
+        for resolution in resolutions:
+            if resolution not in self.resolution_to_processor_mapping:
+                self.resolution_to_processor_mapping[resolution] = Glmark2ResultProcessor()
+        return self
+
+    def process(self, resolution, content):
+        if resolution not in self.resolution_to_processor_mapping:
+            self.resolution_to_processor_mapping[resolution] = Glmark2ResultProcessor()
+        self.resolution_to_processor_mapping[resolution].process(content)
+
+
+
+
 
 class Glmark2ResultProcessor:
     def __init__(self):

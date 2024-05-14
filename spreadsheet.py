@@ -6,8 +6,9 @@ from gspread import Worksheet
 import glmark2_extractor
 import namd_extractor
 import pytorch_extractor
-from glmark2_extractor import Glmark2ResultProcessor
+from glmark2_extractor import Glmark2ResultProcessor, MultiresolutionGlmark2ResultProcessor
 from stats import stat_functions, T_test_equal, T_test_greater, major_grouping_by_stat_name, T_test_less
+from stats_recap import StatRecapPerOpenStackService
 from thread_pool_worker import WorkerPool, maximum_backoff
 from utils import transpose, combine_dicts, flatten_dict_of_list, flatten_arrays, get_column, \
     iterate_dict_items_based_on_list_ordering, groupby_and_select
@@ -18,63 +19,40 @@ INDEX_OF_T_TEST_COMPARISON = 0
 
 class SpreadsheetLogic:
     # openstack_service_name, then resolution
-    def __init__(self, glmark_processors: dict[str, dict[str, glmark2_extractor.Glmark2ResultProcessor]],
+    def __init__(self, openstack_services_recap: dict[str, StatRecapPerOpenStackService],
+                 glmark_processors: dict[str, MultiresolutionGlmark2ResultProcessor],
                  namd_processors: dict[str, namd_extractor.NamdResultProcessor],
                  pytorch_processors: dict[str, pytorch_extractor.PytorchResultProcessor], clear_sheet=True):
         self.gc = gspread.service_account("./key/key.json")
         self.url = "https://docs.google.com/spreadsheets/d/1tEoTYKBOAVweJ5HYzxigeq6tE--nBIjnK5f8EBO-JLk/edit#gid=0"
         self.document = self.gc.open_by_url(self.url)
+
+        self.openstack_services_recap = openstack_services_recap
         self.glmark_processors = glmark_processors
         self.namd_processors = namd_processors
         self.pytorch_processors = pytorch_processors
         self.worksheets: list[gspread.Worksheet] = self.document.worksheets()
         self.workers = WorkerPool()
-        self.spreadsheet_prefix = "07 "
+        self.spreadsheet_prefix = "08 "
         self.clear_sheet = clear_sheet
 
     def overview(self, openstack_services, glmark2_grouped_by_resolution: dict[str, list[Glmark2ResultProcessor]],
                  pytorch_grouped_by_model_batchsize_tc: dict[tuple[str, int, int], list]):
 
         headers = ["Benchmark",	"Group", "Stats"] + openstack_services
-        table = [headers]
-        for resolution, benchmark_results in glmark2_grouped_by_resolution.items():
-            comparison = benchmark_results[INDEX_OF_T_TEST_COMPARISON].get_values()
-            t_test_function = T_test_less(comparison)
-            t_test_function_equal = T_test_equal(comparison)
-            for stat_function in stat_functions + [t_test_function, t_test_function_equal]:
-                row = ['Glmark2', resolution, func_to_str(stat_function)]
-                for benchmark_result in benchmark_results:
-                    list_of_fps = benchmark_result.get_values()
-                    row.append(stat_function(list_of_fps))
-                table.append(row)
 
+        comparison_openstack_service_name = openstack_services[INDEX_OF_T_TEST_COMPARISON]
+        comparison = self.openstack_services_recap[comparison_openstack_service_name]
+        for index, op_svc in enumerate(openstack_services):
+            openstack_service_recap = self.openstack_services_recap[op_svc]
+            openstack_service_recap.calculate_benchmark(comparison)
 
-        namd_comparison = self.namd_processors[openstack_services[INDEX_OF_T_TEST_COMPARISON]].results
-        t_test_function = T_test_greater(namd_comparison)
-        t_test_function_equal = T_test_equal(namd_comparison)
-        for stat_function in stat_functions + [t_test_function, t_test_function_equal]:
-            row = ['NAMD', '', func_to_str(stat_function)]
-            for openstack_service in openstack_services:
-                benchmark_results_namd = self.namd_processors[openstack_service]
-                row.append(stat_function(benchmark_results_namd.results))
-            table.append(row)
-        # list of ((model, batch_size, tc_number), values)
-        pytorch_list = list(pytorch_grouped_by_model_batchsize_tc.items())
-        group_by_model = lambda x: x[0][0]
-        select_values = lambda x: x[1]
-        model_to_list_of_values = groupby_and_select(pytorch_list, group_by_model, select_values)
+        table = StatRecapPerOpenStackService.as_table(get_column(
+                list(iterate_dict_items_based_on_list_ordering(self.openstack_services_recap, openstack_services)),
+            1
+        ))
+        table.insert(0, headers)
 
-        # list_of_values contains 2d list, 1st axis represents batch_size & tc. 2nd axis represents the openstack_service
-        for model, list_of_values in model_to_list_of_values.items():
-            transposed_list_of_values = transpose(list_of_values)
-
-            comparison_pytorch = transposed_list_of_values[INDEX_OF_T_TEST_COMPARISON]
-            t_test_function = T_test_less(comparison_pytorch)
-            t_test_function_equal = T_test_equal(comparison_pytorch)
-            for stat_function in stat_functions + [t_test_function, t_test_function_equal]:
-                table.append(['PyTorch', model, func_to_str(stat_function), ] + [
-                    stat_function(values) for values in transposed_list_of_values
-                ])
         self.draw_overview_table("Overview", table)
         major_grouping_by_stat_name(table)
         self.draw_overview_table("Overview by Stats", table)
@@ -107,7 +85,7 @@ class SpreadsheetLogic:
         openstack_service_names = openstack_service_ordering
         dictionaries = []
         for ops_svc_name in openstack_service_ordering:
-            dictionaries.append(self.glmark_processors[ops_svc_name])
+            dictionaries.append(self.glmark_processors[ops_svc_name].as_dict)
         ret = {}
         headers = ['resolution', 'step']
         table = [headers]

@@ -2,17 +2,17 @@ from scipy.stats import ttest_ind
 from scipy.stats._result_classes import TtestResult
 import statistics
 
-def avg(arr):
+def avg(arr, **_):
     if not arr:
         return ''
     return sum(arr) / len(arr)
 
 
-def Stdev(arr):
+def Stdev(arr, **_):
     return statistics.stdev(arr)
 
 
-def Count(arr):
+def Count(arr, **_):
     return len(arr)
 
 def T_test_greater(physical_result: list):
@@ -28,6 +28,11 @@ def T_test_equal(physical_result: list):
 def t_test_wrappee(comparison, arr, alternative):
     ret: TtestResult = ttest_ind(comparison, arr, alternative=alternative)
     return ret.pvalue
+
+def t_test_new_api(arr1, arr2, alternative,):
+    ret: TtestResult = ttest_ind(arr1, arr2, alternative=alternative)
+    return ret.pvalue
+
 
 class CustomNamedFunction:
     def __init__(self, name, func):

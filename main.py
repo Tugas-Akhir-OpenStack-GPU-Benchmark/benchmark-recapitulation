@@ -5,8 +5,9 @@ from glob import glob
 
 import namd_extractor
 import pytorch_extractor
-from glmark2_extractor import Glmark2ResultProcessor
+from glmark2_extractor import Glmark2ResultProcessor, MultiresolutionGlmark2ResultProcessor
 from spreadsheet import SpreadsheetLogic
+from stats_recap import StatRecapPerBenchmarkApp, StatRecapPerOpenStackService
 
 glmark2_resolutions = ['1920x1080', '1366x768', '360x800', '192x108']
 openstack_namd_batch_range = range(0, 15)
@@ -16,7 +17,7 @@ async def main():
     file_names = get_file_list()
     files = get_file_content_dict(file_names)
 
-    glmark2_processors = {opnstck_svc_nm: {key: Glmark2ResultProcessor() for key in glmark2_resolutions}
+    glmark2_processors = {opnstck_svc_nm: MultiresolutionGlmark2ResultProcessor().add_resolutions(glmark2_resolutions)
                           for opnstck_svc_nm in files.keys()}
     pytorch_processors = {opnstck_svc_nm: pytorch_extractor.PytorchResultProcessor() for opnstck_svc_nm in files.keys()}
     namd_processors = {opnstck_svc_nm: namd_extractor.NamdResultProcessor() for opnstck_svc_nm in files.keys()}
@@ -27,7 +28,15 @@ async def main():
         for benchmark_type, content in benchmark_results.items():
             handle_processing(benchmark_type, content, pytorch_processors[openstack_service_name],
                               namd_processors[openstack_service_name], glmark2_processors[openstack_service_name])
-    spreadsheet_logic = SpreadsheetLogic(glmark2_processors, namd_processors, pytorch_processors)
+
+    openstack_services = {opnstck_svc_nm: StatRecapPerOpenStackService(opnstck_svc_nm) for opnstck_svc_nm in files.keys()}
+    for openstack_service_name, openstack_service_recap in openstack_services.items():
+        openstack_service_recap.glmark2_processor = glmark2_processors[openstack_service_name]
+        openstack_service_recap.pytorch_processor = pytorch_processors[openstack_service_name]
+        openstack_service_recap.namd_processor = namd_processors[openstack_service_name]
+
+
+    spreadsheet_logic = SpreadsheetLogic(openstack_services, glmark2_processors, namd_processors, pytorch_processors)
     print(spreadsheet_logic.url)
     await spreadsheet_logic.process_spreadsheet()
 

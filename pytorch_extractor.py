@@ -1,7 +1,9 @@
 import re
 
+from ResultProcessors import ResultProcessors
 
-class PytorchResultProcessor:
+
+class PytorchResultProcessor(ResultProcessors):
     def __init__(self):
         self.results = {}
 
@@ -19,3 +21,10 @@ class PytorchResultProcessor:
             result = substring.split()
             self.results[(model, batch_size)] = list(map(float, result))
 
+    def groups_to_values_mapping(self) -> dict[str, list[float]]:
+        ret = {}
+        for (model, batch_size), values in self.results.items():
+            if model not in ret:
+                ret[model] = []
+            ret[model].extend(values)
+        return ret
