@@ -8,30 +8,8 @@ from pytorch_extractor import PytorchResultProcessor
 from stats import *
 
 
-def p_value_equal(x, additional_argument):
-    return t_test_new_api(additional_argument, x, 'two-sided')
 
 
-def p_value_greater(x, additional_argument):
-    return t_test_new_api(additional_argument, x, 'greater')
-
-
-def p_value_less(x, additional_argument):
-    return t_test_new_api(additional_argument, x, 'less')
-
-
-DEFAULT_STATS_TO_CONSIDER = [
-    ('Average', avg),
-    ('Stdev', stdev),
-    ('Count', count),
-    ('= physical; p-value', p_value_equal),
-]
-GREATER_THAN_PHYSICAL = [
-    ('> physical; p-value', p_value_greater),
-]
-LESS_THAN_PHYSICAL = [
-    ('< physical; p-value', p_value_less),
-]
 
 
 class StatsRecap:
@@ -118,7 +96,8 @@ class StatRecapPerOpenStackService:
         stat_per_benchmark_app: StatRecapPerBenchmarkApp
         for openstack_service_stat_recap in all_openstack_service_stat_recap:
             openstack_service_name = extract_openstack_service_name(openstack_service_stat_recap.openstack_service_name)
-            ret.append(f"% ========== {openstack_service_stat_recap.openstack_service_name} ==========")
+
+            ret.append(f"% {'='*40} {openstack_service_stat_recap.openstack_service_name} {'='*40}")
 
             for benchmark_app, stat_per_benchmark_app in openstack_service_stat_recap.as_dict().items():
                 for group, stat_recap in stat_per_benchmark_app.grouping_to_stats_recap_mapping.items():
@@ -130,8 +109,10 @@ class StatRecapPerOpenStackService:
                                f"{replace_forbidden_names(group).title()}"
                                f"{sanitize(stat_func.__name__).title()}")
                         ret.append(
-                            "\\Var{\\"+ key +"}{"+ str(stat_value_result) +"}"
+                            "\\var{\\"+ key +"}{"+ str(stat_value_result) +"}"
                         )
+                    ret.append("")
+            ret.append("")
             ret.append("")
             ret.append("")
         return ret

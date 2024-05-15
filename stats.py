@@ -46,9 +46,41 @@ class CustomNamedFunction:
         return self.name
 
 
-stat_functions = [CustomNamedFunction('Average', avg),
-                  CustomNamedFunction('Stdev', stdev),
-                  CustomNamedFunction('Count', count)]
+
+def p_value_equal(x, additional_argument):
+    return t_test_new_api(additional_argument, x, 'two-sided')
+
+
+def p_value_greater(x, additional_argument):
+    return t_test_new_api(additional_argument, x, 'greater')
+
+
+def p_value_less(x, additional_argument):
+    return t_test_new_api(additional_argument, x, 'less')
+
+def mininum(x, additional_argument):
+    return min(x)
+def maximum(x, additional_argument):
+    return max(x)
+def median(x, additional_argument):
+    return statistics.median(x)
+
+
+DEFAULT_STATS_TO_CONSIDER = [
+    ('Average', avg),
+    ('Stdev', stdev),
+    ('Count', count),
+    ('Min', mininum),
+    ('Max', maximum),
+    ('Median', median),
+    ('= physical; p-value', p_value_equal),
+]
+GREATER_THAN_PHYSICAL = [
+    ('> physical; p-value', p_value_greater),
+]
+LESS_THAN_PHYSICAL = [
+    ('< physical; p-value', p_value_less),
+]
 
 
 def major_grouping_by_stat_name(table):
@@ -59,7 +91,7 @@ def major_grouping_by_stat_name(table):
 def major_grouping_by_stat_name__sort_key(item):
     benchmark_name, benchmark_group, function_name, *_ = item
     benchmark_name_ordering = ['Glmark2', 'NAMD', 'PyTorch']
-    stat_function_name_ordering = list(map(lambda x: x.get_name(), stat_functions))
+    stat_function_name_ordering = list(map(lambda x: x[0], DEFAULT_STATS_TO_CONSIDER))
     stat_function_name_ordering.append(T_test_equal([]).get_name())
     try:
         return stat_function_name_ordering.index(function_name)

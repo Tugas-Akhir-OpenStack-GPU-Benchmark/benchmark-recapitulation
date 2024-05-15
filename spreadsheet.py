@@ -7,7 +7,7 @@ import glmark2_extractor
 import namd_extractor
 import pytorch_extractor
 from glmark2_extractor import Glmark2ResultProcessor, MultiresolutionGlmark2ResultProcessor
-from stats import stat_functions, T_test_equal, T_test_greater, major_grouping_by_stat_name, T_test_less
+from stats import major_grouping_by_stat_name
 from stats_recap import StatRecapPerOpenStackService
 from thread_pool_worker import WorkerPool, maximum_backoff
 from utils import transpose, combine_dicts, flatten_dict_of_list, flatten_arrays, get_column, \
