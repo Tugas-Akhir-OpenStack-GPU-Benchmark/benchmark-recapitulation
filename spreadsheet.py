@@ -33,11 +33,10 @@ class SpreadsheetLogic:
         self.pytorch_processors = pytorch_processors
         self.worksheets: list[gspread.Worksheet] = self.document.worksheets()
         self.workers = WorkerPool()
-        self.spreadsheet_prefix = "08 "
+        self.spreadsheet_prefix = "07 "
         self.clear_sheet = clear_sheet
 
-    def overview(self, openstack_services, glmark2_grouped_by_resolution: dict[str, list[Glmark2ResultProcessor]],
-                 pytorch_grouped_by_model_batchsize_tc: dict[tuple[str, int, int], list]):
+    def overview(self, openstack_services):
 
         headers = ["Benchmark",	"Group", "Stats"] + openstack_services
 
@@ -76,7 +75,7 @@ class SpreadsheetLogic:
         glmark2_grouped_by_resolution = await self.process_glmark2(openstack_service_ordering)
         self.process_namd(openstack_service_ordering)
         pytorch_grouped_by_model_batchsize_tc = await self.process_pytorch(openstack_service_ordering)
-        self.overview(openstack_service_ordering, glmark2_grouped_by_resolution, pytorch_grouped_by_model_batchsize_tc)
+        self.overview(openstack_service_ordering)
 
         self.workers.stop_workers()
         print("Done")

@@ -8,11 +8,11 @@ def avg(arr, **_):
     return sum(arr) / len(arr)
 
 
-def Stdev(arr, **_):
+def stdev(arr, **_):
     return statistics.stdev(arr)
 
 
-def Count(arr, **_):
+def count(arr, **_):
     return len(arr)
 
 def T_test_greater(physical_result: list):
@@ -47,8 +47,8 @@ class CustomNamedFunction:
 
 
 stat_functions = [CustomNamedFunction('Average', avg),
-                  CustomNamedFunction('Stdev', Stdev),
-                  CustomNamedFunction('Count', Count)]
+                  CustomNamedFunction('Stdev', stdev),
+                  CustomNamedFunction('Count', count)]
 
 
 def major_grouping_by_stat_name(table):

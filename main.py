@@ -38,7 +38,14 @@ async def main():
 
     spreadsheet_logic = SpreadsheetLogic(openstack_services, glmark2_processors, namd_processors, pytorch_processors)
     print(spreadsheet_logic.url)
+
     await spreadsheet_logic.process_spreadsheet()
+
+    with open("latex_command.tex", "w") as f:
+        print("\n".join(StatRecapPerOpenStackService.as_latex_variables(
+            list(openstack_services.values())
+        )), file=f)
+
 
 
 def handle_processing(benchmark_type, content, pytorch_processor, namd_processor, glmark2_processors: dict[str, Glmark2ResultProcessor]):

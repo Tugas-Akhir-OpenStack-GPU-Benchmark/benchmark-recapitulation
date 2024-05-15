@@ -8,17 +8,29 @@ from pytorch_extractor import PytorchResultProcessor
 from stats import *
 
 
+def p_value_equal(x, additional_argument):
+    return t_test_new_api(additional_argument, x, 'two-sided')
+
+
+def p_value_greater(x, additional_argument):
+    return t_test_new_api(additional_argument, x, 'greater')
+
+
+def p_value_less(x, additional_argument):
+    return t_test_new_api(additional_argument, x, 'less')
+
+
 DEFAULT_STATS_TO_CONSIDER = [
     ('Average', avg),
-    ('Stdev', Stdev),
-    ('Count', Count),
-    ('= physical; p-value', lambda x, additional_argument: t_test_new_api(additional_argument, x, 'two-sided')),
+    ('Stdev', stdev),
+    ('Count', count),
+    ('= physical; p-value', p_value_equal),
 ]
 GREATER_THAN_PHYSICAL = [
-    ('> physical; p-value', lambda x, additional_argument: t_test_new_api(additional_argument, x, 'greater')),
+    ('> physical; p-value', p_value_greater),
 ]
 LESS_THAN_PHYSICAL = [
-    ('< physical; p-value', lambda x, additional_argument: t_test_new_api(additional_argument, x, 'less')),
+    ('< physical; p-value', p_value_less),
 ]
 
 
@@ -26,8 +38,10 @@ class StatsRecap:
     def __init__(self, array_of_values: list[float]):
         self.array_of_values = array_of_values
         self.stats: dict[str, float] = {}
+        self.calculated_stats: list[tuple[str, Callable]] = None
 
     def calculate_stats(self, stats_to_consider: list[tuple[str, Callable]], additional_argument):
+        self.calculated_stats = stats_to_consider
         for stat_name, stat_func in stats_to_consider:
             result = stat_func(self.array_of_values, additional_argument=additional_argument)
             self.stats[stat_name] = result
@@ -97,5 +111,57 @@ class StatRecapPerOpenStackService:
             table.append([benchmark_app, group, stat_name] + list_of_values)
         return table
 
+    @staticmethod
+    def as_latex_variables(all_openstack_service_stat_recap: list[StatRecapPerOpenStackService]) -> list[str]:
+        ret = []
+
+        stat_per_benchmark_app: StatRecapPerBenchmarkApp
+        for openstack_service_stat_recap in all_openstack_service_stat_recap:
+            openstack_service_name = extract_openstack_service_name(openstack_service_stat_recap.openstack_service_name)
+            ret.append(f"% ========== {openstack_service_stat_recap.openstack_service_name} ==========")
+
+            for benchmark_app, stat_per_benchmark_app in openstack_service_stat_recap.as_dict().items():
+                for group, stat_recap in stat_per_benchmark_app.grouping_to_stats_recap_mapping.items():
+                    for stat_name, stat_func  in stat_recap.calculated_stats:
+                        stat_value_result = stat_recap.stats[stat_name]
+                        # Cannot have underscores
+                        key = (f"{openstack_service_name}"
+                               f"{replace_forbidden_names(sanitize(benchmark_app).title())}"
+                               f"{replace_forbidden_names(group).title()}"
+                               f"{sanitize(stat_func.__name__).title()}")
+                        ret.append(
+                            "\\Var{\\"+ key +"}{"+ str(stat_value_result) +"}"
+                        )
+            ret.append("")
+            ret.append("")
+        return ret
+
+def replace_forbidden_names(forbidden_name):
+    names = {
+        'Glmark2': 'Glmark',
+        'ResNet-50': 'ResnetFivety',
+        'ResNet-152': 'ResnetOFT',
+        'Efficientnet_v2_l': 'Efnet',
+        '1920x1080': 'LaptopBig',
+        '1366x768': 'LaptopSmall',
+        '360x800': 'Phone',
+        '192x108': 'Smallest'
+    }
+    return names.get(forbidden_name, forbidden_name)
+
+def sanitize(string):
+    forbidden_characters = ['-', ',', '.', '_']
+    for char in forbidden_characters:
+        string = string.replace(char, '')
+    return string
+
+
+def extract_openstack_service_name(string: str):
+    string = string.lower()
+    values_to_find = ['nova', 'zun', 'ironic', 'physical', 'direct']
+    for value in values_to_find:
+        if value in string:
+            return value
+    return sanitize(string)
 
 
