@@ -58,12 +58,22 @@ def p_value_greater(x, additional_argument):
 def p_value_less(x, additional_argument):
     return t_test_new_api(additional_argument, x, 'less')
 
-def mininum(x, additional_argument):
-    return min(x)
-def maximum(x, additional_argument):
-    return max(x)
-def median(x, additional_argument):
-    return statistics.median(x)
+def mininum(data, additional_argument):
+    return min(data)
+def maximum(data, additional_argument):
+    return max(data)
+def median(data, additional_argument):
+    return statistics.median(data)
+
+def lower_quantile(data, additional_argument):
+    q1, med, q3 = statistics.quantiles(data, n=4)
+    return q1
+
+
+def upper_quantile(data, additional_argument):
+    q1, med, q3 = statistics.quantiles(data, n=4)
+    return q3
+
 
 
 DEFAULT_STATS_TO_CONSIDER = [
@@ -71,8 +81,10 @@ DEFAULT_STATS_TO_CONSIDER = [
     ('Stdev', stdev),
     ('Count', count),
     ('Min', mininum),
-    ('Max', maximum),
+    ('Q1', lower_quantile),
     ('Median', median),
+    ('Q3', upper_quantile),
+    ('Max', maximum),
     ('= physical; p-value', p_value_equal),
 ]
 GREATER_THAN_PHYSICAL = [
