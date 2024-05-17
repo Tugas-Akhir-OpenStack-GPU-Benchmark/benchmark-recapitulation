@@ -14,7 +14,7 @@ from utils import transpose, combine_dicts, flatten_dict_of_list, flatten_arrays
     iterate_dict_items_based_on_list_ordering, groupby_and_select
 
 
-INDEX_OF_T_TEST_COMPARISON = 0
+
 
 
 class SpreadsheetLogic:
@@ -39,12 +39,6 @@ class SpreadsheetLogic:
     def overview(self, openstack_services):
 
         headers = ["Benchmark",	"Group", "Stats"] + openstack_services
-
-        comparison_openstack_service_name = openstack_services[INDEX_OF_T_TEST_COMPARISON]
-        comparison = self.openstack_services_recap[comparison_openstack_service_name]
-        for index, op_svc in enumerate(openstack_services):
-            openstack_service_recap = self.openstack_services_recap[op_svc]
-            openstack_service_recap.calculate_benchmark(comparison)
 
         table = StatRecapPerOpenStackService.as_table(get_column(
                 list(iterate_dict_items_based_on_list_ordering(self.openstack_services_recap, openstack_services)),
@@ -75,6 +69,7 @@ class SpreadsheetLogic:
         glmark2_grouped_by_resolution = await self.process_glmark2(openstack_service_ordering)
         self.process_namd(openstack_service_ordering)
         pytorch_grouped_by_model_batchsize_tc = await self.process_pytorch(openstack_service_ordering)
+
         self.overview(openstack_service_ordering)
 
         self.workers.stop_workers()

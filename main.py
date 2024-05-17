@@ -11,6 +11,7 @@ from stats_recap import StatRecapPerBenchmarkApp, StatRecapPerOpenStackService
 
 glmark2_resolutions = ['1920x1080', '1366x768', '360x800', '192x108']
 openstack_namd_batch_range = range(0, 15)
+INDEX_OF_T_TEST_COMPARISON = 0
 
 
 async def main():
@@ -39,12 +40,19 @@ async def main():
     spreadsheet_logic = SpreadsheetLogic(openstack_services, glmark2_processors, namd_processors, pytorch_processors)
     print(spreadsheet_logic.url)
 
-    await spreadsheet_logic.process_spreadsheet()
+    openstack_services_ordering = list(namd_processors.keys())
+    comparison_openstack_service_name = openstack_services_ordering[INDEX_OF_T_TEST_COMPARISON]
+    comparison = openstack_services[comparison_openstack_service_name]
+    for index, op_svc in enumerate(openstack_services):
+        openstack_service_recap = openstack_services[op_svc]
+        openstack_service_recap.calculate_benchmark(comparison)
 
     with open("latex_command.tex", "w") as f:
         print("\n".join(StatRecapPerOpenStackService.as_latex_variables(
             list(openstack_services.values())
         )), file=f)
+
+    await spreadsheet_logic.process_spreadsheet()
 
 
 

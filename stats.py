@@ -74,6 +74,12 @@ def upper_quantile(data, additional_argument):
     q1, med, q3 = statistics.quantiles(data, n=4)
     return q3
 
+def lower_whisker(data, additional_argument):
+    q1, med, q3 = statistics.quantiles(data, n=4)
+    iqr = q3 - q1
+    return q1 - 1.5*iqr
+
+
 
 
 DEFAULT_STATS_TO_CONSIDER = [
@@ -81,10 +87,11 @@ DEFAULT_STATS_TO_CONSIDER = [
     ('Stdev', stdev),
     ('Count', count),
     ('Min', mininum),
+    ('Max', maximum),
     ('Q1', lower_quantile),
     ('Median', median),
     ('Q3', upper_quantile),
-    ('Max', maximum),
+
     ('= physical; p-value', p_value_equal),
 ]
 GREATER_THAN_PHYSICAL = [

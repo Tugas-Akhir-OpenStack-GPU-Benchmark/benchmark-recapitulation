@@ -109,13 +109,23 @@ class StatRecapPerOpenStackService:
                                f"{replace_forbidden_names(group).title()}"
                                f"{sanitize(stat_func.__name__).title()}")
                         ret.append(
-                            "\\var{\\"+ key +"}{"+ str(stat_value_result) +"}"
+                            "\\var{\\"+ key +"}{"+ str(round(stat_value_result, 5)) +"}"
                         )
                     ret.append("")
+                    key = (f"BOXPLOT{openstack_service_name}"
+                                 f"{replace_forbidden_names(sanitize(benchmark_app).title())}"
+                                 f"{replace_forbidden_names(group).title()}Array")
+                    data = "data\\\\" + "\\\\".join(list(map(str, stat_recap.array_of_values))) + "\\\\"
+                    data = "\\addplot+[boxplot, fill, draw=black,] table[row sep=\\\\,y index=0] {"+data+"};"
+                    ret.append(f"\\var{{\\{key}}}{{{data}}}")
+                    ret.append("")
+
             ret.append("")
             ret.append("")
             ret.append("")
         return ret
+
+
 
 def replace_forbidden_names(forbidden_name):
     names = {
