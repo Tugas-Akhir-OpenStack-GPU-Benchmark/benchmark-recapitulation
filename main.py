@@ -6,6 +6,7 @@ from glob import glob
 import namd_extractor
 import pytorch_extractor
 from glmark2_extractor import Glmark2ResultProcessor, MultiresolutionGlmark2ResultProcessor
+from gpu_utilization_extractor import GpuUtilizzationExtractorBase, GpuUtilizzationExtractor
 from spreadsheet import SpreadsheetLogic
 from stats_recap import StatRecapPerBenchmarkApp, StatRecapPerOpenStackService
 
@@ -22,20 +23,23 @@ async def main():
                           for opnstck_svc_nm in files.keys()}
     pytorch_processors = {opnstck_svc_nm: pytorch_extractor.PytorchResultProcessor() for opnstck_svc_nm in files.keys()}
     namd_processors = {opnstck_svc_nm: namd_extractor.NamdResultProcessor() for opnstck_svc_nm in files.keys()}
+    gpu_util_processors = {opnstck_svc_nm: GpuUtilizzationExtractorBase() for opnstck_svc_nm in files.keys()}
 
     for index, (openstack_service_name, content) in enumerate(files.items()):
         print(openstack_service_name)
         benchmark_results = extract_file_name_from_more_format(content)
+
         for benchmark_type, content in benchmark_results.items():
             handle_processing(benchmark_type, content, pytorch_processors[openstack_service_name],
-                              namd_processors[openstack_service_name], glmark2_processors[openstack_service_name])
+                              namd_processors[openstack_service_name], glmark2_processors[openstack_service_name],
+                              gpu_util_processors[openstack_service_name])
 
     openstack_services = {opnstck_svc_nm: StatRecapPerOpenStackService(opnstck_svc_nm) for opnstck_svc_nm in files.keys()}
     for openstack_service_name, openstack_service_recap in openstack_services.items():
         openstack_service_recap.glmark2_processor = glmark2_processors[openstack_service_name]
         openstack_service_recap.pytorch_processor = pytorch_processors[openstack_service_name]
         openstack_service_recap.namd_processor = namd_processors[openstack_service_name]
-
+        openstack_service_recap.gpu_util_processor = gpu_util_processors[openstack_service_name]
 
     spreadsheet_logic = SpreadsheetLogic(openstack_services, glmark2_processors, namd_processors, pytorch_processors)
     print(spreadsheet_logic.url)
@@ -56,14 +60,20 @@ async def main():
 
 
 
-def handle_processing(benchmark_type, content, pytorch_processor, namd_processor, glmark2_processors: dict[str, Glmark2ResultProcessor]):
+
+def handle_processing(benchmark_type, content, pytorch_processor, namd_processor, glmark2_processors: dict[str, Glmark2ResultProcessor], utilization_base_proc):
     handlers = {
         'pytorch_benchmark_result.txt': pytorch_processor,
         'namd_benchmark_result.txt': namd_processor,
+        'nvidia_smi_glmark2.txt': GpuUtilizzationExtractor(utilization_base_proc, 'nvidia_smi_glmark2.txt'),
+        'nvidia_smi_pytorch.txt': GpuUtilizzationExtractor(utilization_base_proc, 'nvidia_smi_pytorch.txt'),
     } | {
         f'glmark2_benchmark_result_{resolution}.txt': processor for resolution, processor in glmark2_processors.items()
     } | {
         f'namd_benchmark_result_{batch_no}.txt': namd_processor
+        for batch_no in openstack_namd_batch_range
+    } | {
+        f'nvidia_smi_namd_{batch_no}.txt': GpuUtilizzationExtractor(utilization_base_proc, 'nvidia_smi_namd_{batch_no}.txt')
         for batch_no in openstack_namd_batch_range
     }
     nop_processor = NopProcessor()

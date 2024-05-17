@@ -1,6 +1,7 @@
 import re
 
 from ResultProcessors import ResultProcessors
+from stats import LESS_THAN_PHYSICAL, DEFAULT_STATS_TO_CONSIDER
 
 
 class PytorchResultProcessor(ResultProcessors):
@@ -28,3 +29,6 @@ class PytorchResultProcessor(ResultProcessors):
                 ret[model] = []
             ret[model].extend(values)
         return ret
+
+    def stats_to_consider(self) -> list[tuple[str, callable]]:
+        return DEFAULT_STATS_TO_CONSIDER + LESS_THAN_PHYSICAL

@@ -1,6 +1,7 @@
 import re
 
 from ResultProcessors import ResultProcessors
+from stats import GREATER_THAN_PHYSICAL, DEFAULT_STATS_TO_CONSIDER
 
 
 class NamdResultProcessor(ResultProcessors):
@@ -16,4 +17,8 @@ class NamdResultProcessor(ResultProcessors):
 
     def groups_to_values_mapping(self) -> dict[str, list[float]]:
         return {'': self.results}
+
+    def stats_to_consider(self) -> list[tuple[str, callable]]:
+        return DEFAULT_STATS_TO_CONSIDER + GREATER_THAN_PHYSICAL
+
 

@@ -1,6 +1,7 @@
 import re
 
 from ResultProcessors import ResultProcessors
+from stats import DEFAULT_STATS_TO_CONSIDER, LESS_THAN_PHYSICAL
 
 
 class MultiresolutionGlmark2ResultProcessor(ResultProcessors):
@@ -36,6 +37,8 @@ class MultiresolutionGlmark2ResultProcessor(ResultProcessors):
             self.resolution_to_processor_mapping[resolution] = Glmark2ResultProcessor()
         self.resolution_to_processor_mapping[resolution].process(content)
 
+    def stats_to_consider(self):
+        return DEFAULT_STATS_TO_CONSIDER + LESS_THAN_PHYSICAL
 
 
 

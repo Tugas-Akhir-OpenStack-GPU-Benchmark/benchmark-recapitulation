@@ -4,6 +4,7 @@ from typing import Callable
 import namd_extractor
 from ResultProcessors import ResultProcessors
 from glmark2_extractor import MultiresolutionGlmark2ResultProcessor
+from gpu_utilization_extractor import GpuUtilizzationExtractor, GpuUtilizzationExtractorBase
 from pytorch_extractor import PytorchResultProcessor
 from stats import *
 
@@ -36,11 +37,11 @@ class StatRecapPerBenchmarkApp:
         return self.grouping_to_stats_recap_mapping[group_name]
 
 
-    def calculate_stats(self, resultProcessor: ResultProcessors, stats_to_consider, comparison: StatRecapPerBenchmarkApp):
+    def calculate_stats(self, resultProcessor: ResultProcessors, comparison: StatRecapPerBenchmarkApp):
         for group, values in resultProcessor.groups_to_values_mapping().items():
             stat_recap = StatsRecap(values)
             self.add_group(group, stat_recap)
-            stat_recap.calculate_stats(stats_to_consider, additional_argument=comparison.get_group_stats(group).array_of_values)
+            stat_recap.calculate_stats(resultProcessor.stats_to_consider(), additional_argument=comparison.get_group_stats(group).array_of_values)
 
 
 
@@ -58,19 +59,23 @@ class StatRecapPerOpenStackService:
         self.namd: StatRecapPerBenchmarkApp = StatRecapPerBenchmarkApp()
         self.pytorch_processor: PytorchResultProcessor = None
         self.pytorch: StatRecapPerBenchmarkApp = StatRecapPerBenchmarkApp()
+        self.gpu_util_processor: GpuUtilizzationExtractorBase = None
+        self.gpu_util: StatRecapPerBenchmarkApp = StatRecapPerBenchmarkApp()
 
     def as_dict(self):
         return {
             'Glmark2': self.glmark2,
             'NAMD': self.namd,
             'PyTorch': self.pytorch,
+            'GpuUtil': self.gpu_util,
         }
 
 
     def calculate_benchmark(self, comparison: StatRecapPerOpenStackService):
-        self.glmark2.calculate_stats(self.glmark2_processor, DEFAULT_STATS_TO_CONSIDER + LESS_THAN_PHYSICAL, comparison.glmark2)
-        self.namd.calculate_stats(self.namd_processor, DEFAULT_STATS_TO_CONSIDER + GREATER_THAN_PHYSICAL, comparison.namd)
-        self.pytorch.calculate_stats(self.pytorch_processor, DEFAULT_STATS_TO_CONSIDER + LESS_THAN_PHYSICAL, comparison.pytorch)
+        self.glmark2.calculate_stats(self.glmark2_processor, comparison.glmark2)
+        self.namd.calculate_stats(self.namd_processor, comparison.namd)
+        self.pytorch.calculate_stats(self.pytorch_processor, comparison.pytorch)
+        self.gpu_util.calculate_stats(self.gpu_util_processor, comparison.gpu_util)
 
     @staticmethod
     def as_table(all_openstack_service_stat_recap: list[StatRecapPerOpenStackService]):
@@ -111,15 +116,12 @@ class StatRecapPerOpenStackService:
                         ret.append(
                             "\\var{\\"+ key +"}{"+ str(round(stat_value_result, 5)) +"}"
                         )
-                    ret.append("")
                     key = (f"BOXPLOT{openstack_service_name}"
                                  f"{replace_forbidden_names(sanitize(benchmark_app).title())}"
                                  f"{replace_forbidden_names(group).title()}Array")
                     data = "data\\\\" + "\\\\".join(list(map(str, stat_recap.array_of_values))) + "\\\\"
                     data = "\\addplot+[boxplot, fill, draw=black,] table[row sep=\\\\,y index=0] {"+data+"};"
                     ret.append(f"\\var{{\\{key}}}{{{data}}}")
-                    ret.append("")
-
             ret.append("")
             ret.append("")
             ret.append("")
@@ -129,16 +131,17 @@ class StatRecapPerOpenStackService:
 
 def replace_forbidden_names(forbidden_name):
     names = {
-        'Glmark2': 'Glmark',
-        'ResNet-50': 'ResnetFivety',
-        'ResNet-152': 'ResnetOFT',
-        'Efficientnet_v2_l': 'Efnet',
+        'Glmark2'.lower(): 'Glmark',
+        'ResNet-50'.lower(): 'ResnetFivety',
+        'ResNet-152'.lower(): 'ResnetOFT',
+        'Efficientnet_v2_l'.lower(): 'Efnet',
         '1920x1080': 'LaptopBig',
         '1366x768': 'LaptopSmall',
         '360x800': 'Phone',
         '192x108': 'Smallest'
     }
-    return names.get(forbidden_name, forbidden_name)
+    return names.get(forbidden_name.lower(), forbidden_name)
+
 
 def sanitize(string):
     forbidden_characters = ['-', ',', '.', '_']

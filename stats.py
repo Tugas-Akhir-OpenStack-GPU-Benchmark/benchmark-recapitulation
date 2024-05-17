@@ -5,7 +5,7 @@ import statistics
 def avg(arr, **_):
     if not arr:
         return ''
-    return sum(arr) / len(arr)
+    return float(sum(arr) / len(arr))
 
 
 def stdev(arr, **_):
