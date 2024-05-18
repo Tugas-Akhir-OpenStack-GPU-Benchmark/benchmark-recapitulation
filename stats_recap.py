@@ -41,7 +41,7 @@ class StatRecapPerBenchmarkApp:
         for group, values in resultProcessor.groups_to_values_mapping().items():
             stat_recap = StatsRecap(values)
             self.add_group(group, stat_recap)
-            stat_recap.calculate_stats(resultProcessor.stats_to_consider(), additional_argument=comparison.get_group_stats(group).array_of_values)
+            stat_recap.calculate_stats(resultProcessor.stats_to_consider(), comparison.get_group_stats(group).array_of_values)
 
 
 

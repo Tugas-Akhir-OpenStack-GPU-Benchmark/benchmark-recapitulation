@@ -48,15 +48,15 @@ class CustomNamedFunction:
 
 
 def p_value_equal(x, additional_argument):
-    return t_test_new_api(additional_argument, x, 'two-sided')
+    return t_test_new_api(x, additional_argument, 'two-sided')
 
 
 def p_value_greater(x, additional_argument):
-    return t_test_new_api(additional_argument, x, 'greater')
+    return t_test_new_api(x, additional_argument, 'greater')
 
 
 def p_value_less(x, additional_argument):
-    return t_test_new_api(additional_argument, x, 'less')
+    return t_test_new_api(x, additional_argument, 'less')
 
 def mininum(data, additional_argument):
     return min(data)
