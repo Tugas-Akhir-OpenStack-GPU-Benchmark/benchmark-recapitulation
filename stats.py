@@ -22,7 +22,7 @@ def T_test_less(physical_result: list):
     return CustomNamedFunction('< physical; p-value', lambda arr: t_test_wrappee(physical_result, arr, 'less'))
 
 def T_test_equal(physical_result: list):
-    return CustomNamedFunction('= physical; p-value', lambda arr: t_test_wrappee(physical_result, arr, 'two-sided'))
+    return CustomNamedFunction('≠ physical; p-value', lambda arr: t_test_wrappee(physical_result, arr, 'two-sided'))
 
 
 def t_test_wrappee(comparison, arr, alternative):
@@ -47,7 +47,7 @@ class CustomNamedFunction:
 
 
 
-def p_value_equal(x, additional_argument):
+def p_value_not_equal(x, additional_argument):
     return t_test_new_api(x, additional_argument, 'two-sided')
 
 
@@ -92,7 +92,7 @@ DEFAULT_STATS_TO_CONSIDER = [
     ('Median', median),
     ('Q3', upper_quantile),
 
-    ('= physical; p-value', p_value_equal),
+    ('≠ physical; p-value', p_value_not_equal),
 ]
 GREATER_THAN_PHYSICAL = [
     ('> physical; p-value', p_value_greater),
