@@ -76,7 +76,7 @@ class GpuUtilStats:
         return self.count
 
     def __float__(self):
-        return self.sum / self.count
+        return round(self.sum / self.count, 2)
 
     def __repr__(self):
         return f"{self.__float__()}"
@@ -85,7 +85,7 @@ class GpuUtilStats:
         return iter([self])
 
     def __round__(self, ndigits=None):
-        return round(self.__float__(), ndigits=ndigits)
+        return round(self.__float__(), ndigits=min(2,ndigits or 100))
 
 
 def groups_to_values_mapping(self) -> dict[str, list[float]]:
