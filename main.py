@@ -47,6 +47,7 @@ async def main():
     openstack_services_ordering = list(namd_processors.keys())
     comparison_openstack_service_name = openstack_services_ordering[INDEX_OF_T_TEST_COMPARISON]
     comparison = openstack_services[comparison_openstack_service_name]
+    comparison.as_comparison = True
     for index, op_svc in enumerate(openstack_services):
         openstack_service_recap = openstack_services[op_svc]
         openstack_service_recap.calculate_benchmark(comparison)
