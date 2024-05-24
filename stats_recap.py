@@ -132,8 +132,12 @@ class StatRecapPerOpenStackService:
                                                                   benchmark_app, all_openstack_service_stat_recap, group))
                     ret.append(getLatexDeclaration(f"{openstack_service_name}{benchmark_app_latex_var_name}{group_latex_var_name}AverageRatio",
                                                    as_percentage(comparison_ratios[-1])))
+                    ret.append(getLatexDeclaration(f"{openstack_service_name}{benchmark_app_latex_var_name}{group_latex_var_name}DecrementRatio",
+                                                   as_percentage(1 - comparison_ratios[-1])))
                 ret.append(getLatexDeclaration(f"{openstack_service_name}{benchmark_app_latex_var_name}OverallAverageRatio",
                                                as_percentage(avg(comparison_ratios))))
+                ret.append(getLatexDeclaration(f"{openstack_service_name}{benchmark_app_latex_var_name}OverallDecrementRatio",
+                                               as_percentage(1 - avg(comparison_ratios))))
             ret.append("")
             ret.append("")
             ret.append("")
