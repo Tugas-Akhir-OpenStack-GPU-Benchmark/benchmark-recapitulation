@@ -1,5 +1,7 @@
 import re
 
+import pandas as pd
+
 from ResultProcessors import ResultProcessors
 from stats import GREATER_THAN_PHYSICAL, DEFAULT_STATS_TO_CONSIDER
 
@@ -21,4 +23,10 @@ class NamdResultProcessor(ResultProcessors):
     def stats_to_consider(self) -> list[tuple[str, callable]]:
         return DEFAULT_STATS_TO_CONSIDER + GREATER_THAN_PHYSICAL
 
-
+    def as_dataframe(self) -> pd.DataFrame:
+        data = []
+        for value in self.results:
+            data.append({
+                'days/ns': value,
+            })
+        return pd.DataFrame(data)

@@ -1,5 +1,7 @@
 import re
 
+import pandas as pd
+
 from ResultProcessors import ResultProcessors
 from stats import LESS_THAN_PHYSICAL, DEFAULT_STATS_TO_CONSIDER
 
@@ -32,3 +34,13 @@ class PytorchResultProcessor(ResultProcessors):
 
     def stats_to_consider(self) -> list[tuple[str, callable]]:
         return DEFAULT_STATS_TO_CONSIDER + LESS_THAN_PHYSICAL
+
+    def as_dataframe(self) -> pd.DataFrame:
+        data = []
+        for model, values in self.groups_to_values_mapping().items():
+            for value in values:
+                data.append({
+                    'model': model,
+                    'batches/second': value,
+                })
+        return pd.DataFrame(data)

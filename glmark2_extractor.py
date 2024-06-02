@@ -1,4 +1,7 @@
+from __future__ import annotations
 import re
+
+import pandas as pd
 
 from ResultProcessors import ResultProcessors
 from stats import DEFAULT_STATS_TO_CONSIDER, LESS_THAN_PHYSICAL
@@ -40,6 +43,15 @@ class MultiresolutionGlmark2ResultProcessor(ResultProcessors):
     def stats_to_consider(self):
         return DEFAULT_STATS_TO_CONSIDER + LESS_THAN_PHYSICAL
 
+    def as_dataframe(self) -> pd.DataFrame:
+        data = []
+        for resolution, values in self.groups_to_values_mapping().items():
+            for value in values:
+                data.append({
+                    'resolution': resolution,
+                    'FPS': value,
+                })
+        return pd.DataFrame(data)
 
 
 

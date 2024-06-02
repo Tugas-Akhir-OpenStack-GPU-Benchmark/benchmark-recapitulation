@@ -1,3 +1,6 @@
+import pandas as pd
+
+
 class ResultProcessors:
     def process(self, content) -> None:
         raise NotImplementedError
@@ -6,4 +9,7 @@ class ResultProcessors:
         raise NotImplementedError
 
     def stats_to_consider(self) -> list[tuple[str, callable]]:
+        raise NotImplementedError
+
+    def as_dataframe(self) -> pd.DataFrame:
         raise NotImplementedError

@@ -34,6 +34,17 @@ def combine_dicts(dictionaries: dict, key_sorter=lambda x: x, jagged_default_val
     return ret
 
 
+def transpose_dict(dictionaries: dict[str, dict]):
+    ret = {}
+
+    for key, inner_dict in dictionaries.items():
+        for inner_key, value in inner_dict.items():
+            ret[inner_key] = ret.get(inner_key, {})
+            ret[inner_key][key] = value
+    return ret
+
+
+
 def flatten_arrays(array_of_arrays):
     ret = []
     for array in array_of_arrays:

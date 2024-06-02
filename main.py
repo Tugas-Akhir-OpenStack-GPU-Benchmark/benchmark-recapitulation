@@ -9,6 +9,8 @@ from glmark2_extractor import Glmark2ResultProcessor, MultiresolutionGlmark2Resu
 from gpu_utilization_extractor import GpuUtilizzationExtractorBase, GpuUtilizzationExtractor
 from spreadsheet import SpreadsheetLogic
 from stats_recap import StatRecapPerBenchmarkApp, StatRecapPerOpenStackService
+from update_graphics import UpdateGraphics
+from update_gslide import UpdateGslide
 
 glmark2_resolutions = ['1920x1080', '1366x768', '360x800', '192x108']
 openstack_namd_batch_range = range(0, 15)
@@ -57,6 +59,11 @@ async def main():
             list(openstack_services.values())
         )), file=f)
 
+    update_charts = UpdateGraphics(openstack_services, glmark2_processors, namd_processors, pytorch_processors)
+    update_charts.update_slides()
+    update_slide = UpdateGslide()
+    update_slide.upsert_all_in_folder('./graphics')
+    # print()
     await spreadsheet_logic.process_spreadsheet()
 
 
