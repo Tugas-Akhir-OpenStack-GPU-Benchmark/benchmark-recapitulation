@@ -1,8 +1,11 @@
 from __future__ import annotations
 from typing import Callable
 
+import pandas as pd
+
 import namd_extractor
 from ResultProcessors import ResultProcessors
+from constants import openstack_service_col, benchmark_app_col, group_col, stat_name_col, value_col
 from glmark2_extractor import MultiresolutionGlmark2ResultProcessor
 from gpu_utilization_extractor import GpuUtilizzationExtractor, GpuUtilizzationExtractorBase
 from pytorch_extractor import PytorchResultProcessor
@@ -103,6 +106,18 @@ class StatRecapPerOpenStackService:
         for (benchmark_app, group, stat_name), list_of_values in rows.items():
             table.append([benchmark_app, group, stat_name] + list_of_values)
         return table
+
+    @staticmethod
+    def as_dataframe(all_openstack_service_stat_recap: dict[str, StatRecapPerOpenStackService]) -> pd.DataFrame:
+        rows = {}
+        ret = []
+        stat_per_benchmark_app: StatRecapPerBenchmarkApp
+        for openstack_name, openstack_service_stat_recap in all_openstack_service_stat_recap.items():
+            for benchmark_app, stat_per_benchmark_app in openstack_service_stat_recap.as_dict().items():
+                for group, stat_recap in stat_per_benchmark_app.grouping_to_stats_recap_mapping.items():
+                    for stat_name, stat_value_result in stat_recap.stats_calculation_result.items():
+                        ret.append([openstack_name, benchmark_app, group, stat_name, stat_value_result])
+        return pd.DataFrame.from_records(ret, columns=[openstack_service_col, benchmark_app_col, group_col, stat_name_col, value_col])
 
     @staticmethod
     def as_latex_variables(all_openstack_service_stat_recap: list[StatRecapPerOpenStackService]) -> list[str]:
