@@ -39,23 +39,23 @@ class UpdateGraphics():
         plt.figure()
         boxplot = sns.boxplot(data=curr_data, x=openstack_service_col, y=y_col).set_title(title)
         figure = boxplot.get_figure()
-        figure.savefig(f"./graphics/boxplot_{save_file}.png")
+        figure.savefig(f"./graphics/boxplot_{save_file}.png", transparent=True)
 
         fig, ax = plt.subplots(1, 1)
         sns.kdeplot(data=curr_data, hue=openstack_service_col, x=y_col, ax=ax, bw_adjust=1.8)
         ax.set_title(title)
         ax.set_ylabel(ylabel="")
-        fig.savefig(f"./graphics/bellcurve_{save_file}.png")
+        fig.savefig(f"./graphics/bellcurve_{save_file}.png", transparent=True)
 
         dataframe = self.stat_recap_pd[(self.stat_recap_pd[group_col] == group)]
         dataframe = dataframe[dataframe['benchmark'] == benchmark]
         original_order = dataframe[stat_name_col].unique()  # to maintain original order of stat_name_col column
         dataframe = dataframe.pivot(columns=openstack_service_col, index=stat_name_col, values=value_col).reindex(
             index=original_order)
-        dataframe.columns = [physical_machine_const, nova_const, zun_const, ironic_const]
+        dataframe = dataframe[[physical_machine_const, nova_const, zun_const, ironic_const]]
         dataframe = dataframe.reset_index(stat_name_col)
 
-        export_pandas_to_png(dataframe, f"./graphics/table_{save_file}.png", hide_index=True)
+        export_pandas_to_png(dataframe, f"./graphics/table_{save_file}.png", title=title, hide_index=True)
 
 
     def update_slides_glmark2(self):

@@ -1,11 +1,13 @@
 # Taken from https://towardsdatascience.com/make-your-tables-look-glorious-2a5ddbfcc0e5
 import pandas as pd
 import dataframe_image as dfi
+from matplotlib import pyplot as plt, image as mpimg
+
 
 def highlight_product(series, colour ='yellow'):
     r = pd.Series(data = False, index = series.index)
 
-    return [f'background-color: {colour}' if series.name[-1] % 2 == 1 else '' for v in r]
+    return [f'background-color: {colour}' if series.name[-1] % 2 == 0 else '' for v in r]
 
 def format_value(value):
     if pd.isna(value):
@@ -18,7 +20,7 @@ def format_value(value):
         return f"{value:.3f}"  # Two decimal places for floats
 
 
-def export_pandas_to_png(df: pd.DataFrame, filename: str, hide_index=False):
+def export_pandas_to_png(df: pd.DataFrame, filename: str, title:str, hide_index=False):
     df.insert(0, 'index', range(len(df)))
     df.set_index('index', inplace=True, drop=True, append=True)
     d_styled = (
@@ -39,4 +41,13 @@ def export_pandas_to_png(df: pd.DataFrame, filename: str, hide_index=False):
         d_styled,
         filename,
     )
+    img = mpimg.imread(filename)
+    fig, ax = plt.subplots()
+    ax.imshow(img)
+    ax.axis('off')
+
+    plt.title(title, fontsize=14, pad=10)
+    plt.savefig(filename, transparent=True, bbox_inches='tight', pad_inches=0.05)
+    plt.close()
+
 
