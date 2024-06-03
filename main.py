@@ -1,6 +1,7 @@
 import asyncio
 import os.path
 import re
+import shutil
 from glob import glob
 
 import namd_extractor
@@ -59,6 +60,7 @@ async def main():
             list(openstack_services.values())
         )), file=f)
 
+    clear_folder("./graphics")
     update_charts = UpdateGraphics(openstack_services, glmark2_processors, namd_processors, pytorch_processors)
     update_charts.update_slides()
     update_slide = UpdateGslide()
@@ -122,6 +124,17 @@ def extract_file_name_from_more_format(output_in_more_format: str) -> dict[str, 
     for file_name, content in flat_to_2d(splitted, 2):
         ret[file_name.strip()] = content
     return ret
+
+def clear_folder(folder_path: str):
+    for filename in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, filename)
+        try:
+            if os.path.isfile(file_path) or os.path.islink(file_path):
+                os.unlink(file_path)  # remove file or link
+            elif os.path.isdir(file_path):
+                shutil.rmtree(file_path)  # remove directory
+        except Exception as e:
+            print(f'Failed to delete {file_path}. Reason: {e}')
 
 
 

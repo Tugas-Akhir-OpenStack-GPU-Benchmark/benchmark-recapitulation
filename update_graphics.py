@@ -64,7 +64,7 @@ class UpdateGraphics():
 
         for resolution in data['resolution'].unique():
             curr_data = data[data['resolution'] == resolution]
-            self.do_graphic(curr_data, "FPS", f'Glmark2 {resolution}', f"glmark2_{resolution}", resolution, "Glmark2")
+            self.do_graphic(curr_data, "FPS", f'{resolution}', f"glmark2_{resolution}", resolution, "Glmark2")
 
     def update_slides_pytorch(self):
         data = dataframe_from_dict_of_processor(self.pytorch_processors)
@@ -73,12 +73,12 @@ class UpdateGraphics():
         for model in data['model'].unique():
             curr_data = data[data['model'] == model]
             self.do_graphic(curr_data, "batches/second",
-                            f'Phoronix PyTorch {model}', f"pytorch_{model}", model, "PyTorch")
+                            f'{model}', f"pytorch_{model}", model, "PyTorch")
 
     def update_slides_namd(self):
         data = dataframe_from_dict_of_processor(self.namd_processors)
         data[openstack_service_col] = data[openstack_service_col].apply(convert_to_openstack_name)
-        self.do_graphic(data, "days/ns", f'Phoronix NAMD', f"boxplot_namd", "", "NAMD")
+        self.do_graphic(data, "days/ns", f'', f"namd", "", "NAMD")
 
 
 def convert_to_openstack_name(file_name):
