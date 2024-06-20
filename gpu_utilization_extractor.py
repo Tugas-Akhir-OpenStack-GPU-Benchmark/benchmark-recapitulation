@@ -1,12 +1,15 @@
+from __future__ import annotations
 import json
+
+import pandas as pd
 
 from ResultProcessors import ResultProcessors
 from stats import avg, count
 
 BENCHMARK_TO_PROCESS_MAPPING = {
-    'glmark2': "glmark2",
-    'namd': "./namd2",
-    'pytorch': "python3",
+    'Glmark2': "glmark2",
+    'NAMD': "./namd2",
+    'PyTorch': "python3",
 }
 
 
@@ -23,7 +26,7 @@ class GpuUtilizzationExtractorBase(ResultProcessors):
         self.groups[app_name].sum += util_info['gpu-sum']
         self.groups[app_name].count += util_info['count']
 
-    def groups_to_values_mapping(self) -> dict[str, list[float]]:
+    def groups_to_values_mapping(self) -> dict[str, GpuUtilStats]:
         return self.groups
         # return {
         #     key: [value] for key,value in self.groups.items()
@@ -35,14 +38,14 @@ class GpuUtilizzationExtractorBase(ResultProcessors):
     def extract_benchmark_app_name(self, file_name):
         file_name = file_name.lower()
         for benchmark_app in BENCHMARK_TO_PROCESS_MAPPING.keys():
-            if benchmark_app in file_name:
+            if benchmark_app.lower() in file_name:
                 return benchmark_app
         assert False
 
 
     def get_utilization_dict_info_from_process(self, benchmark_app_name, parsed):
-        benchmark_app_name = benchmark_app_name.lower()
-        assert benchmark_app_name in ('glmark2', 'namd', 'pytorch')
+        benchmark_app_name = benchmark_app_name
+        assert benchmark_app_name in BENCHMARK_TO_PROCESS_MAPPING.keys()
         process_name = BENCHMARK_TO_PROCESS_MAPPING[benchmark_app_name]
 
         if process_name in parsed:
@@ -51,6 +54,16 @@ class GpuUtilizzationExtractorBase(ResultProcessors):
             return parsed["null"]
         assert False
 
+    def as_dataframe(self) -> pd.DataFrame:
+        data = []
+        for benchmark_app, gpu_util in self.groups_to_values_mapping().items():
+            for value in gpu_util:
+                data.append({
+                    'benchmark': benchmark_app,
+                    'gpu-util': gpu_util.sum / gpu_util.count,
+                    'count': gpu_util.count,
+                })
+        return pd.DataFrame(data)
 
 
 class GpuUtilStats:

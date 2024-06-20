@@ -61,12 +61,12 @@ async def main():
         )), file=f)
 
     clear_folder("./graphics")
-    update_charts = UpdateGraphics(openstack_services, glmark2_processors, namd_processors, pytorch_processors)
+    update_charts = UpdateGraphics(openstack_services, glmark2_processors, namd_processors, pytorch_processors, gpu_util_processors)
     update_charts.update_slides()
+
+    await spreadsheet_logic.process_spreadsheet()
     update_slide = UpdateGslide()
     update_slide.upsert_all_in_folder('./graphics')
-    # print()
-    await spreadsheet_logic.process_spreadsheet()
 
 
 
