@@ -126,6 +126,8 @@ def extract_file_name_from_more_format(output_in_more_format: str) -> dict[str, 
     return ret
 
 def clear_folder(folder_path: str):
+    if not os.path.isdir(folder_path):
+        return
     for filename in os.listdir(folder_path):
         file_path = os.path.join(folder_path, filename)
         try:
