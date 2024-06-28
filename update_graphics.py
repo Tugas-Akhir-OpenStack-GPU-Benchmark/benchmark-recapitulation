@@ -38,7 +38,7 @@ class UpdateGraphics():
         self.update_slides_glmark2()
         self.update_slides_namd()
         self.update_slides_pytorch()
-        # self.update_gpu_util()
+        self.update_gpu_util()
 
     def do_graphic(self, curr_data, y_col, title, save_file, group, benchmark):
         plt.figure()
@@ -88,9 +88,13 @@ class UpdateGraphics():
         self.do_graphic(data, "days/ns", f'', f"namd", "", "NAMD")
 
     def update_gpu_util(self):
-        data = dataframe_from_dict_of_processor(self.gpu_util_processors)
-        data[openstack_service_col] = data[openstack_service_col].apply(convert_to_openstack_name)
-        df_melted = pd.melt(data, id_vars=["benchmark", "openstack-service"], value_vars=["gpu-util", "count"], var_name="Statistik")
+        df_melted = self.stat_recap_pd[self.stat_recap_pd['benchmark'] == 'GpuUtil']
+        df_melted.drop("benchmark", inplace=True, axis=1)
+        df_melted.rename(columns={"group": "benchmark"}, inplace=True)
+
+        # data = dataframe_from_dict_of_processor(self.gpu_util_processors)
+        # data[openstack_service_col] = data[openstack_service_col].apply(convert_to_openstack_name)
+        # df_melted = pd.melt(data, id_vars=["benchmark", "openstack-service"], value_vars=["gpu-util", "count", "stdev"], var_name="Statistik")
         df_pivot = df_melted.pivot_table(index=["benchmark", "Statistik"], columns="openstack-service", values="value")
         dataframe = df_pivot[[physical_machine_const, nova_const, zun_const, ironic_const]]
         dataframe.reset_index(level='Statistik', inplace=True)
@@ -100,7 +104,7 @@ class UpdateGraphics():
         export_pandas_to_png(dataframe, f"./graphics/table_gpuutil.png", title="GPU Utilization",
                              hide_index=False, border=True, alternating_row_colors=False)
         # self.export_table_graphic(df_pivot, f'GPU Utilization', f"gpuutil", "", "NAMD")
-
+        pass
 
 
 def convert_to_openstack_name(file_name):

@@ -2,6 +2,7 @@ from __future__ import annotations
 import json
 
 import pandas as pd
+from scipy.stats import ttest_ind_from_stats
 
 from ResultProcessors import ResultProcessors
 from stats import avg, count
@@ -12,6 +13,7 @@ BENCHMARK_TO_PROCESS_MAPPING = {
     'PyTorch': "python3",
 }
 
+TWO_SIDED_P_VALUE_EQUAL = "≠ physical; p-value"
 
 class GpuUtilizzationExtractorBase(ResultProcessors):
     def __init__(self):
@@ -23,17 +25,14 @@ class GpuUtilizzationExtractorBase(ResultProcessors):
         util_info = self.get_utilization_dict_info_from_process(app_name, parsed)
         if app_name not in self.groups:
             self.groups[app_name] = GpuUtilStats()
-        self.groups[app_name].sum += util_info['gpu-sum']
-        self.groups[app_name].count += util_info['count']
+        currentData = GpuUtilStats(util_info['gpu-sum'], util_info['count'], util_info['gpu-variance'])
+        self.groups[app_name] = self.groups[app_name] + currentData
 
     def groups_to_values_mapping(self) -> dict[str, GpuUtilStats]:
         return self.groups
-        # return {
-        #     key: [value] for key,value in self.groups.items()
-        # }
 
     def stats_to_consider(self) -> list[tuple[str, callable]]:
-        return [('Average', avg), ('Count', count)]
+        return [('Average', avg), ('Count', count), ('Stdev', stdevForGpuutils), (TWO_SIDED_P_VALUE_EQUAL, ttest_two_tail)]
 
     def extract_benchmark_app_name(self, file_name):
         file_name = file_name.lower()
@@ -62,17 +61,29 @@ class GpuUtilizzationExtractorBase(ResultProcessors):
                     'benchmark': benchmark_app,
                     'gpu-util': gpu_util.sum / gpu_util.count,
                     'count': gpu_util.count,
+                    'stdev': gpu_util.stdev,
                 })
         return pd.DataFrame(data)
 
 
 class GpuUtilStats:
-    def __init__(self, sum=0, count=0):
+    def __init__(self, sum=0, count=0, variance=0):
         self.count = count
         self.sum = sum
+        self.variance = variance
+
+    @property
+    def average(self):
+        if self.count == 0:
+            return 9999999999999
+        return self.sum / self.count
+
+    @property
+    def stdev(self):
+        return self.variance**.5
 
     def __add__(self, other):
-        return GpuUtilStats(self.sum + other.sum, self.count + other.count)
+        return GpuUtilStats(self.sum + other.sum, self.count + other.count, calculateVariance(self, other))
 
     def __radd__(self, other):
         if isinstance(other, int):
@@ -100,6 +111,26 @@ class GpuUtilStats:
     def __round__(self, ndigits=None):
         return round(self.__float__(), ndigits=min(2,ndigits or 100))
 
+
+def calculateVariance(stats1: GpuUtilStats, stats2: GpuUtilStats):
+    add1 = (stats1.count - 1) * stats1.variance
+    add2 = (stats2.count - 1) * stats2.variance
+    divisor = stats1.count + stats2.count - 1
+    firstNumber = (add1 + add2) / divisor
+
+    numerator = stats1.count*stats2.count * (stats1.average - stats2.average)**2
+    denominator = (stats1.count + stats2.count) * (stats1.count + stats2.count - 1)
+    secondNumber = numerator / denominator
+    return firstNumber + secondNumber
+
+
+def stdevForGpuutils(gpuUtil: GpuUtilStats, **_):
+    return gpuUtil.stdev
+
+def ttest_two_tail(gpuUtil: GpuUtilStats, additional_argument: GpuUtilStats):
+    physical = additional_argument
+    tstat, pvalue = ttest_ind_from_stats(gpuUtil.average, gpuUtil.stdev, gpuUtil.count, physical.average, physical.stdev, physical.count, alternative='two-sided')
+    return pvalue
 
 def groups_to_values_mapping(self) -> dict[str, list[float]]:
         raise NotImplementedError
