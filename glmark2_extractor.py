@@ -61,7 +61,7 @@ class Glmark2ResultProcessor:
 
     def process(self, content) -> None:
         informations = list(re.finditer(
-            "\\[([a-zA-Z]+)\\] (.+?): FPS: (\\d+) FrameTime: ([0-9.]+) ms", content))
+            "\\[([a-zA-Z0-9]+)\\] (.+?): FPS: (\\d+) FrameTime: ([0-9.]+) ms", content))
         for info in informations:
             step_category = info.group(1)
             step_name = info.group(2)
