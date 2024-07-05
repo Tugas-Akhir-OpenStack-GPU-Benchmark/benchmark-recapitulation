@@ -44,9 +44,6 @@ async def main():
         openstack_service_recap.namd_processor = namd_processors[openstack_service_name]
         openstack_service_recap.gpu_util_processor = gpu_util_processors[openstack_service_name]
 
-    spreadsheet_logic = SpreadsheetLogic(openstack_services, glmark2_processors, namd_processors, pytorch_processors)
-    print(spreadsheet_logic.url)
-
     openstack_services_ordering = list(namd_processors.keys())
     comparison_openstack_service_name = openstack_services_ordering[INDEX_OF_T_TEST_COMPARISON]
     comparison = openstack_services[comparison_openstack_service_name]
@@ -64,7 +61,10 @@ async def main():
     update_charts = UpdateGraphics(openstack_services, glmark2_processors, namd_processors, pytorch_processors, gpu_util_processors)
     update_charts.update_slides()
 
+    # spreadsheet_logic = SpreadsheetLogic(openstack_services, glmark2_processors, namd_processors, pytorch_processors)
+    # print(spreadsheet_logic.url)
     # await spreadsheet_logic.process_spreadsheet()
+
     # update_slide = UpdateGslide()
     # update_slide.upsert_all_in_folder('./graphics')
 

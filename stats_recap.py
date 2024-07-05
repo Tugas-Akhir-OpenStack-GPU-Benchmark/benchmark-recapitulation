@@ -10,10 +10,7 @@ from glmark2_extractor import MultiresolutionGlmark2ResultProcessor
 from gpu_utilization_extractor import GpuUtilizzationExtractor, GpuUtilizzationExtractorBase
 from pytorch_extractor import PytorchResultProcessor
 from stats import *
-
-
-
-
+from utils import convert_to_openstack_name, convert_to_openstack_latex_name
 
 
 class StatsRecap:
@@ -214,10 +211,6 @@ def sanitize(string):
 
 def extract_openstack_service_name(string: str):
     string = string.lower()
-    values_to_find = ['nova', 'zun', 'ironic', 'physical', 'direct']
-    for value in values_to_find:
-        if value in string:
-            return value
-    return sanitize(string)
+    return sanitize(convert_to_openstack_latex_name(string))
 
 

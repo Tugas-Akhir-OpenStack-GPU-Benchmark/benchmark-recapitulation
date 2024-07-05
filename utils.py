@@ -1,6 +1,34 @@
 import itertools
 from typing import Any
 
+from constants import nova_const, zun_const, ironic_double_glmark, ironic_const, physical_machine_const
+
+
+def convert_to_openstack_latex_name(file_name):
+    file_name = file_name.lower()
+    names = ['nova', 'zun', 'ironic-warmed', 'ironic', 'physical']
+    for name in names:
+        if name in file_name:
+            return name.replace("-", "")
+    assert False
+
+
+
+def convert_to_openstack_name(file_name):
+    file_name = file_name.lower()
+    if 'nova' in file_name:
+        return nova_const
+    if 'zun' in file_name:
+        return zun_const
+    if 'ironic-warmed' in file_name:
+        return ironic_double_glmark
+    if 'ironic' in file_name:
+        return ironic_const
+    if 'physical' in file_name:
+        return physical_machine_const
+    assert False
+
+
 
 def transpose(two_d_arr, jagged_fill_value=None):
     return list(map(list, itertools.zip_longest(*two_d_arr, fillvalue=jagged_fill_value)))

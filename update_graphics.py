@@ -11,12 +11,13 @@ from pandas.plotting import table
 from ResultProcessors import ResultProcessors
 from aesthetic_pandas_export import export_pandas_to_png
 from constants import openstack_service_col, group_col, zun_const, ironic_const, physical_machine_const, nova_const, \
-    value_col, stat_name_col
+    value_col, stat_name_col, ironic_double_glmark
 from glmark2_extractor import MultiresolutionGlmark2ResultProcessor
 from gpu_utilization_extractor import GpuUtilizzationExtractorBase
 from namd_extractor import NamdResultProcessor
 from pytorch_extractor import PytorchResultProcessor
 from stats_recap import StatRecapPerOpenStackService
+from utils import convert_to_openstack_name
 
 
 class UpdateGraphics():
@@ -59,7 +60,7 @@ class UpdateGraphics():
         original_order = dataframe[stat_name_col].unique()  # to maintain original order of stat_name_col column
         dataframe = dataframe.pivot(columns=openstack_service_col, index=stat_name_col, values=value_col).reindex(
             index=original_order)
-        dataframe = dataframe[[physical_machine_const, nova_const, zun_const, ironic_const]]
+        dataframe = dataframe[[physical_machine_const, nova_const, zun_const, ironic_const, ironic_double_glmark]]
         dataframe = dataframe.reset_index(stat_name_col)
 
         export_pandas_to_png(dataframe, f"./graphics/table_{save_file}.png", title=title, hide_index=True)
@@ -96,7 +97,7 @@ class UpdateGraphics():
         # data[openstack_service_col] = data[openstack_service_col].apply(convert_to_openstack_name)
         # df_melted = pd.melt(data, id_vars=["benchmark", "openstack-service"], value_vars=["gpu-util", "count", "stdev"], var_name="Statistik")
         df_pivot = df_melted.pivot_table(index=["benchmark", "Statistik"], columns="openstack-service", values="value")
-        dataframe = df_pivot[[physical_machine_const, nova_const, zun_const, ironic_const]]
+        dataframe = df_pivot[[physical_machine_const, nova_const, zun_const, ironic_const, ironic_double_glmark]]
         dataframe.reset_index(level='Statistik', inplace=True)
         dataframe.columns.name=''
         # dataframe = dataframe.reset_index(stat_name_col)
@@ -107,17 +108,6 @@ class UpdateGraphics():
         pass
 
 
-def convert_to_openstack_name(file_name):
-    file_name = file_name.lower()
-    if 'nova' in file_name:
-        return nova_const
-    if 'zun' in file_name:
-        return zun_const
-    if 'ironic' in file_name:
-        return ironic_const
-    if 'physical' in file_name:
-        return physical_machine_const
-    assert False
 
 
 def abc(df, group_by, to_be_replicated):
